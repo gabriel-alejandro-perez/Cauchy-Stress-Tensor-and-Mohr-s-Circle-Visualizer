@@ -4,7 +4,7 @@ An interactive, real-time 3D visualizer developed in C++ to explore the Stress T
 
 This project was born as a study initiative to make the abstract concepts of solid mechanics more intuitive by combining linear algebra with graphics programming and a retro green phosphor monitor (CRT) aesthetic.
 
-![Texto alternativo](Gif.gif)
+![Mohr Visualizer](Gif.gif)
 
 ✨ Main Features:
 
