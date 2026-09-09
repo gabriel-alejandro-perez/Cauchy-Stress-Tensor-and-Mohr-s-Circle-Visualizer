@@ -1,0 +1,134 @@
+\doxysection{olc::Resource\+Pack Class Reference}
+\hypertarget{classolc_1_1_resource_pack}{}\label{classolc_1_1_resource_pack}\index{olc::ResourcePack@{olc::ResourcePack}}
+
+
+{\ttfamily \+\#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+Inheritance diagram for olc::Resource\+Pack:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classolc_1_1_resource_pack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_resource_pack_1_1s_resource_file}{s\+Resource\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classolc_1_1_resource_pack_af5b7f93e4fb4e8b899da50985b689083}{Resource\+Pack}} ()
+\item 
+\doxymbox{\hyperlink{classolc_1_1_resource_pack_a7e48d44ecdac3d4a2eec7bb5a5eb1ec5}{\texorpdfstring{$\sim$}{\string~}\+Resource\+Pack}} ()
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_resource_pack_a56eebc321c66215d15df1390b1080c66}{Add\+File}} (const std::\+string \&s\+File)
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_resource_pack_a3168eef974448f8119e93af97272df27}{Load\+Pack}} (const std::\+string \&s\+File, const std::\+string \&s\+Key)
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_resource_pack_af6b1fec791c3c85b51b565db63a1aa9a}{Save\+Pack}} (const std::\+string \&s\+File, const std::\+string \&s\+Key)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_resource_buffer}{Resource\+Buffer}} \doxymbox{\hyperlink{classolc_1_1_resource_pack_accb89668e145dc59e0740925b1b91987}{Get\+File\+Buffer}} (const std::\+string \&s\+File)
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_resource_pack_a4421c33c022ad042d29ef81f29f5b355}{Loaded}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::\+vector$<$ char $>$ \doxymbox{\hyperlink{classolc_1_1_resource_pack_a32f7db39e12b68a89c7269aa5f1a72d2}{scramble}} (const std::\+vector$<$ char $>$ \&data, const std::\+string \&key)
+\item 
+std::\+string \doxymbox{\hyperlink{classolc_1_1_resource_pack_a7ac73e3e7235fd999864e25220c291f9}{makeposix}} (const std::\+string \&path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::\+map$<$ std::\+string, \doxymbox{\hyperlink{structolc_1_1_resource_pack_1_1s_resource_file}{s\+Resource\+File}} $>$ \doxymbox{\hyperlink{classolc_1_1_resource_pack_a79fbfb9b26fa5d68ce4d467ea23b7ec0}{map\+Files}}
+\item 
+std::\+ifstream \doxymbox{\hyperlink{classolc_1_1_resource_pack_ac79116b2e4f647b0a11c53db4a6e17f1}{base\+File}}
+\end{DoxyCompactItemize}
+
+
+\label{classolc_1_1_resource_pack_doc-constructors}
+\Hypertarget{classolc_1_1_resource_pack_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classolc_1_1_resource_pack_af5b7f93e4fb4e8b899da50985b689083}\index{olc::ResourcePack@{olc::ResourcePack}!ResourcePack@{ResourcePack}}
+\index{ResourcePack@{ResourcePack}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{ResourcePack()}{ResourcePack()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_af5b7f93e4fb4e8b899da50985b689083} 
+olc::\+\+Resource\+Pack::\+\+Resource\+Pack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_a7e48d44ecdac3d4a2eec7bb5a5eb1ec5}\index{olc::ResourcePack@{olc::ResourcePack}!````~ResourcePack@{\texorpdfstring{$\sim$}{\string~}ResourcePack}}
+\index{````~ResourcePack@{\texorpdfstring{$\sim$}{\string~}ResourcePack}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ResourcePack()}{\string~ResourcePack()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a7e48d44ecdac3d4a2eec7bb5a5eb1ec5} 
+olc::\+\+Resource\+Pack::\+\texorpdfstring{$\sim$}{\string~}\+Resource\+Pack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{classolc_1_1_resource_pack_doc-func-members}
+\Hypertarget{classolc_1_1_resource_pack_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classolc_1_1_resource_pack_a56eebc321c66215d15df1390b1080c66}\index{olc::ResourcePack@{olc::ResourcePack}!AddFile@{AddFile}}
+\index{AddFile@{AddFile}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{AddFile()}{AddFile()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a56eebc321c66215d15df1390b1080c66} 
+bool olc::\+\+Resource\+Pack::\+\+Add\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+File}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_accb89668e145dc59e0740925b1b91987}\index{olc::ResourcePack@{olc::ResourcePack}!GetFileBuffer@{GetFileBuffer}}
+\index{GetFileBuffer@{GetFileBuffer}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{GetFileBuffer()}{GetFileBuffer()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_accb89668e145dc59e0740925b1b91987} 
+\doxymbox{\hyperlink{structolc_1_1_resource_buffer}{Resource\+Buffer}} olc::\+\+Resource\+Pack::\+\+Get\+File\+Buffer (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+File}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_a4421c33c022ad042d29ef81f29f5b355}\index{olc::ResourcePack@{olc::ResourcePack}!Loaded@{Loaded}}
+\index{Loaded@{Loaded}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{Loaded()}{Loaded()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a4421c33c022ad042d29ef81f29f5b355} 
+bool olc::\+\+Resource\+Pack::\+\+Loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_a3168eef974448f8119e93af97272df27}\index{olc::ResourcePack@{olc::ResourcePack}!LoadPack@{LoadPack}}
+\index{LoadPack@{LoadPack}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{LoadPack()}{LoadPack()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a3168eef974448f8119e93af97272df27} 
+bool olc::\+\+Resource\+Pack::\+\+Load\+Pack (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+File}{, }\item[{const std::\+string \&}]{s\+Key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_a7ac73e3e7235fd999864e25220c291f9}\index{olc::ResourcePack@{olc::ResourcePack}!makeposix@{makeposix}}
+\index{makeposix@{makeposix}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{makeposix()}{makeposix()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a7ac73e3e7235fd999864e25220c291f9} 
+std::\+string olc::\+\+Resource\+Pack::\+makeposix (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classolc_1_1_resource_pack_af6b1fec791c3c85b51b565db63a1aa9a}\index{olc::ResourcePack@{olc::ResourcePack}!SavePack@{SavePack}}
+\index{SavePack@{SavePack}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{SavePack()}{SavePack()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_af6b1fec791c3c85b51b565db63a1aa9a} 
+bool olc::\+\+Resource\+Pack::\+\+Save\+Pack (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+File}{, }\item[{const std::\+string \&}]{s\+Key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_resource_pack_a32f7db39e12b68a89c7269aa5f1a72d2}\index{olc::ResourcePack@{olc::ResourcePack}!scramble@{scramble}}
+\index{scramble@{scramble}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{scramble()}{scramble()}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a32f7db39e12b68a89c7269aa5f1a72d2} 
+std::\+vector$<$ char $>$ olc::\+\+Resource\+Pack::\+scramble (\begin{DoxyParamCaption}\item[{const std::\+vector$<$ char $>$ \&}]{data}{, }\item[{const std::\+string \&}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{classolc_1_1_resource_pack_doc-variable-members}
+\Hypertarget{classolc_1_1_resource_pack_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classolc_1_1_resource_pack_ac79116b2e4f647b0a11c53db4a6e17f1}\index{olc::ResourcePack@{olc::ResourcePack}!baseFile@{baseFile}}
+\index{baseFile@{baseFile}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{baseFile}{baseFile}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_ac79116b2e4f647b0a11c53db4a6e17f1} 
+std::\+ifstream olc::\+\+Resource\+Pack::\+base\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classolc_1_1_resource_pack_a79fbfb9b26fa5d68ce4d467ea23b7ec0}\index{olc::ResourcePack@{olc::ResourcePack}!mapFiles@{mapFiles}}
+\index{mapFiles@{mapFiles}!olc::ResourcePack@{olc::ResourcePack}}
+\doxysubsubsection{\texorpdfstring{mapFiles}{mapFiles}}
+{\footnotesize\ttfamily \label{classolc_1_1_resource_pack_a79fbfb9b26fa5d68ce4d467ea23b7ec0} 
+std::\+map$<$std::\+string, \doxymbox{\hyperlink{structolc_1_1_resource_pack_1_1s_resource_file}{s\+Resource\+File}}$>$ olc::\+\+Resource\+Pack::\+map\+Files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,136 @@
+\doxysection{olc::Platform Class Reference}
+\hypertarget{classolc_1_1_platform}{}\label{classolc_1_1_platform}\index{olc::Platform@{olc::Platform}}
+
+
+{\ttfamily \+\#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{classolc_1_1_platform_a352f636fdc2e30bddac2db85238b166b}{\texorpdfstring{$\sim$}{\string~}\+Platform}} ()=default
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_a65e6f9763726056f6a9d37395b8ed023}{Application\+Start\+Up}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_aec7a14ba9007d3c421481baa49e55669}{Application\+Clean\+Up}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_ace0ea54aaa50143628b5fd41851b578f}{Thread\+Start\+Up}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_a0e4e37ccc06ae7f3251b7a53ce839c13}{Thread\+Clean\+Up}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_a2e951cdc0d8fd9bb68f05b33f1fd0450}{Create\+Graphics}} (bool b\+Full\+Screen, bool b\+Enable\+VSYNC, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+View\+Pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+View\+Size)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_a4966327ca7d5ff2b855b3a4eaf0f88f2}{Create\+Window\+Pane}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Window\+Pos, \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Window\+Size, bool b\+Full\+Screen)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_ab9ea28ecd660730810463dd6c68b73fd}{Set\+Window\+Title}} (const std::\+string \&s)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_ac28f882adec07206fefdb04d6a6d4231}{Show\+Window\+Frame}} (const bool b\+Show\+Frame=true)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_a44352979b89f459964d075d96b965441}{Set\+Window\+Size}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Window\+Pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Window\+Size)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_af58e24a992339020fa1ebf58a224b209}{Start\+System\+Event\+Loop}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_platform_abbc05f4b3aea3513919b05fdb15bfbbc}{Handle\+System\+Event}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_platform_a43a4a5eaaf20384b9cef6aec6e75dbbd}{ptr\+PGE}}
+\end{DoxyCompactItemize}
+
+
+\label{classolc_1_1_platform_doc-constructors}
+\Hypertarget{classolc_1_1_platform_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classolc_1_1_platform_a352f636fdc2e30bddac2db85238b166b}\index{olc::Platform@{olc::Platform}!````~Platform@{\texorpdfstring{$\sim$}{\string~}Platform}}
+\index{````~Platform@{\texorpdfstring{$\sim$}{\string~}Platform}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Platform()}{\string~Platform()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a352f636fdc2e30bddac2db85238b166b} 
+virtual olc::\+\+Platform::\+\texorpdfstring{$\sim$}{\string~}\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\label{classolc_1_1_platform_doc-func-members}
+\Hypertarget{classolc_1_1_platform_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classolc_1_1_platform_aec7a14ba9007d3c421481baa49e55669}\index{olc::Platform@{olc::Platform}!ApplicationCleanUp@{ApplicationCleanUp}}
+\index{ApplicationCleanUp@{ApplicationCleanUp}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ApplicationCleanUp()}{ApplicationCleanUp()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_aec7a14ba9007d3c421481baa49e55669} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Application\+Clean\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_a65e6f9763726056f6a9d37395b8ed023}\index{olc::Platform@{olc::Platform}!ApplicationStartUp@{ApplicationStartUp}}
+\index{ApplicationStartUp@{ApplicationStartUp}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ApplicationStartUp()}{ApplicationStartUp()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a65e6f9763726056f6a9d37395b8ed023} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Application\+Start\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_a2e951cdc0d8fd9bb68f05b33f1fd0450}\index{olc::Platform@{olc::Platform}!CreateGraphics@{CreateGraphics}}
+\index{CreateGraphics@{CreateGraphics}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{CreateGraphics()}{CreateGraphics()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a2e951cdc0d8fd9bb68f05b33f1fd0450} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Create\+Graphics (\begin{DoxyParamCaption}\item[{bool}]{b\+Full\+Screen}{, }\item[{bool}]{b\+Enable\+VSYNC}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+View\+Pos}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+View\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_a4966327ca7d5ff2b855b3a4eaf0f88f2}\index{olc::Platform@{olc::Platform}!CreateWindowPane@{CreateWindowPane}}
+\index{CreateWindowPane@{CreateWindowPane}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{CreateWindowPane()}{CreateWindowPane()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a4966327ca7d5ff2b855b3a4eaf0f88f2} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Create\+Window\+Pane (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Window\+Pos}{, }\item[{\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Window\+Size}{, }\item[{bool}]{b\+Full\+Screen}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_abbc05f4b3aea3513919b05fdb15bfbbc}\index{olc::Platform@{olc::Platform}!HandleSystemEvent@{HandleSystemEvent}}
+\index{HandleSystemEvent@{HandleSystemEvent}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{HandleSystemEvent()}{HandleSystemEvent()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_abbc05f4b3aea3513919b05fdb15bfbbc} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Handle\+System\+Event (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_a44352979b89f459964d075d96b965441}\index{olc::Platform@{olc::Platform}!SetWindowSize@{SetWindowSize}}
+\index{SetWindowSize@{SetWindowSize}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{SetWindowSize()}{SetWindowSize()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a44352979b89f459964d075d96b965441} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Set\+Window\+Size (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Window\+Pos}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Window\+Size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_ab9ea28ecd660730810463dd6c68b73fd}\index{olc::Platform@{olc::Platform}!SetWindowTitle@{SetWindowTitle}}
+\index{SetWindowTitle@{SetWindowTitle}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{SetWindowTitle()}{SetWindowTitle()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_ab9ea28ecd660730810463dd6c68b73fd} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Set\+Window\+Title (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_ac28f882adec07206fefdb04d6a6d4231}\index{olc::Platform@{olc::Platform}!ShowWindowFrame@{ShowWindowFrame}}
+\index{ShowWindowFrame@{ShowWindowFrame}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ShowWindowFrame()}{ShowWindowFrame()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_ac28f882adec07206fefdb04d6a6d4231} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Show\+Window\+Frame (\begin{DoxyParamCaption}\item[{const bool}]{b\+Show\+Frame}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_af58e24a992339020fa1ebf58a224b209}\index{olc::Platform@{olc::Platform}!StartSystemEventLoop@{StartSystemEventLoop}}
+\index{StartSystemEventLoop@{StartSystemEventLoop}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{StartSystemEventLoop()}{StartSystemEventLoop()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_af58e24a992339020fa1ebf58a224b209} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Start\+System\+Event\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_a0e4e37ccc06ae7f3251b7a53ce839c13}\index{olc::Platform@{olc::Platform}!ThreadCleanUp@{ThreadCleanUp}}
+\index{ThreadCleanUp@{ThreadCleanUp}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ThreadCleanUp()}{ThreadCleanUp()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a0e4e37ccc06ae7f3251b7a53ce839c13} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Thread\+Clean\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_platform_ace0ea54aaa50143628b5fd41851b578f}\index{olc::Platform@{olc::Platform}!ThreadStartUp@{ThreadStartUp}}
+\index{ThreadStartUp@{ThreadStartUp}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ThreadStartUp()}{ThreadStartUp()}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_ace0ea54aaa50143628b5fd41851b578f} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Platform::\+\+Thread\+Start\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\label{classolc_1_1_platform_doc-variable-members}
+\Hypertarget{classolc_1_1_platform_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classolc_1_1_platform_a43a4a5eaaf20384b9cef6aec6e75dbbd}\index{olc::Platform@{olc::Platform}!ptrPGE@{ptrPGE}}
+\index{ptrPGE@{ptrPGE}!olc::Platform@{olc::Platform}}
+\doxysubsubsection{\texorpdfstring{ptrPGE}{ptrPGE}}
+{\footnotesize\ttfamily \label{classolc_1_1_platform_a43a4a5eaaf20384b9cef6aec6e75dbbd} 
+\doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}}\texorpdfstring{$\ast$}{*} olc::\+\+Platform::\+ptr\+PGE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

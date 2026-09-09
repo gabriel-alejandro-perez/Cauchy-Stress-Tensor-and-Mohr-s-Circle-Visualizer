@@ -1,0 +1,88 @@
+\doxysection{cube Struct Reference}
+\hypertarget{structcube}{}\label{structcube}\index{cube@{cube}}
+
+
+Vectorial geometric representation (wireframe) of the cubic differential element.  
+
+
+
+
+{\ttfamily \+\#include $<$Cube.\+hpp$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Eigen::\+\+Vector4f \doxymbox{\hyperlink{structcube_ac4e9f814e7eb8cfdf2cf804e0d9d239b}{tvrts}} \+[8]
+\begin{DoxyCompactList}\small\item\em Vertices transformed to screen/\+clip coordinates after applying MVP. \end{DoxyCompactList}\item 
+Eigen::\+\+Vector4f \doxymbox{\hyperlink{structcube_a77371f8e67acb4a98e07a04059a86e0d}{verts}} \+[8]
+\begin{DoxyCompactList}\small\item\em Original vertices of the origin-\/centered cube in homogeneous coordinates (x, y, z, w). \end{DoxyCompactList}\item 
+Eigen::\+\+Vector2i \doxymbox{\hyperlink{structcube_afd704f32bdb947fa0038e1dec1e745f5}{lines}} \+[12]
+\begin{DoxyCompactList}\small\item\em Pairs of vertex indices that define the 12 edges of the wireframe cube. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vectorial geometric representation (wireframe) of the cubic differential element. 
+
+Defines the local coordinates of the 8 vertices of the cube centered at the origin and the index pairs that make up its 12 edges for line rendering. 
+
+\label{structcube_doc-variable-members}
+\Hypertarget{structcube_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcube_afd704f32bdb947fa0038e1dec1e745f5}\index{cube@{cube}!lines@{lines}}
+\index{lines@{lines}!cube@{cube}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \label{structcube_afd704f32bdb947fa0038e1dec1e745f5} 
+Eigen::\+\+Vector2i cube::\+lines\+[12]}
+
+{\bfseries Initial value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \{}
+\DoxyCodeLine{\ \ \ \ Eigen::Vector2i(0,\ 2),\ Eigen::Vector2i(2,\ 3),\ Eigen::Vector2i(3,\ 1),\ Eigen::Vector2i(1,\ 0),}
+\DoxyCodeLine{\ \ \ \ Eigen::Vector2i(4,\ 6),\ Eigen::Vector2i(6,\ 7),\ Eigen::Vector2i(7,\ 5),\ Eigen::Vector2i(5,\ 4),}
+\DoxyCodeLine{\ \ \ \ Eigen::Vector2i(3,\ 7),\ Eigen::Vector2i(1,\ 5),\ Eigen::Vector2i(0,\ 4),\ Eigen::Vector2i(2,\ 6)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Pairs of vertex indices that define the 12 edges of the wireframe cube. 
+
+\Hypertarget{structcube_ac4e9f814e7eb8cfdf2cf804e0d9d239b}\index{cube@{cube}!tvrts@{tvrts}}
+\index{tvrts@{tvrts}!cube@{cube}}
+\doxysubsubsection{\texorpdfstring{tvrts}{tvrts}}
+{\footnotesize\ttfamily \label{structcube_ac4e9f814e7eb8cfdf2cf804e0d9d239b} 
+Eigen::\+\+Vector4f cube::\+tvrts\+[8]}
+
+
+
+Vertices transformed to screen/\+clip coordinates after applying MVP. 
+
+\Hypertarget{structcube_a77371f8e67acb4a98e07a04059a86e0d}\index{cube@{cube}!verts@{verts}}
+\index{verts@{verts}!cube@{cube}}
+\doxysubsubsection{\texorpdfstring{verts}{verts}}
+{\footnotesize\ttfamily \label{structcube_a77371f8e67acb4a98e07a04059a86e0d} 
+Eigen::\+\+Vector4f cube::\+verts\+[8]}
+
+{\bfseries Initial value:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ \{}
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(-\/1.0f,\ -\/1.0f,\ -\/1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(\ 1.0f,\ -\/1.0f,\ -\/1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(-\/1.0f,\ \ 1.0f,\ -\/1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(\ 1.0f,\ \ 1.0f,\ -\/1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(-\/1.0f,\ -\/1.0f,\ \ 1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(\ 1.0f,\ -\/1.0f,\ \ 1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(-\/1.0f,\ \ 1.0f,\ \ 1.0f,\ 1.0f),\ }
+\DoxyCodeLine{\ \ \ \ Eigen::Vector4f(\ 1.0f,\ \ 1.0f,\ \ 1.0f,\ 1.0f)\ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Original vertices of the origin-\/centered cube in homogeneous coordinates (x, y, z, w). 
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_cube_8hpp}{Cube.\+hpp}}\end{DoxyCompactItemize}

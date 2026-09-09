@@ -1,0 +1,124 @@
+\doxysection{Utils.\+hpp File Reference}
+\hypertarget{_utils_8hpp}{}\label{_utils_8hpp}\index{Utils.hpp@{Utils.hpp}}
+
+
+Utility data structures including constants, solvers, and parsers.  
+
+
+{\ttfamily \+\#include $<$Eigen/\+\+Dense$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structcrt_map}{crt\+Map}}
+\begin{DoxyCompactList}\small\item\em Precalculated mapping structure for the CRT monitor visual filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacematrix_layout}{matrix\+Layout}}
+\begin{DoxyCompactList}\small\item\em Layout and positioning constants for rendering the matrix on screen. \end{DoxyCompactList}\item 
+namespace \doxymbox{\hyperlink{namespacemath_utils}{math\+Utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacemath_utils_aae58b5ad2e568d065756d11852d250a9}{math\+Utils::\+eigen\+VV}} (Eigen::\+\+Matrix3f \&A, Eigen::\+\+Matrix3f \&V)
+\begin{DoxyCompactList}\small\item\em Calculates the eigenvalues and eigenvectors of a 3x3 symmetric matrix in real-\/time. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{_utils_8hpp_a62e0c1aaa13c51cd8929b910e61475f9}{try\+Stof}} (const std::\+string \&str)
+\begin{DoxyCompactList}\small\item\em Safely converts a text string to a floating-\/point number (float). \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{_utils_8hpp_a458b9bf5a904b34b6826dc6f31a1a629}{Format2\+Dec}} (float val)
+\begin{DoxyCompactList}\small\item\em Converts a floating-\/point number to a formatted string with exactly two decimal places. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr float \doxymbox{\hyperlink{_utils_8hpp_a1405970de248dafe731b9cc3c66f8bc4}{pi}} = 3.\+14159265358979323846
+\begin{DoxyCompactList}\small\item\em Pi constant (single precision). \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a9810c8ba7ddbd7313eb817cb100e21fb}{matrix\+Layout::\+scale}} = 2
+\begin{DoxyCompactList}\small\item\em Scale factor for text and UI elements. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a9436e63db922007b35f6914011f696b0}{matrix\+Layout::\+width\+Char}} = 8 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacematrix_layout_a9810c8ba7ddbd7313eb817cb100e21fb}{scale}}
+\begin{DoxyCompactList}\small\item\em Width in pixels of an individually rendered character (8px base \texorpdfstring{$\ast$}{*} scale). \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a71c89baea7b7889d6d55cb3de2255ac7}{matrix\+Layout::\+baseX}} = 390
+\begin{DoxyCompactList}\small\item\em Origin X coordinate (top-\/left corner) for drawing the matrix. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_af60a33a71fe918079c68bd621fc434e9}{matrix\+Layout::\+baseY}} = 60
+\begin{DoxyCompactList}\small\item\em Origin Y coordinate for drawing the matrix. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a576b350f92e52b2ab433b58f0902b3ca}{matrix\+Layout::\+height\+Row}} = 25
+\begin{DoxyCompactList}\small\item\em Vertical distance (height) in pixels between each row of the matrix. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_af48c68fb4465223ae7f47ba10ca38e10}{matrix\+Layout::\+margin\+Col}} = 20
+\begin{DoxyCompactList}\small\item\em Horizontal separation margin in pixels between columns. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a9fc63d9acb44c68b864ab1b2b80adcad}{matrix\+Layout::\+width}} = (7 \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{namespacematrix_layout_a9436e63db922007b35f6914011f696b0}{width\+Char}})
+\begin{DoxyCompactList}\small\item\em Width in pixels reserved for the value string (max 7 characters). \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a04e2f8a7bf3c286b89342b7db300fc3c}{matrix\+Layout::\+width\+Col}} = \doxymbox{\hyperlink{namespacematrix_layout_a9fc63d9acb44c68b864ab1b2b80adcad}{width}} + 20
+\begin{DoxyCompactList}\small\item\em Total column width including the formatted value and its margin. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_aad1d044d77be69c556c6cea87a3643cb}{matrix\+Layout::\+height\+Mat}} = 70
+\begin{DoxyCompactList}\small\item\em Total height in pixels of the matrix\textquotesingle{}s visual brackets. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a1d45ab1080db1c90d63685b32a8a3770}{matrix\+Layout::\+width\+Mat}} = 5
+\begin{DoxyCompactList}\small\item\em Thickness/\+\+Width in pixels of the brackets delimiting the matrix. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacematrix_layout_a1612ba828e0546b04d1d3d9aff74ac6d}{matrix\+Layout::\+fil\+Col}} = 3
+\begin{DoxyCompactList}\small\item\em Matrix dimension (3 rows x 3 columns). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility data structures including constants, solvers, and parsers. 
+
+
+
+\label{_utils_8hpp_doc-func-members}
+\Hypertarget{_utils_8hpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_utils_8hpp_a458b9bf5a904b34b6826dc6f31a1a629}\index{Utils.hpp@{Utils.hpp}!Format2Dec@{Format2Dec}}
+\index{Format2Dec@{Format2Dec}!Utils.hpp@{Utils.hpp}}
+\doxysubsubsection{\texorpdfstring{Format2Dec()}{Format2Dec()}}
+{\footnotesize\ttfamily \label{_utils_8hpp_a458b9bf5a904b34b6826dc6f31a1a629} 
+std::\+string Format2\+Dec (\begin{DoxyParamCaption}\item[{float}]{val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a floating-\/point number to a formatted string with exactly two decimal places. 
+
+Uses a string stream (ostringstream) alongside format manipulators (std::\+fixed and std::\+setprecision) to ensure uniform representation. This is essential for rendering clean numerical data in the interface (such as principal stresses, tensor components, and Mohr\textquotesingle{}s Circle data).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em val} & Numeric float value to format.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Text string (std::\+string) with the value represented to two decimal places (e.\+g., 15.\+00). 
+\end{DoxyReturn}
+\Hypertarget{_utils_8hpp_a62e0c1aaa13c51cd8929b910e61475f9}\index{Utils.hpp@{Utils.hpp}!tryStof@{tryStof}}
+\index{tryStof@{tryStof}!Utils.hpp@{Utils.hpp}}
+\doxysubsubsection{\texorpdfstring{tryStof()}{tryStof()}}
+{\footnotesize\ttfamily \label{_utils_8hpp_a62e0c1aaa13c51cd8929b910e61475f9} 
+float try\+Stof (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Safely converts a text string to a floating-\/point number (float). 
+
+Designed to process user inputs intended for the Cauchy Stress Tensor matrix. Automatically handles edge cases and standard C++ exceptions (empty strings, incomplete signs, or out-\/of-\/range values) to prevent the application from crashing. Additionally, normalizes the value \textquotesingle{}-\/0.\+0f\textquotesingle{} to \textquotesingle{}0.\+0f\textquotesingle{} to avoid display issues.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em str} & Text string (std::\+string) entered by the user in the interface.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The numeric value converted to float if the format is valid. 
+
+0.\+0f if an invalid input is detected, is empty, or throws an exception. 
+\end{DoxyReturn}
+
+
+\label{_utils_8hpp_doc-var-members}
+\Hypertarget{_utils_8hpp_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{_utils_8hpp_a1405970de248dafe731b9cc3c66f8bc4}\index{Utils.hpp@{Utils.hpp}!pi@{pi}}
+\index{pi@{pi}!Utils.hpp@{Utils.hpp}}
+\doxysubsubsection{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily \label{_utils_8hpp_a1405970de248dafe731b9cc3c66f8bc4} 
+float pi = 3.\+14159265358979323846\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Pi constant (single precision). 
+

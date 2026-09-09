@@ -1,0 +1,65 @@
+\doxysection{crt\+Map Struct Reference}
+\hypertarget{structcrt_map}{}\label{structcrt_map}\index{crtMap@{crtMap}}
+
+
+Precalculated mapping structure for the CRT monitor visual filter.  
+
+
+
+
+{\ttfamily \+\#include $<$Utils.\+hpp$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{structcrt_map_ab4f5522c69a03a37227230f3dcc042bd}{ux}}
+\begin{DoxyCompactList}\small\item\em Remapped X coordinate in the source buffer. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{structcrt_map_a074e52c116d353f2cafb105c4d8f037f}{uy}}
+\begin{DoxyCompactList}\small\item\em Remapped Y coordinate in the source buffer. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{structcrt_map_ac714c9b20ee6773dd68097a875dbcc39}{vm}}
+\begin{DoxyCompactList}\small\item\em Vignette attenuation factor for the monitor edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Precalculated mapping structure for the CRT monitor visual filter. 
+
+Stores screen coordinates transformed by barrel distortion (Brown-\/\+Conrady) along with their corresponding vignette attenuation factor. Allows applying the CRT effect via a Lookup Table (LUT), avoiding expensive geometric function calculations per pixel on every frame. 
+
+\label{structcrt_map_doc-variable-members}
+\Hypertarget{structcrt_map_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structcrt_map_ab4f5522c69a03a37227230f3dcc042bd}\index{crtMap@{crtMap}!ux@{ux}}
+\index{ux@{ux}!crtMap@{crtMap}}
+\doxysubsubsection{\texorpdfstring{ux}{ux}}
+{\footnotesize\ttfamily \label{structcrt_map_ab4f5522c69a03a37227230f3dcc042bd} 
+int crt\+Map::\+ux}
+
+
+
+Remapped X coordinate in the source buffer. 
+
+\Hypertarget{structcrt_map_a074e52c116d353f2cafb105c4d8f037f}\index{crtMap@{crtMap}!uy@{uy}}
+\index{uy@{uy}!crtMap@{crtMap}}
+\doxysubsubsection{\texorpdfstring{uy}{uy}}
+{\footnotesize\ttfamily \label{structcrt_map_a074e52c116d353f2cafb105c4d8f037f} 
+int crt\+Map::\+uy}
+
+
+
+Remapped Y coordinate in the source buffer. 
+
+\Hypertarget{structcrt_map_ac714c9b20ee6773dd68097a875dbcc39}\index{crtMap@{crtMap}!vm@{vm}}
+\index{vm@{vm}!crtMap@{crtMap}}
+\doxysubsubsection{\texorpdfstring{vm}{vm}}
+{\footnotesize\ttfamily \label{structcrt_map_ac714c9b20ee6773dd68097a875dbcc39} 
+float crt\+Map::\+vm}
+
+
+
+Vignette attenuation factor for the monitor edges. 
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_utils_8hpp}{Utils.\+hpp}}\end{DoxyCompactItemize}

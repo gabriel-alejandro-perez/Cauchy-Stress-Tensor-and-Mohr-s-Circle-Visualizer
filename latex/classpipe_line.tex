@@ -1,0 +1,340 @@
+\doxysection{pipe\+Line Class Reference}
+\hypertarget{classpipe_line}{}\label{classpipe_line}\index{pipeLine@{pipeLine}}
+
+
+Manages the order of 3D transformations (Pipeline) and the camera system.  
+
+
+
+
+{\ttfamily \+\#include $<$Pipeline.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const Eigen::\+\+Matrix4f \& \doxymbox{\hyperlink{classpipe_line_a534a847ecd2c953cbb38aaeef614dd04}{get\+MVP}} () const
+\begin{DoxyCompactList}\small\item\em Gets the final combined MVP (Model-\/\+View-\/\+Projection) matrix. \end{DoxyCompactList}\item 
+const Eigen::\+\+Matrix4f \& \doxymbox{\hyperlink{classpipe_line_a570d3c59aad910657dfe370ec4275f42}{getproj\+View}} () const
+\begin{DoxyCompactList}\small\item\em Gets the precalculated Projection \texorpdfstring{$\ast$}{*} View matrix. \end{DoxyCompactList}\item 
+const Eigen::\+\+Quaternionf \& \doxymbox{\hyperlink{classpipe_line_a252a7151a3f783c23c65508c8c5913f3}{get\+Quat}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current orientation quaternion. \end{DoxyCompactList}\item 
+const float \& \doxymbox{\hyperlink{classpipe_line_aeafc14149db2b36633e6ac7dbc866d60}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current scale of the object. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classpipe_line_a2785ba6109eaae75140c78975e9bf381}{setrot\+Mat}} (Eigen::\+\+Matrix3f \&mat)
+\begin{DoxyCompactList}\small\item\em Prepares the rotation animation towards a new eigenvector basis. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classpipe_line_a03ac6e817a16e3e52e4b3ae7d4273617}{set\+Rot}} (float ag, Eigen::\+\+Vector3f axis, float flt)
+\begin{DoxyCompactList}\small\item\em Applies an incremental rotation to the object based on an axis and an angle. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classpipe_line_ae1b61e855eaefd02746855fe4396ca08}{solve}} (float t)
+\begin{DoxyCompactList}\small\item\em Updates the SLERP interpolation step frame by frame. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classpipe_line_a5404eb69049ea10c55ba611438333b57}{update}} ()
+\begin{DoxyCompactList}\small\item\em Recalculates the model matrix and the final MVP matrix. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classpipe_line_ae6944f3e7674a3377db30c77b4fcd21d}{pipe\+Line}} (int sw, int sh, float angle, float np, float fp, Eigen::\+\+Vector3f cp, Eigen::\+\+Vector3f tp, float scl)
+\begin{DoxyCompactList}\small\item\em 3D Pipeline Constructor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classpipe_line_a4a7f9b4fb151f8f8e04adc6a23e5dc62}{pipe\+Line}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classpipe_line_aafebaed79c665986a7d3f54432168345}{solving}} = false
+\begin{DoxyCompactList}\small\item\em Indicates if a SLERP animation towards the principal axes is currently running. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classpipe_line_a36efe7d35053e3aead3958b619ccb858}{time}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Accumulator for the interpolation time \textquotesingle{}t\textquotesingle{} in the range \+[0.\+0, 1.\+0]. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classpipe_line_aa33b5e05c8ed88b7f5fb390e46d3d116}{scale}}
+\begin{DoxyCompactList}\small\item\em Uniform scale factor applied to the 3D differential element. \end{DoxyCompactList}\item 
+Eigen::\+\+Matrix4f \doxymbox{\hyperlink{classpipe_line_ab8342c3fef91a2c673f7478d72bf5d49}{projection}}
+\begin{DoxyCompactList}\small\item\em Perspective projection matrix. \end{DoxyCompactList}\item 
+Eigen::\+\+Matrix4f \doxymbox{\hyperlink{classpipe_line_a4947dfcf492087e7b8adcb575479766e}{proj\+View}}
+\begin{DoxyCompactList}\small\item\em Combined Projection \texorpdfstring{$\ast$}{*} View matrix (precomputed for optimization). \end{DoxyCompactList}\item 
+Eigen::\+\+Matrix4f \doxymbox{\hyperlink{classpipe_line_a5a4ffed7f4ead97a7291d88d7c5fcf1f}{view}}
+\begin{DoxyCompactList}\small\item\em View matrix (camera in 3D space). \end{DoxyCompactList}\item 
+Eigen::\+\+Matrix4f \doxymbox{\hyperlink{classpipe_line_a7585b5f720f91b674101e91451d4e308}{model}}
+\begin{DoxyCompactList}\small\item\em Model matrix (Scale and Rotation of the object). \end{DoxyCompactList}\item 
+Eigen::\+\+Matrix4f \doxymbox{\hyperlink{classpipe_line_a6115064892d37ac4a7db3b11a3eae5f7}{mvp}}
+\begin{DoxyCompactList}\small\item\em Final Model-\/\+View-\/\+Projection (MVP) matrix. \end{DoxyCompactList}\item 
+Eigen::\+\+Quaternionf \doxymbox{\hyperlink{classpipe_line_a0e0bddcc99061b27ce0683f8c2866654}{quat}}
+\begin{DoxyCompactList}\small\item\em Current orientation quaternion of the object. \end{DoxyCompactList}\item 
+Eigen::\+\+Quaternionf \doxymbox{\hyperlink{classpipe_line_a095b73893531ab244b6e860efe69ae7a}{quat\+Start}}
+\begin{DoxyCompactList}\small\item\em Source quaternion before starting the SLERP interpolation. \end{DoxyCompactList}\item 
+Eigen::\+\+Quaternionf \doxymbox{\hyperlink{classpipe_line_a9acca19d4c64afac12b40a7a90e76da3}{quat\+Solved}}
+\begin{DoxyCompactList}\small\item\em Target quaternion derived from the eigenvector matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the order of 3D transformations (Pipeline) and the camera system. 
+
+This class manually constructs the Projection (Perspective), View (Look\+At), and Model (rotation and scale) matrices. It uses quaternions to manipulate the orientation of the 3D differential volume element free of Gimbal Lock, and implements Spherical Linear Interpolation (SLERP) to smoothly animate the transition from any orientation to the principal stress basis (eigenvectors). 
+
+\label{classpipe_line_doc-constructors}
+\Hypertarget{classpipe_line_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpipe_line_ae6944f3e7674a3377db30c77b4fcd21d}\index{pipeLine@{pipeLine}!pipeLine@{pipeLine}}
+\index{pipeLine@{pipeLine}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{pipeLine()}{pipeLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classpipe_line_ae6944f3e7674a3377db30c77b4fcd21d} 
+pipe\+Line::\+pipe\+Line (\begin{DoxyParamCaption}\item[{int}]{sw}{, }\item[{int}]{sh}{, }\item[{float}]{angle}{, }\item[{float}]{np}{, }\item[{float}]{fp}{, }\item[{Eigen::\+\+Vector3f}]{cp}{, }\item[{Eigen::\+\+Vector3f}]{tp}{, }\item[{float}]{scl}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+3D Pipeline Constructor. 
+
+Manually constructs the Perspective Projection matrix and the Look\+At View matrix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em sw} & Screen Width in pixels. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em sh} & Screen Height in pixels. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em angle} & Field of View (FOV) angle in radians. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em np} & Near clipping plane. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em fp} & Far clipping plane. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em cp} & Camera Position in world coordinates. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em tp} & Target Position the camera is looking at. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em scl} & Initial scale of the object in world space. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classpipe_line_a4a7f9b4fb151f8f8e04adc6a23e5dc62}\index{pipeLine@{pipeLine}!pipeLine@{pipeLine}}
+\index{pipeLine@{pipeLine}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{pipeLine()}{pipeLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classpipe_line_a4a7f9b4fb151f8f8e04adc6a23e5dc62} 
+pipe\+Line::\+pipe\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+
+
+\label{classpipe_line_doc-func-members}
+\Hypertarget{classpipe_line_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpipe_line_a534a847ecd2c953cbb38aaeef614dd04}\index{pipeLine@{pipeLine}!getMVP@{getMVP}}
+\index{getMVP@{getMVP}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{getMVP()}{getMVP()}}
+{\footnotesize\ttfamily \label{classpipe_line_a534a847ecd2c953cbb38aaeef614dd04} 
+const Eigen::\+\+Matrix4f \& pipe\+Line::\+get\+MVP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the final combined MVP (Model-\/\+View-\/\+Projection) matrix. 
+
+\Hypertarget{classpipe_line_a570d3c59aad910657dfe370ec4275f42}\index{pipeLine@{pipeLine}!getprojView@{getprojView}}
+\index{getprojView@{getprojView}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{getprojView()}{getprojView()}}
+{\footnotesize\ttfamily \label{classpipe_line_a570d3c59aad910657dfe370ec4275f42} 
+const Eigen::\+\+Matrix4f \& pipe\+Line::\+getproj\+View (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the precalculated Projection \texorpdfstring{$\ast$}{*} View matrix. 
+
+\Hypertarget{classpipe_line_a252a7151a3f783c23c65508c8c5913f3}\index{pipeLine@{pipeLine}!getQuat@{getQuat}}
+\index{getQuat@{getQuat}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{getQuat()}{getQuat()}}
+{\footnotesize\ttfamily \label{classpipe_line_a252a7151a3f783c23c65508c8c5913f3} 
+const Eigen::\+\+Quaternionf \& pipe\+Line::\+get\+Quat (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current orientation quaternion. 
+
+\Hypertarget{classpipe_line_aeafc14149db2b36633e6ac7dbc866d60}\index{pipeLine@{pipeLine}!getScale@{getScale}}
+\index{getScale@{getScale}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily \label{classpipe_line_aeafc14149db2b36633e6ac7dbc866d60} 
+const float \& pipe\+Line::\+get\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current scale of the object. 
+
+\Hypertarget{classpipe_line_a03ac6e817a16e3e52e4b3ae7d4273617}\index{pipeLine@{pipeLine}!setRot@{setRot}}
+\index{setRot@{setRot}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{setRot()}{setRot()}}
+{\footnotesize\ttfamily \label{classpipe_line_a03ac6e817a16e3e52e4b3ae7d4273617} 
+void pipe\+Line::\+set\+Rot (\begin{DoxyParamCaption}\item[{float}]{ag}{, }\item[{Eigen::\+\+Vector3f}]{axis}{, }\item[{float}]{flt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Applies an incremental rotation to the object based on an axis and an angle. 
+
+Accumulates the rotation delta via quaternion multiplication and re-\/normalizes to prevent the accumulation of numerical floating-\/point errors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em ag} & Base rotation angle in radians. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em axis} & 3D axis around which the rotation is performed. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em flt} & Delta time. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classpipe_line_a2785ba6109eaae75140c78975e9bf381}\index{pipeLine@{pipeLine}!setrotMat@{setrotMat}}
+\index{setrotMat@{setrotMat}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{setrotMat()}{setrotMat()}}
+{\footnotesize\ttfamily \label{classpipe_line_a2785ba6109eaae75140c78975e9bf381} 
+void pipe\+Line::\+setrot\+Mat (\begin{DoxyParamCaption}\item[{Eigen::\+\+Matrix3f \&}]{mat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prepares the rotation animation towards a new eigenvector basis. 
+
+Normalizes the columns of the rotation matrix to prevent scale distortion, extracts the target quaternion, and triggers the SLERP interpolation flag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em mat} & 3x3 Rotation matrix (usually the eigenvector matrix V). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classpipe_line_ae1b61e855eaefd02746855fe4396ca08}\index{pipeLine@{pipeLine}!solve@{solve}}
+\index{solve@{solve}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily \label{classpipe_line_ae1b61e855eaefd02746855fe4396ca08} 
+void pipe\+Line::\+solve (\begin{DoxyParamCaption}\item[{float}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the SLERP interpolation step frame by frame. 
+
+Smoothly and non-\/linearly transitions the current orientation ({\ttfamily \doxylink{classpipe_line_a095b73893531ab244b6e860efe69ae7a}{quat\+Start}}) towards alignment with the principal stresses ({\ttfamily \doxylink{classpipe_line_a9acca19d4c64afac12b40a7a90e76da3}{quat\+Solved}}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em t} & Delta time (dt) elapsed since the last frame. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classpipe_line_a5404eb69049ea10c55ba611438333b57}\index{pipeLine@{pipeLine}!update@{update}}
+\index{update@{update}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpipe_line_a5404eb69049ea10c55ba611438333b57} 
+void pipe\+Line::\+update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recalculates the model matrix and the final MVP matrix. 
+
+Transforms the current quaternion into its matrix representation, applies the scale using Eigen::\+\+Affine3f, and multiplies it with the previously calculated proj\+View matrix. 
+
+\label{classpipe_line_doc-variable-members}
+\Hypertarget{classpipe_line_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpipe_line_a7585b5f720f91b674101e91451d4e308}\index{pipeLine@{pipeLine}!model@{model}}
+\index{model@{model}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{classpipe_line_a7585b5f720f91b674101e91451d4e308} 
+Eigen::\+\+Matrix4f pipe\+Line::\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Model matrix (Scale and Rotation of the object). 
+
+\Hypertarget{classpipe_line_a6115064892d37ac4a7db3b11a3eae5f7}\index{pipeLine@{pipeLine}!mvp@{mvp}}
+\index{mvp@{mvp}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{mvp}{mvp}}
+{\footnotesize\ttfamily \label{classpipe_line_a6115064892d37ac4a7db3b11a3eae5f7} 
+Eigen::\+\+Matrix4f pipe\+Line::\+mvp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Final Model-\/\+View-\/\+Projection (MVP) matrix. 
+
+\Hypertarget{classpipe_line_ab8342c3fef91a2c673f7478d72bf5d49}\index{pipeLine@{pipeLine}!projection@{projection}}
+\index{projection@{projection}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{projection}{projection}}
+{\footnotesize\ttfamily \label{classpipe_line_ab8342c3fef91a2c673f7478d72bf5d49} 
+Eigen::\+\+Matrix4f pipe\+Line::\+projection\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Perspective projection matrix. 
+
+\Hypertarget{classpipe_line_a4947dfcf492087e7b8adcb575479766e}\index{pipeLine@{pipeLine}!projView@{projView}}
+\index{projView@{projView}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{projView}{projView}}
+{\footnotesize\ttfamily \label{classpipe_line_a4947dfcf492087e7b8adcb575479766e} 
+Eigen::\+\+Matrix4f pipe\+Line::\+proj\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Combined Projection \texorpdfstring{$\ast$}{*} View matrix (precomputed for optimization). 
+
+\Hypertarget{classpipe_line_a0e0bddcc99061b27ce0683f8c2866654}\index{pipeLine@{pipeLine}!quat@{quat}}
+\index{quat@{quat}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{quat}{quat}}
+{\footnotesize\ttfamily \label{classpipe_line_a0e0bddcc99061b27ce0683f8c2866654} 
+Eigen::\+\+Quaternionf pipe\+Line::\+quat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current orientation quaternion of the object. 
+
+\Hypertarget{classpipe_line_a9acca19d4c64afac12b40a7a90e76da3}\index{pipeLine@{pipeLine}!quatSolved@{quatSolved}}
+\index{quatSolved@{quatSolved}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{quatSolved}{quatSolved}}
+{\footnotesize\ttfamily \label{classpipe_line_a9acca19d4c64afac12b40a7a90e76da3} 
+Eigen::\+\+Quaternionf pipe\+Line::\+quat\+Solved\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Target quaternion derived from the eigenvector matrix. 
+
+\Hypertarget{classpipe_line_a095b73893531ab244b6e860efe69ae7a}\index{pipeLine@{pipeLine}!quatStart@{quatStart}}
+\index{quatStart@{quatStart}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{quatStart}{quatStart}}
+{\footnotesize\ttfamily \label{classpipe_line_a095b73893531ab244b6e860efe69ae7a} 
+Eigen::\+\+Quaternionf pipe\+Line::\+quat\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Source quaternion before starting the SLERP interpolation. 
+
+\Hypertarget{classpipe_line_aa33b5e05c8ed88b7f5fb390e46d3d116}\index{pipeLine@{pipeLine}!scale@{scale}}
+\index{scale@{scale}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classpipe_line_aa33b5e05c8ed88b7f5fb390e46d3d116} 
+float pipe\+Line::\+scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Uniform scale factor applied to the 3D differential element. 
+
+\Hypertarget{classpipe_line_aafebaed79c665986a7d3f54432168345}\index{pipeLine@{pipeLine}!solving@{solving}}
+\index{solving@{solving}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{solving}{solving}}
+{\footnotesize\ttfamily \label{classpipe_line_aafebaed79c665986a7d3f54432168345} 
+bool pipe\+Line::\+solving = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indicates if a SLERP animation towards the principal axes is currently running. 
+
+\Hypertarget{classpipe_line_a36efe7d35053e3aead3958b619ccb858}\index{pipeLine@{pipeLine}!time@{time}}
+\index{time@{time}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily \label{classpipe_line_a36efe7d35053e3aead3958b619ccb858} 
+float pipe\+Line::\+time = 0.\+0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Accumulator for the interpolation time \textquotesingle{}t\textquotesingle{} in the range \+[0.\+0, 1.\+0]. 
+
+\Hypertarget{classpipe_line_a5a4ffed7f4ead97a7291d88d7c5fcf1f}\index{pipeLine@{pipeLine}!view@{view}}
+\index{view@{view}!pipeLine@{pipeLine}}
+\doxysubsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily \label{classpipe_line_a5a4ffed7f4ead97a7291d88d7c5fcf1f} 
+Eigen::\+\+Matrix4f pipe\+Line::\+view\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+View matrix (camera in 3D space). 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_pipeline_8hpp}{Pipeline.\+hpp}}\end{DoxyCompactItemize}

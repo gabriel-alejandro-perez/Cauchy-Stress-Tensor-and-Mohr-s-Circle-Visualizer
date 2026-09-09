@@ -1,0 +1,1427 @@
+\doxysection{olc Namespace Reference}
+\hypertarget{namespaceolc}{}\label{namespaceolc}\index{olc@{olc}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceolc_1_1_mouse}{Mouse}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_h_w_button}{HWButton}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_resource_buffer}{Resource\+Buffer}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_resource_pack}{Resource\+Pack}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_image_loader}{Image\+Loader}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_decal}{Decal}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_renderable}{Renderable}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_decal_instance}{Decal\+Instance}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_g_p_u_task}{GPUTask}}
+\item 
+struct \doxymbox{\hyperlink{structolc_1_1_layer_desc}{Layer\+Desc}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_renderer}{Renderer}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_platform}{Platform}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{Pixel\+Game\+Engine}}
+\item 
+class \doxymbox{\hyperlink{classolc_1_1_p_g_e_x}{PGEX}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ int32\+\_\+t $>$ \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{vi2d}}
+\item 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ uint32\+\_\+t $>$ \doxymbox{\hyperlink{namespaceolc_a60e2fb07eaea35a66a0f58a4d8de9272}{vu2d}}
+\item 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ float $>$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{vf2d}}
+\item 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ double $>$ \doxymbox{\hyperlink{namespaceolc_a642bce0dbf087ea3c44963418002b9c9}{vd2d}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{rcode}} \{ \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87baadc8ac6e9769db5bb290fbf5f8284dbf}{FAIL}} = 0
+, \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87ba0178b5f8abe39121e6f14d3c6c093a82}{OK}} = 1
+, \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87babfe0b9ad99c942b01b1ee61404f559b5}{NO\+\_\+\+FILE}} = -\/1
+ \}
+\item 
+enum class \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{Key}} : uint8\+\_\+t \{ \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab50339a10e1de285ac99d4c3990b8693}{NONE}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a7fc56270e7a70fa81a5935b72eacbe29}{A}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9d5ed678fe57bcca610140957afab571}{B}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0d61f8370cad1d412f80b84d143e1257}{C}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af623e75af30e62bbd73d6df5b50bb7b5}{D}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a3a3ea00cfc35332cedf6e5e9a32e94da}{E}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a800618943025315f869e4e1f09471012}{F}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adfcf28d0734569a6a693bc8194de62bf}{G}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac1d9f50f86825a1a2302ec2449c17196}{H}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2add7536794b63bf90eccfd37f9b147d7f}{I}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aff44570aca8241914870afbc310cdb85}{J}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa5f3c6a11b03839d46af9fb43c97c188}{K}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad20caec3b48a1eef164cb4ca81ba2587}{L}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a69691c7bdcc3ce6d5d8a1361f22d04ac}{M}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8d9c307cb7f3c4a32822a51922d1ceaa}{N}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af186217753c37b9b9f958d906208506e}{O}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a44c29edb103a2872f519ad0c9a0fdaaa}{P}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af09564c9ca56850d4cd6b3319e541aee}{Q}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1e1d3d40573127e9ee0480caf1283d6}{R}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5dbc98dcc983a70728bd082d1a47546e}{S}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab9ece18c950afbfa6b0fdbfa4ff731d3}{T}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4c614360da93c0a041b22e537de151eb}{U}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5206560a306a2e085a437fd258eb57ce}{V}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a61e9c06ea9a85a5088a499df6458d276}{W}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a02129bb861061d1a052c592e2dc6b383}{X}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a57cec4137b614c87cb4e24a3d003a3e0}{Y}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21c2e59531c8710156d34a3c30ac81d5}{Z}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac198bc89a4e346bb001e99acd7094348}{K0}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa1bba9704da78d22c74f1c2b0acf4213}{K1}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aecebd75fc367b9aa41be06278689dc63}{K2}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2c729497d91709de6bf1ccd875cf28e5}{K3}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a23ff49ed815108d610c1a75d592488dd}{K4}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0b48b1841bf2b209986a30f9720aafd1}{K5}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adce0eb67e20bada2f2a2ac1084c34d7d}{K6}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abe2268c01180c5580c4be9a0c38c3686}{K7}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a70333d89c64ddd3b7291f4a54aaf9641}{K8}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2041f5bc5a5df10fe0d1ca3d90177e70}{K9}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1dffc8709f31a4987c8a88334107e89}{F1}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afe5c3684dce76cdd9f7f42430868aa74}{F2}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4b6bf4b531770872d4328ce69bef5627}{F3}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae7e0e72401a9f2718ed0f39f2861d702}{F4}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a37f438df6a6d5ba4c17ef8ca58562f00}{F5}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1faf42f2823f184eb2c9f0dffe5d73f2}{F6}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a47489eb597b7db34caa24b1fc78fc839}{F7}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4787509ad9f9d747a81a30e9dde3d4a7}{F8}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a892a245e287c163080b23db737d3c4c9}{F9}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab213ce22ca6ad4eda8db82966b9b6e5a}{F10}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a643b0662422d1d0dffa3fca2e2bf28a8}{F11}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae902674982fc99aa343cdd94da7476c3}{F12}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afbaedde498cdead4f2780217646e9ba1}{UP}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac4e0e4e3118472beeb2ae75827450f1f}{DOWN}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a684d325a7303f52e64011467ff5c5758}{LEFT}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21507b40c80068eda19865706fdc2403}{RIGHT}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6506ae39fdca9845e3a6de3865183e57}{SPACE}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af684bf05fa3e81528c84d1d281d839f1}{TAB}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a46afff2b309b8b16a46d812172a9235c}{SHIFT}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a32f7eee2581c72a5561c21df3013a89a}{CTRL}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a77dd7b24e2c968c0215779e4152c8d67}{INS}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2bbe23c0e8b3f638f0f5aed4b6864513}{DEL}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a710533dd879dd1202e5c73b27705bf02}{HOME}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab1a326c06d88bf042f73d70f50197905}{END}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2cef59b6096dc0002990413fdce8637f}{PGUP}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a27b24c29e2addc88fb66e9e5e1bb323c}{PGDN}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1dd26f1f1790f0b56d5752fb0fbecef0}{BACK}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adaaedac409335b869929ea43fa44be5d}{ESCAPE}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa2bec276a54439fe011eb523b845dac5}{RETURN}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a331b3100a485d8cacff1d3df8e9b0c13}{ENTER}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a291554596c183e837f0a6bec3767c891}{PAUSE}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71574275cadb387a5082e87e9dd60c25}{SCROLL}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abefae2f7250b968cb43ce1f23b3ca886}{NP0}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a06bfddc759bcbdcc8f363807685ee11f}{NP1}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8fe48d89cc94bdbdae0e842d3ce3a5c4}{NP2}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a28de645b78823730e54407c0b682c1aa}{NP3}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af68e9571d92dd7061238478d82bbf1a3}{NP4}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71eb01e2fb8302be2c86a78c80aefde6}{NP5}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae31be48545b861d11f8225d6b43ec5e0}{NP6}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab315b6c045238c6dbb0f30ece973a4aa}{NP7}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aef92c42bba75c4e5e4bc90fae1cc1dd0}{NP8}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a200dc99021b6b318008d7c7357ff22d3}{NP9}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8987588e80f16cbb0c87ddee15f34d62}{NP\+\_\+\+MUL}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad7d94fef09e4fef9d919d067a321f383}{NP\+\_\+\+DIV}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a857f4ce47f8f24d469f8e48f66f2a04e}{NP\+\_\+\+ADD}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab32cf1bff23b5a6371ecc227c621a6f0}{NP\+\_\+\+SUB}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a59e392dcc1a57a140a5c1ff01999fe28}{NP\+\_\+\+DECIMAL}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ade58a28573783fe95304a260ccd90362}{PERIOD}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6837aeca94b8f55801166eb031e26a5a}{EQUALS}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4d9b3e9fc12849d060371eb65154c751}{COMMA}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2affc0d9b54a1fe677c4c9e6b050e67c81}{MINUS}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae91938057eb9d9a998fb0c34e759cce3}{OEM\+\_\+1}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a162a5ad4411bb4afc35aa059cfd9ebbf}{OEM\+\_\+2}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae3755e95125ee8953e36af77261a51a1}{OEM\+\_\+3}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9bc809e39ba8b36b7b0a2acbf071228e}{OEM\+\_\+4}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2accac03142e511444812e4c81a7502625}{OEM\+\_\+5}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9faadd3700669319a02bdd54098c7d5c}{OEM\+\_\+6}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1e6ab2bcef5e704ea5c213c6360bdc90}{OEM\+\_\+7}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5c0e0a1c94c86141c47e9ae4553dadc0}{OEM\+\_\+8}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae40af1d5cc55c55ae0bb25953f7a7ee2}{CAPS\+\_\+\+LOCK}}
+, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad927000fd863b08d2426cbf3fc66bd56}{ENUM\+\_\+\+END}}
+ \}
+\item 
+enum class \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{Decal\+Mode}} \{ \newline
+\doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caa1e23852820b9154316c7c06e2b7ba051}{NORMAL}}
+, \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caa8d8c2c7c04ebe2b70bca10a3060ca491}{ADDITIVE}}
+, \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caa418ef46700a2836c0d6218e2b46bf564}{MULTIPLICATIVE}}
+, \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caa301b25ea9a653329b5d5d727f92514c4}{STENCIL}}
+, \newline
+\doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caab892134232b911680f88a64a24883f7d}{ILLUMINATE}}
+, \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138caa43ea8c7cefb63ec314b4df5628cba577}{WIREFRAME}}
+ \}
+\item 
+enum class \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}{Decal\+Structure}} \{ \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a17b8ef2c330f1430e00c9de5469fc7e7}{LINE}}
+, \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a1da87abe947673580190ba507384ad37}{FAN}}
+, \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a6989032db1002ec3fb0b2de2c970f184}{STRIP}}
+, \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a298cb25408234de02baf2085803a464a}{LIST}}
+ \}
+\item 
+enum class \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189}{Cull\+Mode}} : uint8\+\_\+t \{ \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189ab50339a10e1de285ac99d4c3990b8693}{NONE}} = 0
+, \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a9af3107a066f6b0defb1cafc0499f6ed}{CW}} = 1
+, \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a59ec5d573abd014f3ae2c26ca962e8cf}{CCW}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a3164863c140a63c0ac008d46c4b5761f}{operator\texorpdfstring{$\ast$}{*}}} (const TL \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a4363dbc6c12cfbcc2e5551aa74739413}{operator\texorpdfstring{$\ast$}{*}}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_aef827b5018857332704a2429c690b86c}{operator\texorpdfstring{$\ast$}{*}}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a8e203069c7470406fa8caf314d3ebb3f}{operator\texorpdfstring{$\ast$}{*}=}} (\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a1c6a7e7fb828f74e641a73ea3b5ba3b2}{operator/}} (const TL \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_adfbfe379014b89dd00291195f076b218}{operator/}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a7ac51cc89e290ff5ae82ab0c9a73e4b6}{operator/}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a1273cca09a564c13bb869914c3c8a4f3}{operator/\+=}} (\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class T$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a5c68f57bb2c894e39e5149ea5006322e}{operator+}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&lhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a5d3fdc7d235ea1482d233352d0aa7adb}{operator+}} (const TL \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a04faf950a13360e19f964e36a888248d}{operator+}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a30751c93233bca5648318fb38e128cc5}{operator+}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a5463bf222a68ce82154819c70b908b27}{operator+=}} (\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a52ca600643774f2bf4db5f532e8f41cc}{operator+=}} (\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class T$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a90b8884bfb9b792b64c876558bb3d728}{operator-\/}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&lhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a1d45575974f2e0d27fa9181a477681b4}{operator-\/}} (const TL \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_ade4287261ede3b7c3856c3eb2a616ab4}{operator-\/}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a19391e5ad0a42db11ab970526bd758b6}{operator-\/}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr auto \doxymbox{\hyperlink{namespaceolc_a4a06cbbc4b038695152763a3c6b292b4}{operator-\/=}} (\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const TR \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr bool \doxymbox{\hyperlink{namespaceolc_a079b3c18528c055d466f811505ed1557}{operator$<$}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class TL, class TR$>$ }\\constexpr bool \doxymbox{\hyperlink{namespaceolc_afd1528a9f9239b7f487e30b3e3ddbfd9}{operator$>$}} (const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&lhs, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&rhs)
+\item 
+{\footnotesize template$<$class T$>$ }\\constexpr std::\+ostream \& \doxymbox{\hyperlink{namespaceolc_a51e25abb45a4e9c56ae4fe861febf367}{operator$<$$<$}} (std::\+ostream \&os, const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&rhs)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a06c9f23f2e370e7afe71788427a820fd}{PixelF}} (float red, float green, float blue, float alpha=1.\+0f)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a2069e5cf447f5dd311c680c9463f9c42}{Pixel\+Lerp}} (const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&p1, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&p2, float t)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a7208a6ce62e94eca5b0ba80f7c2f5e30}{DARK\+\_\+\+GREY}} (128, 128, 128)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a93de271d8b3cbd5aec73a085e6a6ec7a}{VERY\+\_\+\+DARK\+\_\+\+GREY}} (64, 64, 64)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ad4579f7eb75a257d76bb657a268f0a8d}{RED}} (255, 0, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a8265396ef812918ca95d2e7aa39c14cc}{DARK\+\_\+\+RED}} (128, 0, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a82b6404acf7ac86f237179fc5f9a859f}{VERY\+\_\+\+DARK\+\_\+\+RED}} (64, 0, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a6c9728f6dba8b58406bb0e10979b6ccf}{YELLOW}} (255, 255, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a379f9d3a40edb1700299c031cd0b6a08}{DARK\+\_\+\+YELLOW}} (128, 128, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a131df56f1dd5cb0906cd02f9df49b17d}{VERY\+\_\+\+DARK\+\_\+\+YELLOW}} (64, 64, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a32b98884f548bf731eab3225557ebe8c}{GREEN}} (0, 255, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ac192218acb2f30c4c3748485dd5e4ba0}{DARK\+\_\+\+GREEN}} (0, 128, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a29c85b49a3c9cbd0b251e80e3bc57140}{VERY\+\_\+\+DARK\+\_\+\+GREEN}} (0, 64, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a43ffa41e9a4a260b86da82b823e6a252}{CYAN}} (0, 255, 255)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_aa0824f5fdd85c58712495a7bc0de191e}{DARK\+\_\+\+CYAN}} (0, 128, 128)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_aee6a06b446368ac58033b5ae4f4c6ca2}{VERY\+\_\+\+DARK\+\_\+\+CYAN}} (0, 64, 64)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ac1e1d3e39e0b78e9767142c9daeba4ee}{BLUE}} (0, 0, 255)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ac6e041f71287438da8b9145758c4fe63}{DARK\+\_\+\+BLUE}} (0, 0, 128)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a48fb6375b9a7c0a0d44feaa879e7ebb7}{VERY\+\_\+\+DARK\+\_\+\+BLUE}} (0, 0, 64)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_adc292fdc3c4d2a03e8c6bbad1853b727}{MAGENTA}} (255, 0, 255)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_abad91f58a178a173f76ce7d9f9aa99c4}{DARK\+\_\+\+MAGENTA}} (128, 0, 128)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a150fed0369958dc77d3207298588bc94}{VERY\+\_\+\+DARK\+\_\+\+MAGENTA}} (64, 0, 64)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{WHITE}} (255, 255, 255)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_a183de1c471cfd6f45980bc9c2c58ed9d}{BLACK}} (0, 0, 0)
+\item 
+static const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{namespaceolc_ac940e7f6502cbced06f26b4d13349166}{BLANK}} (0, 0, 0, 0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr uint8\+\_\+t \doxymbox{\hyperlink{namespaceolc_abf7dfc35dd1d895f33d3635831953e38}{n\+Mouse\+Buttons}} = 5
+\item 
+constexpr uint8\+\_\+t \doxymbox{\hyperlink{namespaceolc_adede7d1156ab9d8ffdc3e9048f0f364b}{n\+Default\+Alpha}} = 0x\+FF
+\item 
+constexpr uint32\+\_\+t \doxymbox{\hyperlink{namespaceolc_a10bbdc57cc3fecc7b80ba428eb7494d0}{n\+Default\+Pixel}} = uint32\+\_\+t(\doxymbox{\hyperlink{namespaceolc_adede7d1156ab9d8ffdc3e9048f0f364b}{n\+Default\+Alpha}} $<$$<$ 24)
+\item 
+constexpr uint8\+\_\+t \doxymbox{\hyperlink{namespaceolc_a63e04c5d0f196f674d1bb3b1a6cd97f0}{n\+Tab\+Size\+In\+Spaces}} = 4
+\item 
+constexpr size\+\_\+t \doxymbox{\hyperlink{namespaceolc_a87dc6874c26012c971b7130a6012a626}{OLC\+\_\+\+MAX\+\_\+\+VERTS}} = 128
+\item 
+std::\+map$<$ size\+\_\+t, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} $>$ \doxymbox{\hyperlink{namespaceolc_a3b73c91be5144c7b9289d31ad8808a52}{map\+Keys}}
+\end{DoxyCompactItemize}
+
+
+\label{namespaceolc_doc-typedef-members}
+\Hypertarget{namespaceolc_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespaceolc_a642bce0dbf087ea3c44963418002b9c9}\index{olc@{olc}!vd2d@{vd2d}}
+\index{vd2d@{vd2d}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{vd2d}{vd2d}}
+{\footnotesize\ttfamily \label{namespaceolc_a642bce0dbf087ea3c44963418002b9c9} 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$double$>$ \doxymbox{\hyperlink{namespaceolc_a642bce0dbf087ea3c44963418002b9c9}{olc::\+vd2d}}}
+
+\Hypertarget{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}\index{olc@{olc}!vf2d@{vf2d}}
+\index{vf2d@{vf2d}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{vf2d}{vf2d}}
+{\footnotesize\ttfamily \label{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742} 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$float$>$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}}}
+
+\Hypertarget{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}\index{olc@{olc}!vi2d@{vi2d}}
+\index{vi2d@{vi2d}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{vi2d}{vi2d}}
+{\footnotesize\ttfamily \label{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b} 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$int32\+\_\+t$>$ \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}}}
+
+\Hypertarget{namespaceolc_a60e2fb07eaea35a66a0f58a4d8de9272}\index{olc@{olc}!vu2d@{vu2d}}
+\index{vu2d@{vu2d}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{vu2d}{vu2d}}
+{\footnotesize\ttfamily \label{namespaceolc_a60e2fb07eaea35a66a0f58a4d8de9272} 
+typedef \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$uint32\+\_\+t$>$ \doxymbox{\hyperlink{namespaceolc_a60e2fb07eaea35a66a0f58a4d8de9272}{olc::\+vu2d}}}
+
+
+
+\label{namespaceolc_doc-enum-members}
+\Hypertarget{namespaceolc_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189}\index{olc@{olc}!CullMode@{CullMode}}
+\index{CullMode@{CullMode}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{CullMode}{CullMode}}
+{\footnotesize\ttfamily \label{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189} 
+enum class \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189}{olc::\+\+Cull\+Mode}} :\+ uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!olc@{olc}}
+\index{olc@{olc}!NONE@{NONE}}
+}\Hypertarget{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189ab50339a10e1de285ac99d4c3990b8693}\label{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189ab50339a10e1de285ac99d4c3990b8693} 
+NONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CW@{CW}!olc@{olc}}
+\index{olc@{olc}!CW@{CW}}
+}\Hypertarget{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a9af3107a066f6b0defb1cafc0499f6ed}\label{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a9af3107a066f6b0defb1cafc0499f6ed} 
+CW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CCW@{CCW}!olc@{olc}}
+\index{olc@{olc}!CCW@{CCW}}
+}\Hypertarget{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a59ec5d573abd014f3ae2c26ca962e8cf}\label{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189a59ec5d573abd014f3ae2c26ca962e8cf} 
+CCW&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138ca}\index{olc@{olc}!DecalMode@{DecalMode}}
+\index{DecalMode@{DecalMode}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DecalMode}{DecalMode}}
+{\footnotesize\ttfamily \label{namespaceolc_aeda642f63378f868193c28e8613138ca} 
+enum class \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc::\+\+Decal\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL@{NORMAL}!olc@{olc}}
+\index{olc@{olc}!NORMAL@{NORMAL}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caa1e23852820b9154316c7c06e2b7ba051}\label{namespaceolc_aeda642f63378f868193c28e8613138caa1e23852820b9154316c7c06e2b7ba051} 
+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADDITIVE@{ADDITIVE}!olc@{olc}}
+\index{olc@{olc}!ADDITIVE@{ADDITIVE}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caa8d8c2c7c04ebe2b70bca10a3060ca491}\label{namespaceolc_aeda642f63378f868193c28e8613138caa8d8c2c7c04ebe2b70bca10a3060ca491} 
+ADDITIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULTIPLICATIVE@{MULTIPLICATIVE}!olc@{olc}}
+\index{olc@{olc}!MULTIPLICATIVE@{MULTIPLICATIVE}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caa418ef46700a2836c0d6218e2b46bf564}\label{namespaceolc_aeda642f63378f868193c28e8613138caa418ef46700a2836c0d6218e2b46bf564} 
+MULTIPLICATIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STENCIL@{STENCIL}!olc@{olc}}
+\index{olc@{olc}!STENCIL@{STENCIL}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caa301b25ea9a653329b5d5d727f92514c4}\label{namespaceolc_aeda642f63378f868193c28e8613138caa301b25ea9a653329b5d5d727f92514c4} 
+STENCIL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ILLUMINATE@{ILLUMINATE}!olc@{olc}}
+\index{olc@{olc}!ILLUMINATE@{ILLUMINATE}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caab892134232b911680f88a64a24883f7d}\label{namespaceolc_aeda642f63378f868193c28e8613138caab892134232b911680f88a64a24883f7d} 
+ILLUMINATE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WIREFRAME@{WIREFRAME}!olc@{olc}}
+\index{olc@{olc}!WIREFRAME@{WIREFRAME}}
+}\Hypertarget{namespaceolc_aeda642f63378f868193c28e8613138caa43ea8c7cefb63ec314b4df5628cba577}\label{namespaceolc_aeda642f63378f868193c28e8613138caa43ea8c7cefb63ec314b4df5628cba577} 
+WIREFRAME&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}\index{olc@{olc}!DecalStructure@{DecalStructure}}
+\index{DecalStructure@{DecalStructure}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DecalStructure}{DecalStructure}}
+{\footnotesize\ttfamily \label{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629} 
+enum class \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}{olc::\+\+Decal\+Structure}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINE@{LINE}!olc@{olc}}
+\index{olc@{olc}!LINE@{LINE}}
+}\Hypertarget{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a17b8ef2c330f1430e00c9de5469fc7e7}\label{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a17b8ef2c330f1430e00c9de5469fc7e7} 
+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAN@{FAN}!olc@{olc}}
+\index{olc@{olc}!FAN@{FAN}}
+}\Hypertarget{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a1da87abe947673580190ba507384ad37}\label{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a1da87abe947673580190ba507384ad37} 
+FAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STRIP@{STRIP}!olc@{olc}}
+\index{olc@{olc}!STRIP@{STRIP}}
+}\Hypertarget{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a6989032db1002ec3fb0b2de2c970f184}\label{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a6989032db1002ec3fb0b2de2c970f184} 
+STRIP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIST@{LIST}!olc@{olc}}
+\index{olc@{olc}!LIST@{LIST}}
+}\Hypertarget{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a298cb25408234de02baf2085803a464a}\label{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a298cb25408234de02baf2085803a464a} 
+LIST&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}\index{olc@{olc}!Key@{Key}}
+\index{Key@{Key}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily \label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2} 
+enum class \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} :\+ uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!olc@{olc}}
+\index{olc@{olc}!NONE@{NONE}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab50339a10e1de285ac99d4c3990b8693}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab50339a10e1de285ac99d4c3990b8693} 
+NONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!olc@{olc}}
+\index{olc@{olc}!A@{A}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a7fc56270e7a70fa81a5935b72eacbe29}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a7fc56270e7a70fa81a5935b72eacbe29} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!olc@{olc}}
+\index{olc@{olc}!B@{B}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9d5ed678fe57bcca610140957afab571}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9d5ed678fe57bcca610140957afab571} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!olc@{olc}}
+\index{olc@{olc}!C@{C}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0d61f8370cad1d412f80b84d143e1257}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0d61f8370cad1d412f80b84d143e1257} 
+C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D@{D}!olc@{olc}}
+\index{olc@{olc}!D@{D}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af623e75af30e62bbd73d6df5b50bb7b5}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af623e75af30e62bbd73d6df5b50bb7b5} 
+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E@{E}!olc@{olc}}
+\index{olc@{olc}!E@{E}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a3a3ea00cfc35332cedf6e5e9a32e94da}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a3a3ea00cfc35332cedf6e5e9a32e94da} 
+E&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!olc@{olc}}
+\index{olc@{olc}!F@{F}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a800618943025315f869e4e1f09471012}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a800618943025315f869e4e1f09471012} 
+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G@{G}!olc@{olc}}
+\index{olc@{olc}!G@{G}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adfcf28d0734569a6a693bc8194de62bf}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adfcf28d0734569a6a693bc8194de62bf} 
+G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H@{H}!olc@{olc}}
+\index{olc@{olc}!H@{H}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac1d9f50f86825a1a2302ec2449c17196}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac1d9f50f86825a1a2302ec2449c17196} 
+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I@{I}!olc@{olc}}
+\index{olc@{olc}!I@{I}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2add7536794b63bf90eccfd37f9b147d7f}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2add7536794b63bf90eccfd37f9b147d7f} 
+I&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J@{J}!olc@{olc}}
+\index{olc@{olc}!J@{J}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aff44570aca8241914870afbc310cdb85}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aff44570aca8241914870afbc310cdb85} 
+J&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K@{K}!olc@{olc}}
+\index{olc@{olc}!K@{K}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa5f3c6a11b03839d46af9fb43c97c188}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa5f3c6a11b03839d46af9fb43c97c188} 
+K&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L@{L}!olc@{olc}}
+\index{olc@{olc}!L@{L}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad20caec3b48a1eef164cb4ca81ba2587}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad20caec3b48a1eef164cb4ca81ba2587} 
+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M@{M}!olc@{olc}}
+\index{olc@{olc}!M@{M}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a69691c7bdcc3ce6d5d8a1361f22d04ac}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a69691c7bdcc3ce6d5d8a1361f22d04ac} 
+M&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N@{N}!olc@{olc}}
+\index{olc@{olc}!N@{N}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8d9c307cb7f3c4a32822a51922d1ceaa}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8d9c307cb7f3c4a32822a51922d1ceaa} 
+N&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O@{O}!olc@{olc}}
+\index{olc@{olc}!O@{O}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af186217753c37b9b9f958d906208506e}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af186217753c37b9b9f958d906208506e} 
+O&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P@{P}!olc@{olc}}
+\index{olc@{olc}!P@{P}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a44c29edb103a2872f519ad0c9a0fdaaa}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a44c29edb103a2872f519ad0c9a0fdaaa} 
+P&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q@{Q}!olc@{olc}}
+\index{olc@{olc}!Q@{Q}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af09564c9ca56850d4cd6b3319e541aee}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af09564c9ca56850d4cd6b3319e541aee} 
+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!olc@{olc}}
+\index{olc@{olc}!R@{R}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1e1d3d40573127e9ee0480caf1283d6}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1e1d3d40573127e9ee0480caf1283d6} 
+R&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!olc@{olc}}
+\index{olc@{olc}!S@{S}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5dbc98dcc983a70728bd082d1a47546e}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5dbc98dcc983a70728bd082d1a47546e} 
+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!olc@{olc}}
+\index{olc@{olc}!T@{T}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab9ece18c950afbfa6b0fdbfa4ff731d3}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab9ece18c950afbfa6b0fdbfa4ff731d3} 
+T&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U@{U}!olc@{olc}}
+\index{olc@{olc}!U@{U}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4c614360da93c0a041b22e537de151eb}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4c614360da93c0a041b22e537de151eb} 
+U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V@{V}!olc@{olc}}
+\index{olc@{olc}!V@{V}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5206560a306a2e085a437fd258eb57ce}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5206560a306a2e085a437fd258eb57ce} 
+V&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W@{W}!olc@{olc}}
+\index{olc@{olc}!W@{W}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a61e9c06ea9a85a5088a499df6458d276}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a61e9c06ea9a85a5088a499df6458d276} 
+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!olc@{olc}}
+\index{olc@{olc}!X@{X}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a02129bb861061d1a052c592e2dc6b383}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a02129bb861061d1a052c592e2dc6b383} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!olc@{olc}}
+\index{olc@{olc}!Y@{Y}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a57cec4137b614c87cb4e24a3d003a3e0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a57cec4137b614c87cb4e24a3d003a3e0} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!olc@{olc}}
+\index{olc@{olc}!Z@{Z}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21c2e59531c8710156d34a3c30ac81d5}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21c2e59531c8710156d34a3c30ac81d5} 
+Z&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K0@{K0}!olc@{olc}}
+\index{olc@{olc}!K0@{K0}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac198bc89a4e346bb001e99acd7094348}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac198bc89a4e346bb001e99acd7094348} 
+K0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K1@{K1}!olc@{olc}}
+\index{olc@{olc}!K1@{K1}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa1bba9704da78d22c74f1c2b0acf4213}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa1bba9704da78d22c74f1c2b0acf4213} 
+K1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K2@{K2}!olc@{olc}}
+\index{olc@{olc}!K2@{K2}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aecebd75fc367b9aa41be06278689dc63}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aecebd75fc367b9aa41be06278689dc63} 
+K2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K3@{K3}!olc@{olc}}
+\index{olc@{olc}!K3@{K3}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2c729497d91709de6bf1ccd875cf28e5}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2c729497d91709de6bf1ccd875cf28e5} 
+K3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K4@{K4}!olc@{olc}}
+\index{olc@{olc}!K4@{K4}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a23ff49ed815108d610c1a75d592488dd}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a23ff49ed815108d610c1a75d592488dd} 
+K4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K5@{K5}!olc@{olc}}
+\index{olc@{olc}!K5@{K5}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0b48b1841bf2b209986a30f9720aafd1}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a0b48b1841bf2b209986a30f9720aafd1} 
+K5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K6@{K6}!olc@{olc}}
+\index{olc@{olc}!K6@{K6}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adce0eb67e20bada2f2a2ac1084c34d7d}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adce0eb67e20bada2f2a2ac1084c34d7d} 
+K6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K7@{K7}!olc@{olc}}
+\index{olc@{olc}!K7@{K7}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abe2268c01180c5580c4be9a0c38c3686}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abe2268c01180c5580c4be9a0c38c3686} 
+K7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K8@{K8}!olc@{olc}}
+\index{olc@{olc}!K8@{K8}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a70333d89c64ddd3b7291f4a54aaf9641}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a70333d89c64ddd3b7291f4a54aaf9641} 
+K8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K9@{K9}!olc@{olc}}
+\index{olc@{olc}!K9@{K9}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2041f5bc5a5df10fe0d1ca3d90177e70}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2041f5bc5a5df10fe0d1ca3d90177e70} 
+K9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F1@{F1}!olc@{olc}}
+\index{olc@{olc}!F1@{F1}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1dffc8709f31a4987c8a88334107e89}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae1dffc8709f31a4987c8a88334107e89} 
+F1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F2@{F2}!olc@{olc}}
+\index{olc@{olc}!F2@{F2}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afe5c3684dce76cdd9f7f42430868aa74}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afe5c3684dce76cdd9f7f42430868aa74} 
+F2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F3@{F3}!olc@{olc}}
+\index{olc@{olc}!F3@{F3}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4b6bf4b531770872d4328ce69bef5627}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4b6bf4b531770872d4328ce69bef5627} 
+F3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F4@{F4}!olc@{olc}}
+\index{olc@{olc}!F4@{F4}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae7e0e72401a9f2718ed0f39f2861d702}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae7e0e72401a9f2718ed0f39f2861d702} 
+F4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F5@{F5}!olc@{olc}}
+\index{olc@{olc}!F5@{F5}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a37f438df6a6d5ba4c17ef8ca58562f00}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a37f438df6a6d5ba4c17ef8ca58562f00} 
+F5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F6@{F6}!olc@{olc}}
+\index{olc@{olc}!F6@{F6}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1faf42f2823f184eb2c9f0dffe5d73f2}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1faf42f2823f184eb2c9f0dffe5d73f2} 
+F6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F7@{F7}!olc@{olc}}
+\index{olc@{olc}!F7@{F7}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a47489eb597b7db34caa24b1fc78fc839}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a47489eb597b7db34caa24b1fc78fc839} 
+F7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F8@{F8}!olc@{olc}}
+\index{olc@{olc}!F8@{F8}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4787509ad9f9d747a81a30e9dde3d4a7}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4787509ad9f9d747a81a30e9dde3d4a7} 
+F8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F9@{F9}!olc@{olc}}
+\index{olc@{olc}!F9@{F9}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a892a245e287c163080b23db737d3c4c9}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a892a245e287c163080b23db737d3c4c9} 
+F9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F10@{F10}!olc@{olc}}
+\index{olc@{olc}!F10@{F10}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab213ce22ca6ad4eda8db82966b9b6e5a}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab213ce22ca6ad4eda8db82966b9b6e5a} 
+F10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F11@{F11}!olc@{olc}}
+\index{olc@{olc}!F11@{F11}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a643b0662422d1d0dffa3fca2e2bf28a8}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a643b0662422d1d0dffa3fca2e2bf28a8} 
+F11&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F12@{F12}!olc@{olc}}
+\index{olc@{olc}!F12@{F12}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae902674982fc99aa343cdd94da7476c3}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae902674982fc99aa343cdd94da7476c3} 
+F12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!olc@{olc}}
+\index{olc@{olc}!UP@{UP}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afbaedde498cdead4f2780217646e9ba1}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2afbaedde498cdead4f2780217646e9ba1} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!olc@{olc}}
+\index{olc@{olc}!DOWN@{DOWN}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac4e0e4e3118472beeb2ae75827450f1f}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ac4e0e4e3118472beeb2ae75827450f1f} 
+DOWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!olc@{olc}}
+\index{olc@{olc}!LEFT@{LEFT}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a684d325a7303f52e64011467ff5c5758}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a684d325a7303f52e64011467ff5c5758} 
+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!olc@{olc}}
+\index{olc@{olc}!RIGHT@{RIGHT}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21507b40c80068eda19865706fdc2403}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a21507b40c80068eda19865706fdc2403} 
+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SPACE@{SPACE}!olc@{olc}}
+\index{olc@{olc}!SPACE@{SPACE}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6506ae39fdca9845e3a6de3865183e57}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6506ae39fdca9845e3a6de3865183e57} 
+SPACE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TAB@{TAB}!olc@{olc}}
+\index{olc@{olc}!TAB@{TAB}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af684bf05fa3e81528c84d1d281d839f1}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af684bf05fa3e81528c84d1d281d839f1} 
+TAB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHIFT@{SHIFT}!olc@{olc}}
+\index{olc@{olc}!SHIFT@{SHIFT}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a46afff2b309b8b16a46d812172a9235c}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a46afff2b309b8b16a46d812172a9235c} 
+SHIFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CTRL@{CTRL}!olc@{olc}}
+\index{olc@{olc}!CTRL@{CTRL}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a32f7eee2581c72a5561c21df3013a89a}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a32f7eee2581c72a5561c21df3013a89a} 
+CTRL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INS@{INS}!olc@{olc}}
+\index{olc@{olc}!INS@{INS}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a77dd7b24e2c968c0215779e4152c8d67}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a77dd7b24e2c968c0215779e4152c8d67} 
+INS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEL@{DEL}!olc@{olc}}
+\index{olc@{olc}!DEL@{DEL}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2bbe23c0e8b3f638f0f5aed4b6864513}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2bbe23c0e8b3f638f0f5aed4b6864513} 
+DEL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HOME@{HOME}!olc@{olc}}
+\index{olc@{olc}!HOME@{HOME}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a710533dd879dd1202e5c73b27705bf02}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a710533dd879dd1202e5c73b27705bf02} 
+HOME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END@{END}!olc@{olc}}
+\index{olc@{olc}!END@{END}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab1a326c06d88bf042f73d70f50197905}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab1a326c06d88bf042f73d70f50197905} 
+END&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PGUP@{PGUP}!olc@{olc}}
+\index{olc@{olc}!PGUP@{PGUP}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2cef59b6096dc0002990413fdce8637f}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a2cef59b6096dc0002990413fdce8637f} 
+PGUP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PGDN@{PGDN}!olc@{olc}}
+\index{olc@{olc}!PGDN@{PGDN}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a27b24c29e2addc88fb66e9e5e1bb323c}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a27b24c29e2addc88fb66e9e5e1bb323c} 
+PGDN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BACK@{BACK}!olc@{olc}}
+\index{olc@{olc}!BACK@{BACK}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1dd26f1f1790f0b56d5752fb0fbecef0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1dd26f1f1790f0b56d5752fb0fbecef0} 
+BACK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESCAPE@{ESCAPE}!olc@{olc}}
+\index{olc@{olc}!ESCAPE@{ESCAPE}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adaaedac409335b869929ea43fa44be5d}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2adaaedac409335b869929ea43fa44be5d} 
+ESCAPE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETURN@{RETURN}!olc@{olc}}
+\index{olc@{olc}!RETURN@{RETURN}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa2bec276a54439fe011eb523b845dac5}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aa2bec276a54439fe011eb523b845dac5} 
+RETURN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENTER@{ENTER}!olc@{olc}}
+\index{olc@{olc}!ENTER@{ENTER}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a331b3100a485d8cacff1d3df8e9b0c13}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a331b3100a485d8cacff1d3df8e9b0c13} 
+ENTER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSE@{PAUSE}!olc@{olc}}
+\index{olc@{olc}!PAUSE@{PAUSE}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a291554596c183e837f0a6bec3767c891}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a291554596c183e837f0a6bec3767c891} 
+PAUSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCROLL@{SCROLL}!olc@{olc}}
+\index{olc@{olc}!SCROLL@{SCROLL}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71574275cadb387a5082e87e9dd60c25}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71574275cadb387a5082e87e9dd60c25} 
+SCROLL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP0@{NP0}!olc@{olc}}
+\index{olc@{olc}!NP0@{NP0}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abefae2f7250b968cb43ce1f23b3ca886}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2abefae2f7250b968cb43ce1f23b3ca886} 
+NP0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP1@{NP1}!olc@{olc}}
+\index{olc@{olc}!NP1@{NP1}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a06bfddc759bcbdcc8f363807685ee11f}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a06bfddc759bcbdcc8f363807685ee11f} 
+NP1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP2@{NP2}!olc@{olc}}
+\index{olc@{olc}!NP2@{NP2}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8fe48d89cc94bdbdae0e842d3ce3a5c4}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8fe48d89cc94bdbdae0e842d3ce3a5c4} 
+NP2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP3@{NP3}!olc@{olc}}
+\index{olc@{olc}!NP3@{NP3}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a28de645b78823730e54407c0b682c1aa}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a28de645b78823730e54407c0b682c1aa} 
+NP3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP4@{NP4}!olc@{olc}}
+\index{olc@{olc}!NP4@{NP4}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af68e9571d92dd7061238478d82bbf1a3}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2af68e9571d92dd7061238478d82bbf1a3} 
+NP4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP5@{NP5}!olc@{olc}}
+\index{olc@{olc}!NP5@{NP5}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71eb01e2fb8302be2c86a78c80aefde6}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a71eb01e2fb8302be2c86a78c80aefde6} 
+NP5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP6@{NP6}!olc@{olc}}
+\index{olc@{olc}!NP6@{NP6}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae31be48545b861d11f8225d6b43ec5e0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae31be48545b861d11f8225d6b43ec5e0} 
+NP6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP7@{NP7}!olc@{olc}}
+\index{olc@{olc}!NP7@{NP7}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab315b6c045238c6dbb0f30ece973a4aa}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab315b6c045238c6dbb0f30ece973a4aa} 
+NP7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP8@{NP8}!olc@{olc}}
+\index{olc@{olc}!NP8@{NP8}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aef92c42bba75c4e5e4bc90fae1cc1dd0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2aef92c42bba75c4e5e4bc90fae1cc1dd0} 
+NP8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP9@{NP9}!olc@{olc}}
+\index{olc@{olc}!NP9@{NP9}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a200dc99021b6b318008d7c7357ff22d3}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a200dc99021b6b318008d7c7357ff22d3} 
+NP9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP\_MUL@{NP\_MUL}!olc@{olc}}
+\index{olc@{olc}!NP\_MUL@{NP\_MUL}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8987588e80f16cbb0c87ddee15f34d62}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a8987588e80f16cbb0c87ddee15f34d62} 
+NP\+\_\+\+MUL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP\_DIV@{NP\_DIV}!olc@{olc}}
+\index{olc@{olc}!NP\_DIV@{NP\_DIV}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad7d94fef09e4fef9d919d067a321f383}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad7d94fef09e4fef9d919d067a321f383} 
+NP\+\_\+\+DIV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP\_ADD@{NP\_ADD}!olc@{olc}}
+\index{olc@{olc}!NP\_ADD@{NP\_ADD}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a857f4ce47f8f24d469f8e48f66f2a04e}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a857f4ce47f8f24d469f8e48f66f2a04e} 
+NP\+\_\+\+ADD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP\_SUB@{NP\_SUB}!olc@{olc}}
+\index{olc@{olc}!NP\_SUB@{NP\_SUB}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab32cf1bff23b5a6371ecc227c621a6f0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ab32cf1bff23b5a6371ecc227c621a6f0} 
+NP\+\_\+\+SUB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NP\_DECIMAL@{NP\_DECIMAL}!olc@{olc}}
+\index{olc@{olc}!NP\_DECIMAL@{NP\_DECIMAL}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a59e392dcc1a57a140a5c1ff01999fe28}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a59e392dcc1a57a140a5c1ff01999fe28} 
+NP\+\_\+\+DECIMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PERIOD@{PERIOD}!olc@{olc}}
+\index{olc@{olc}!PERIOD@{PERIOD}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ade58a28573783fe95304a260ccd90362}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ade58a28573783fe95304a260ccd90362} 
+PERIOD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EQUALS@{EQUALS}!olc@{olc}}
+\index{olc@{olc}!EQUALS@{EQUALS}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6837aeca94b8f55801166eb031e26a5a}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a6837aeca94b8f55801166eb031e26a5a} 
+EQUALS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMA@{COMMA}!olc@{olc}}
+\index{olc@{olc}!COMMA@{COMMA}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4d9b3e9fc12849d060371eb65154c751}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a4d9b3e9fc12849d060371eb65154c751} 
+COMMA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MINUS@{MINUS}!olc@{olc}}
+\index{olc@{olc}!MINUS@{MINUS}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2affc0d9b54a1fe677c4c9e6b050e67c81}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2affc0d9b54a1fe677c4c9e6b050e67c81} 
+MINUS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_1@{OEM\_1}!olc@{olc}}
+\index{olc@{olc}!OEM\_1@{OEM\_1}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae91938057eb9d9a998fb0c34e759cce3}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae91938057eb9d9a998fb0c34e759cce3} 
+OEM\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_2@{OEM\_2}!olc@{olc}}
+\index{olc@{olc}!OEM\_2@{OEM\_2}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a162a5ad4411bb4afc35aa059cfd9ebbf}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a162a5ad4411bb4afc35aa059cfd9ebbf} 
+OEM\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_3@{OEM\_3}!olc@{olc}}
+\index{olc@{olc}!OEM\_3@{OEM\_3}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae3755e95125ee8953e36af77261a51a1}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae3755e95125ee8953e36af77261a51a1} 
+OEM\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_4@{OEM\_4}!olc@{olc}}
+\index{olc@{olc}!OEM\_4@{OEM\_4}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9bc809e39ba8b36b7b0a2acbf071228e}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9bc809e39ba8b36b7b0a2acbf071228e} 
+OEM\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_5@{OEM\_5}!olc@{olc}}
+\index{olc@{olc}!OEM\_5@{OEM\_5}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2accac03142e511444812e4c81a7502625}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2accac03142e511444812e4c81a7502625} 
+OEM\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_6@{OEM\_6}!olc@{olc}}
+\index{olc@{olc}!OEM\_6@{OEM\_6}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9faadd3700669319a02bdd54098c7d5c}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a9faadd3700669319a02bdd54098c7d5c} 
+OEM\+\_\+6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_7@{OEM\_7}!olc@{olc}}
+\index{olc@{olc}!OEM\_7@{OEM\_7}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1e6ab2bcef5e704ea5c213c6360bdc90}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a1e6ab2bcef5e704ea5c213c6360bdc90} 
+OEM\+\_\+7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OEM\_8@{OEM\_8}!olc@{olc}}
+\index{olc@{olc}!OEM\_8@{OEM\_8}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5c0e0a1c94c86141c47e9ae4553dadc0}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2a5c0e0a1c94c86141c47e9ae4553dadc0} 
+OEM\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAPS\_LOCK@{CAPS\_LOCK}!olc@{olc}}
+\index{olc@{olc}!CAPS\_LOCK@{CAPS\_LOCK}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae40af1d5cc55c55ae0bb25953f7a7ee2}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ae40af1d5cc55c55ae0bb25953f7a7ee2} 
+CAPS\+\_\+\+LOCK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ENUM\_END@{ENUM\_END}!olc@{olc}}
+\index{olc@{olc}!ENUM\_END@{ENUM\_END}}
+}\Hypertarget{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad927000fd863b08d2426cbf3fc66bd56}\label{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2ad927000fd863b08d2426cbf3fc66bd56} 
+ENUM\+\_\+\+END&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{namespaceolc_a3d40e9b1c005602550230690b55ae87b}\index{olc@{olc}!rcode@{rcode}}
+\index{rcode@{rcode}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{rcode}{rcode}}
+{\footnotesize\ttfamily \label{namespaceolc_a3d40e9b1c005602550230690b55ae87b} 
+enum \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAIL@{FAIL}!olc@{olc}}
+\index{olc@{olc}!FAIL@{FAIL}}
+}\Hypertarget{namespaceolc_a3d40e9b1c005602550230690b55ae87baadc8ac6e9769db5bb290fbf5f8284dbf}\label{namespaceolc_a3d40e9b1c005602550230690b55ae87baadc8ac6e9769db5bb290fbf5f8284dbf} 
+FAIL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OK@{OK}!olc@{olc}}
+\index{olc@{olc}!OK@{OK}}
+}\Hypertarget{namespaceolc_a3d40e9b1c005602550230690b55ae87ba0178b5f8abe39121e6f14d3c6c093a82}\label{namespaceolc_a3d40e9b1c005602550230690b55ae87ba0178b5f8abe39121e6f14d3c6c093a82} 
+OK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_FILE@{NO\_FILE}!olc@{olc}}
+\index{olc@{olc}!NO\_FILE@{NO\_FILE}}
+}\Hypertarget{namespaceolc_a3d40e9b1c005602550230690b55ae87babfe0b9ad99c942b01b1ee61404f559b5}\label{namespaceolc_a3d40e9b1c005602550230690b55ae87babfe0b9ad99c942b01b1ee61404f559b5} 
+NO\+\_\+\+FILE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{namespaceolc_doc-func-members}
+\Hypertarget{namespaceolc_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceolc_a183de1c471cfd6f45980bc9c2c58ed9d}\index{olc@{olc}!BLACK@{BLACK}}
+\index{BLACK@{BLACK}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{BLACK()}{BLACK()}}
+{\footnotesize\ttfamily \label{namespaceolc_a183de1c471cfd6f45980bc9c2c58ed9d} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+BLACK (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{0}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ac940e7f6502cbced06f26b4d13349166}\index{olc@{olc}!BLANK@{BLANK}}
+\index{BLANK@{BLANK}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{BLANK()}{BLANK()}}
+{\footnotesize\ttfamily \label{namespaceolc_ac940e7f6502cbced06f26b4d13349166} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+BLANK (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{0}]{}{, }\item[{0}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ac1e1d3e39e0b78e9767142c9daeba4ee}\index{olc@{olc}!BLUE@{BLUE}}
+\index{BLUE@{BLUE}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{BLUE()}{BLUE()}}
+{\footnotesize\ttfamily \label{namespaceolc_ac1e1d3e39e0b78e9767142c9daeba4ee} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+BLUE (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{0}]{}{, }\item[{255}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a43ffa41e9a4a260b86da82b823e6a252}\index{olc@{olc}!CYAN@{CYAN}}
+\index{CYAN@{CYAN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{CYAN()}{CYAN()}}
+{\footnotesize\ttfamily \label{namespaceolc_a43ffa41e9a4a260b86da82b823e6a252} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+CYAN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{255}]{}{, }\item[{255}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ac6e041f71287438da8b9145758c4fe63}\index{olc@{olc}!DARK\_BLUE@{DARK\_BLUE}}
+\index{DARK\_BLUE@{DARK\_BLUE}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_BLUE()}{DARK\_BLUE()}}
+{\footnotesize\ttfamily \label{namespaceolc_ac6e041f71287438da8b9145758c4fe63} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+BLUE (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{0}]{}{, }\item[{128}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_aa0824f5fdd85c58712495a7bc0de191e}\index{olc@{olc}!DARK\_CYAN@{DARK\_CYAN}}
+\index{DARK\_CYAN@{DARK\_CYAN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_CYAN()}{DARK\_CYAN()}}
+{\footnotesize\ttfamily \label{namespaceolc_aa0824f5fdd85c58712495a7bc0de191e} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+CYAN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{128}]{}{, }\item[{128}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ac192218acb2f30c4c3748485dd5e4ba0}\index{olc@{olc}!DARK\_GREEN@{DARK\_GREEN}}
+\index{DARK\_GREEN@{DARK\_GREEN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_GREEN()}{DARK\_GREEN()}}
+{\footnotesize\ttfamily \label{namespaceolc_ac192218acb2f30c4c3748485dd5e4ba0} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+GREEN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{128}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a7208a6ce62e94eca5b0ba80f7c2f5e30}\index{olc@{olc}!DARK\_GREY@{DARK\_GREY}}
+\index{DARK\_GREY@{DARK\_GREY}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_GREY()}{DARK\_GREY()}}
+{\footnotesize\ttfamily \label{namespaceolc_a7208a6ce62e94eca5b0ba80f7c2f5e30} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+GREY (\begin{DoxyParamCaption}\item[{128}]{}{, }\item[{128}]{}{, }\item[{128}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_abad91f58a178a173f76ce7d9f9aa99c4}\index{olc@{olc}!DARK\_MAGENTA@{DARK\_MAGENTA}}
+\index{DARK\_MAGENTA@{DARK\_MAGENTA}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_MAGENTA()}{DARK\_MAGENTA()}}
+{\footnotesize\ttfamily \label{namespaceolc_abad91f58a178a173f76ce7d9f9aa99c4} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+MAGENTA (\begin{DoxyParamCaption}\item[{128}]{}{, }\item[{0}]{}{, }\item[{128}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a8265396ef812918ca95d2e7aa39c14cc}\index{olc@{olc}!DARK\_RED@{DARK\_RED}}
+\index{DARK\_RED@{DARK\_RED}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_RED()}{DARK\_RED()}}
+{\footnotesize\ttfamily \label{namespaceolc_a8265396ef812918ca95d2e7aa39c14cc} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+RED (\begin{DoxyParamCaption}\item[{128}]{}{, }\item[{0}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a379f9d3a40edb1700299c031cd0b6a08}\index{olc@{olc}!DARK\_YELLOW@{DARK\_YELLOW}}
+\index{DARK\_YELLOW@{DARK\_YELLOW}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{DARK\_YELLOW()}{DARK\_YELLOW()}}
+{\footnotesize\ttfamily \label{namespaceolc_a379f9d3a40edb1700299c031cd0b6a08} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+DARK\+\_\+\+YELLOW (\begin{DoxyParamCaption}\item[{128}]{}{, }\item[{128}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a32b98884f548bf731eab3225557ebe8c}\index{olc@{olc}!GREEN@{GREEN}}
+\index{GREEN@{GREEN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{GREEN()}{GREEN()}}
+{\footnotesize\ttfamily \label{namespaceolc_a32b98884f548bf731eab3225557ebe8c} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+GREEN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{255}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_adc292fdc3c4d2a03e8c6bbad1853b727}\index{olc@{olc}!MAGENTA@{MAGENTA}}
+\index{MAGENTA@{MAGENTA}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{MAGENTA()}{MAGENTA()}}
+{\footnotesize\ttfamily \label{namespaceolc_adc292fdc3c4d2a03e8c6bbad1853b727} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+MAGENTA (\begin{DoxyParamCaption}\item[{255}]{}{, }\item[{0}]{}{, }\item[{255}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a3164863c140a63c0ac008d46c4b5761f}\index{olc@{olc}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_a3164863c140a63c0ac008d46c4b5761f} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const TL \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a4363dbc6c12cfbcc2e5551aa74739413}\index{olc@{olc}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_a4363dbc6c12cfbcc2e5551aa74739413} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_aef827b5018857332704a2429c690b86c}\index{olc@{olc}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_aef827b5018857332704a2429c690b86c} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a8e203069c7470406fa8caf314d3ebb3f}\index{olc@{olc}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \label{namespaceolc_a8e203069c7470406fa8caf314d3ebb3f} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a5d3fdc7d235ea1482d233352d0aa7adb}\index{olc@{olc}!operator+@{operator+}}
+\index{operator+@{operator+}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a5d3fdc7d235ea1482d233352d0aa7adb} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator+ (\begin{DoxyParamCaption}\item[{const TL \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a5c68f57bb2c894e39e5149ea5006322e}\index{olc@{olc}!operator+@{operator+}}
+\index{operator+@{operator+}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a5c68f57bb2c894e39e5149ea5006322e} 
+template$<$class T$>$ \\
+auto olc::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&}]{lhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a04faf950a13360e19f964e36a888248d}\index{olc@{olc}!operator+@{operator+}}
+\index{operator+@{operator+}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a04faf950a13360e19f964e36a888248d} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a30751c93233bca5648318fb38e128cc5}\index{olc@{olc}!operator+@{operator+}}
+\index{operator+@{operator+}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a30751c93233bca5648318fb38e128cc5} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator+ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a5463bf222a68ce82154819c70b908b27}\index{olc@{olc}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceolc_a5463bf222a68ce82154819c70b908b27} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator+= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a52ca600643774f2bf4db5f532e8f41cc}\index{olc@{olc}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceolc_a52ca600643774f2bf4db5f532e8f41cc} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator+= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a1d45575974f2e0d27fa9181a477681b4}\index{olc@{olc}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a1d45575974f2e0d27fa9181a477681b4} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator-\/ (\begin{DoxyParamCaption}\item[{const TL \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a90b8884bfb9b792b64c876558bb3d728}\index{olc@{olc}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a90b8884bfb9b792b64c876558bb3d728} 
+template$<$class T$>$ \\
+auto olc::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&}]{lhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_ade4287261ede3b7c3856c3eb2a616ab4}\index{olc@{olc}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_ade4287261ede3b7c3856c3eb2a616ab4} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a19391e5ad0a42db11ab970526bd758b6}\index{olc@{olc}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{namespaceolc_a19391e5ad0a42db11ab970526bd758b6} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator-\/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a4a06cbbc4b038695152763a3c6b292b4}\index{olc@{olc}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \label{namespaceolc_a4a06cbbc4b038695152763a3c6b292b4} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator-\/= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a1c6a7e7fb828f74e641a73ea3b5ba3b2}\index{olc@{olc}!operator/@{operator/}}
+\index{operator/@{operator/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_a1c6a7e7fb828f74e641a73ea3b5ba3b2} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator/ (\begin{DoxyParamCaption}\item[{const TL \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_adfbfe379014b89dd00291195f076b218}\index{olc@{olc}!operator/@{operator/}}
+\index{operator/@{operator/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_adfbfe379014b89dd00291195f076b218} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a7ac51cc89e290ff5ae82ab0c9a73e4b6}\index{olc@{olc}!operator/@{operator/}}
+\index{operator/@{operator/}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceolc_a7ac51cc89e290ff5ae82ab0c9a73e4b6} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator/ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a1273cca09a564c13bb869914c3c8a4f3}\index{olc@{olc}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \label{namespaceolc_a1273cca09a564c13bb869914c3c8a4f3} 
+template$<$class TL, class TR$>$ \\
+auto olc::\+operator/\+= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const TR \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a079b3c18528c055d466f811505ed1557}\index{olc@{olc}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{namespaceolc_a079b3c18528c055d466f811505ed1557} 
+template$<$class TL, class TR$>$ \\
+bool olc::\+operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a51e25abb45a4e9c56ae4fe861febf367}\index{olc@{olc}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{namespaceolc_a51e25abb45a4e9c56ae4fe861febf367} 
+template$<$class T$>$ \\
+std::\+ostream \& olc::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{os}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ T $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_afd1528a9f9239b7f487e30b3e3ddbfd9}\index{olc@{olc}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{namespaceolc_afd1528a9f9239b7f487e30b3e3ddbfd9} 
+template$<$class TL, class TR$>$ \\
+bool olc::\+operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TL $>$ \&}]{lhs}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1v__2d}{v\+\_\+2d}}$<$ TR $>$ \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a06c9f23f2e370e7afe71788427a820fd}\index{olc@{olc}!PixelF@{PixelF}}
+\index{PixelF@{PixelF}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{PixelF()}{PixelF()}}
+{\footnotesize\ttfamily \label{namespaceolc_a06c9f23f2e370e7afe71788427a820fd} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+PixelF (\begin{DoxyParamCaption}\item[{float}]{red}{, }\item[{float}]{green}{, }\item[{float}]{blue}{, }\item[{float}]{alpha}{ = {\ttfamily 1.0f}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a2069e5cf447f5dd311c680c9463f9c42}\index{olc@{olc}!PixelLerp@{PixelLerp}}
+\index{PixelLerp@{PixelLerp}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{PixelLerp()}{PixelLerp()}}
+{\footnotesize\ttfamily \label{namespaceolc_a2069e5cf447f5dd311c680c9463f9c42} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Pixel\+Lerp (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&}]{p1}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&}]{p2}{, }\item[{float}]{t}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ad4579f7eb75a257d76bb657a268f0a8d}\index{olc@{olc}!RED@{RED}}
+\index{RED@{RED}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{RED()}{RED()}}
+{\footnotesize\ttfamily \label{namespaceolc_ad4579f7eb75a257d76bb657a268f0a8d} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+RED (\begin{DoxyParamCaption}\item[{255}]{}{, }\item[{0}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a48fb6375b9a7c0a0d44feaa879e7ebb7}\index{olc@{olc}!VERY\_DARK\_BLUE@{VERY\_DARK\_BLUE}}
+\index{VERY\_DARK\_BLUE@{VERY\_DARK\_BLUE}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_BLUE()}{VERY\_DARK\_BLUE()}}
+{\footnotesize\ttfamily \label{namespaceolc_a48fb6375b9a7c0a0d44feaa879e7ebb7} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+BLUE (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{0}]{}{, }\item[{64}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_aee6a06b446368ac58033b5ae4f4c6ca2}\index{olc@{olc}!VERY\_DARK\_CYAN@{VERY\_DARK\_CYAN}}
+\index{VERY\_DARK\_CYAN@{VERY\_DARK\_CYAN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_CYAN()}{VERY\_DARK\_CYAN()}}
+{\footnotesize\ttfamily \label{namespaceolc_aee6a06b446368ac58033b5ae4f4c6ca2} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+CYAN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{64}]{}{, }\item[{64}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a29c85b49a3c9cbd0b251e80e3bc57140}\index{olc@{olc}!VERY\_DARK\_GREEN@{VERY\_DARK\_GREEN}}
+\index{VERY\_DARK\_GREEN@{VERY\_DARK\_GREEN}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_GREEN()}{VERY\_DARK\_GREEN()}}
+{\footnotesize\ttfamily \label{namespaceolc_a29c85b49a3c9cbd0b251e80e3bc57140} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+GREEN (\begin{DoxyParamCaption}\item[{0}]{}{, }\item[{64}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a93de271d8b3cbd5aec73a085e6a6ec7a}\index{olc@{olc}!VERY\_DARK\_GREY@{VERY\_DARK\_GREY}}
+\index{VERY\_DARK\_GREY@{VERY\_DARK\_GREY}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_GREY()}{VERY\_DARK\_GREY()}}
+{\footnotesize\ttfamily \label{namespaceolc_a93de271d8b3cbd5aec73a085e6a6ec7a} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+GREY (\begin{DoxyParamCaption}\item[{64}]{}{, }\item[{64}]{}{, }\item[{64}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a150fed0369958dc77d3207298588bc94}\index{olc@{olc}!VERY\_DARK\_MAGENTA@{VERY\_DARK\_MAGENTA}}
+\index{VERY\_DARK\_MAGENTA@{VERY\_DARK\_MAGENTA}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_MAGENTA()}{VERY\_DARK\_MAGENTA()}}
+{\footnotesize\ttfamily \label{namespaceolc_a150fed0369958dc77d3207298588bc94} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+MAGENTA (\begin{DoxyParamCaption}\item[{64}]{}{, }\item[{0}]{}{, }\item[{64}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a82b6404acf7ac86f237179fc5f9a859f}\index{olc@{olc}!VERY\_DARK\_RED@{VERY\_DARK\_RED}}
+\index{VERY\_DARK\_RED@{VERY\_DARK\_RED}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_RED()}{VERY\_DARK\_RED()}}
+{\footnotesize\ttfamily \label{namespaceolc_a82b6404acf7ac86f237179fc5f9a859f} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+RED (\begin{DoxyParamCaption}\item[{64}]{}{, }\item[{0}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a131df56f1dd5cb0906cd02f9df49b17d}\index{olc@{olc}!VERY\_DARK\_YELLOW@{VERY\_DARK\_YELLOW}}
+\index{VERY\_DARK\_YELLOW@{VERY\_DARK\_YELLOW}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{VERY\_DARK\_YELLOW()}{VERY\_DARK\_YELLOW()}}
+{\footnotesize\ttfamily \label{namespaceolc_a131df56f1dd5cb0906cd02f9df49b17d} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+VERY\+\_\+\+DARK\+\_\+\+YELLOW (\begin{DoxyParamCaption}\item[{64}]{}{, }\item[{64}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}\index{olc@{olc}!WHITE@{WHITE}}
+\index{WHITE@{WHITE}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{WHITE()}{WHITE()}}
+{\footnotesize\ttfamily \label{namespaceolc_ae3de4726bf87f2d74693e62d76816db1} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+WHITE (\begin{DoxyParamCaption}\item[{255}]{}{, }\item[{255}]{}{, }\item[{255}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceolc_a6c9728f6dba8b58406bb0e10979b6ccf}\index{olc@{olc}!YELLOW@{YELLOW}}
+\index{YELLOW@{YELLOW}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{YELLOW()}{YELLOW()}}
+{\footnotesize\ttfamily \label{namespaceolc_a6c9728f6dba8b58406bb0e10979b6ccf} 
+const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+YELLOW (\begin{DoxyParamCaption}\item[{255}]{}{, }\item[{255}]{}{, }\item[{0}]{}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespaceolc_doc-var-members}
+\Hypertarget{namespaceolc_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceolc_a3b73c91be5144c7b9289d31ad8808a52}\index{olc@{olc}!mapKeys@{mapKeys}}
+\index{mapKeys@{mapKeys}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{mapKeys}{mapKeys}}
+{\footnotesize\ttfamily \label{namespaceolc_a3b73c91be5144c7b9289d31ad8808a52} 
+std::\+map$<$size\+\_\+t, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}}$>$ olc::\+map\+Keys\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{namespaceolc_adede7d1156ab9d8ffdc3e9048f0f364b}\index{olc@{olc}!nDefaultAlpha@{nDefaultAlpha}}
+\index{nDefaultAlpha@{nDefaultAlpha}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{nDefaultAlpha}{nDefaultAlpha}}
+{\footnotesize\ttfamily \label{namespaceolc_adede7d1156ab9d8ffdc3e9048f0f364b} 
+uint8\+\_\+t olc::\+n\+Default\+Alpha = 0x\+FF\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a10bbdc57cc3fecc7b80ba428eb7494d0}\index{olc@{olc}!nDefaultPixel@{nDefaultPixel}}
+\index{nDefaultPixel@{nDefaultPixel}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{nDefaultPixel}{nDefaultPixel}}
+{\footnotesize\ttfamily \label{namespaceolc_a10bbdc57cc3fecc7b80ba428eb7494d0} 
+uint32\+\_\+t olc::\+n\+Default\+Pixel = uint32\+\_\+t(\doxymbox{\hyperlink{namespaceolc_adede7d1156ab9d8ffdc3e9048f0f364b}{n\+Default\+Alpha}} $<$$<$ 24)\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_abf7dfc35dd1d895f33d3635831953e38}\index{olc@{olc}!nMouseButtons@{nMouseButtons}}
+\index{nMouseButtons@{nMouseButtons}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{nMouseButtons}{nMouseButtons}}
+{\footnotesize\ttfamily \label{namespaceolc_abf7dfc35dd1d895f33d3635831953e38} 
+uint8\+\_\+t olc::\+n\+Mouse\+Buttons = 5\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a63e04c5d0f196f674d1bb3b1a6cd97f0}\index{olc@{olc}!nTabSizeInSpaces@{nTabSizeInSpaces}}
+\index{nTabSizeInSpaces@{nTabSizeInSpaces}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{nTabSizeInSpaces}{nTabSizeInSpaces}}
+{\footnotesize\ttfamily \label{namespaceolc_a63e04c5d0f196f674d1bb3b1a6cd97f0} 
+uint8\+\_\+t olc::\+n\+Tab\+Size\+In\+Spaces = 4\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{namespaceolc_a87dc6874c26012c971b7130a6012a626}\index{olc@{olc}!OLC\_MAX\_VERTS@{OLC\_MAX\_VERTS}}
+\index{OLC\_MAX\_VERTS@{OLC\_MAX\_VERTS}!olc@{olc}}
+\doxysubsubsection{\texorpdfstring{OLC\_MAX\_VERTS}{OLC\_MAX\_VERTS}}
+{\footnotesize\ttfamily \label{namespaceolc_a87dc6874c26012c971b7130a6012a626} 
+size\+\_\+t olc::\+\+OLC\+\_\+\+MAX\+\_\+\+VERTS = 128\hspace{0.3cm}{\ttfamily [constexpr]}}
+

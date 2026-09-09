@@ -1,0 +1,100 @@
+\doxysection{Cube.\+hpp}
+\hypertarget{_cube_8hpp_source}{}\label{_cube_8hpp_source}\doxymbox{\hyperlink{_cube_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CUBE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CUBE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pipeline_8hpp}{Pipeline.hpp}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_face_stress}{FaceStress}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Eigen::Vector3f\ \doxymbox{\hyperlink{struct_face_stress_a8e7ec1ad404ed9fb8d47b768a42f75c7}{center}};\ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ Eigen::Vector3f\ \doxymbox{\hyperlink{struct_face_stress_a7284239bb225ad902cb0d9c0eb161969}{axialVec}};\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ Eigen::Vector3f\ \doxymbox{\hyperlink{struct_face_stress_afb03f3f0cf5b64998d35a67b7fa7c2bb}{shearVec1}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ Eigen::Vector3f\ \doxymbox{\hyperlink{struct_face_stress_a15bfa9c34dc9ed79727bb7f87d58949d}{shearVec2}};\ }
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structtensor}{tensor}}\{}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{structtensor_a8178343d537cb8d58dcc6d350aba4213}{solve}}()\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ Eigen::Matrix3f\ Vec;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ Eigen::Matrix3f\ Mat\ =\ \doxymbox{\hyperlink{structtensor_a4d71fac9e5948d35cc619aa84f21fa56}{sigma}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{namespacemath_utils_aae58b5ad2e568d065756d11852d250a9}{mathUtils::eigenVV}}(\ Mat,\ Vec\ );}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{//@note\ Check\ before\ sorting\ or\ the\ determinant\ could\ equal\ -\/1\ }}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structtensor_a49a4ba1c5893b4ffd28cb290ea8ac69e}{solut}}\ =\ Vec;\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Mat(0,\ 0)\ <\ Mat(1,\ 1))\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(Mat(0,\ 0),\ Mat(1,\ 1));}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ Vec.col(0).swap(Vec.col(1));}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Mat(0,\ 0)\ <\ Mat(2,\ 2))\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(Mat(0,\ 0),\ Mat(2,\ 2));}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ Vec.col(0).swap(Vec.col(2));}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Mat(1,\ 1)\ <\ Mat(2,\ 2))\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ std::swap(Mat(1,\ 1),\ Mat(2,\ 2));}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ Vec.col(1).swap(Vec.col(2));}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Principal\ stresses}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structtensor_a58cc634b7680d8498f402d062b4117bd}{sigma1}}\ =\ Mat(0,\ 0);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structtensor_ae11b5412ee22dc421696b8c4ce08770d}{sigma2}}\ =\ Mat(1,\ 1);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structtensor_ab86a2cfed0f096568aea8e3a8e64308d}{sigma3}}\ =\ Mat(2,\ 2);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Absolute\ maximum\ shear\ (Radius\ of\ the\ main\ Mohr's\ Circle)}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structtensor_a9490a1ec4821447851f20bf2dab0b82f}{tauMax}}\ =\ (\doxymbox{\hyperlink{structtensor_a58cc634b7680d8498f402d062b4117bd}{sigma1}}\ -\/\ \doxymbox{\hyperlink{structtensor_ab86a2cfed0f096568aea8e3a8e64308d}{sigma3}})\ /\ 2.0;}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00092\ \ \ \ \ \doxymbox{\hyperlink{struct_face_stress}{FaceStress}}\ \doxymbox{\hyperlink{structtensor_a6f32893bc785ab1ab5fd0858ca031f66}{calculatefaceStress}}(\textcolor{keyword}{const}\ Eigen::Matrix3f\&\ globalSigma,\ \textcolor{keyword}{const}\ Eigen::Vector3f\&\ normal,\ \textcolor{keyword}{const}\ Eigen::Vector3f\&\ tangent1,\ \textcolor{keyword}{const}\ Eigen::Vector3f\&\ tangent2,\ \textcolor{keyword}{const}\ Eigen::Vector3f\&\ faceCenter)\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{struct_face_stress}{FaceStress}}\ face;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ face.\doxymbox{\hyperlink{struct_face_stress_a8e7ec1ad404ed9fb8d47b768a42f75c7}{center}}\ =\ faceCenter;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Traction\ vector\ T\ =\ Sigma\ *\ n}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ Eigen::Vector3f\ traction\ =\ globalSigma\ *\ normal;}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Projection\ of\ the\ traction\ vector\ into\ its\ axial\ and\ shear\ components}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ face.\doxymbox{\hyperlink{struct_face_stress_a7284239bb225ad902cb0d9c0eb161969}{axialVec}}\ \ =\ traction.dot(normal)\ \ \ *\ normal;\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ face.\doxymbox{\hyperlink{struct_face_stress_afb03f3f0cf5b64998d35a67b7fa7c2bb}{shearVec1}}\ =\ traction.dot(tangent1)\ *\ tangent1;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ face.\doxymbox{\hyperlink{struct_face_stress_a15bfa9c34dc9ed79727bb7f87d58949d}{shearVec2}}\ =\ traction.dot(tangent2)\ *\ tangent2;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ face;}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ Eigen::Matrix3f\ \doxymbox{\hyperlink{structtensor_a4d71fac9e5948d35cc619aa84f21fa56}{sigma}};\ }
+\DoxyCodeLine{00108\ \ \ \ \ Eigen::Matrix3f\ \doxymbox{\hyperlink{structtensor_a49a4ba1c5893b4ffd28cb290ea8ac69e}{solut}};\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structtensor_a58cc634b7680d8498f402d062b4117bd}{sigma1}}\ =\ 0.0f;\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structtensor_ae11b5412ee22dc421696b8c4ce08770d}{sigma2}}\ =\ 0.0f;\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structtensor_ab86a2cfed0f096568aea8e3a8e64308d}{sigma3}}\ =\ 0.0f;\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{structtensor_a9490a1ec4821447851f20bf2dab0b82f}{tauMax}}\ =\ 0.0f;\ }
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structcube}{cube}}\ \{}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ Eigen::Vector4f\ \doxymbox{\hyperlink{structcube_ac4e9f814e7eb8cfdf2cf804e0d9d239b}{tvrts}}[8];\ }
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00128\ \ \ \ \ Eigen::Vector4f\ \doxymbox{\hyperlink{structcube_a77371f8e67acb4a98e07a04059a86e0d}{verts}}[8]\ =\ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ Eigen::Vector4f(-\/1.0f,\ -\/1.0f,\ -\/1.0f,\ 1.0f),\ \textcolor{comment}{//0}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ Eigen::Vector4f(\ 1.0f,\ -\/1.0f,\ -\/1.0f,\ 1.0f),\ \textcolor{comment}{//1}}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ Eigen::Vector4f(-\/1.0f,\ \ 1.0f,\ -\/1.0f,\ 1.0f),\ \textcolor{comment}{//2}}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ Eigen::Vector4f(\ 1.0f,\ \ 1.0f,\ -\/1.0f,\ 1.0f),\ \textcolor{comment}{//3}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ Eigen::Vector4f(-\/1.0f,\ -\/1.0f,\ \ 1.0f,\ 1.0f),\ \textcolor{comment}{//4}}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ Eigen::Vector4f(\ 1.0f,\ -\/1.0f,\ \ 1.0f,\ 1.0f),\ \textcolor{comment}{//5}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ Eigen::Vector4f(-\/1.0f,\ \ 1.0f,\ \ 1.0f,\ 1.0f),\ \textcolor{comment}{//6}}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ Eigen::Vector4f(\ 1.0f,\ \ 1.0f,\ \ 1.0f,\ 1.0f)\ \ \textcolor{comment}{//7}}
+\DoxyCodeLine{00137\ \ \ \ \ \};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00140\ \ \ \ \ Eigen::Vector2i\ \doxymbox{\hyperlink{structcube_afd704f32bdb947fa0038e1dec1e745f5}{lines}}[12]\ =\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ Eigen::Vector2i(0,\ 2),\ Eigen::Vector2i(2,\ 3),\ Eigen::Vector2i(3,\ 1),\ Eigen::Vector2i(1,\ 0),}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ Eigen::Vector2i(4,\ 6),\ Eigen::Vector2i(6,\ 7),\ Eigen::Vector2i(7,\ 5),\ Eigen::Vector2i(5,\ 4),}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ Eigen::Vector2i(3,\ 7),\ Eigen::Vector2i(1,\ 5),\ Eigen::Vector2i(0,\ 4),\ Eigen::Vector2i(2,\ 6)}
+\DoxyCodeLine{00144\ \ \ \ \ \};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

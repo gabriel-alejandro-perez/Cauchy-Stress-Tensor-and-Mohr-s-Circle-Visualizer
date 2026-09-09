@@ -1,0 +1,727 @@
+\doxysection{visualizador3D Class Reference}
+\hypertarget{classvisualizador3_d}{}\label{classvisualizador3_d}\index{visualizador3D@{visualizador3D}}
+
+
+Interactive application for the visualization of Mohr\textquotesingle{}s Circle and the 3D stress state.  
+
+
+Inheritance diagram for visualizador3D:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classvisualizador3_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classvisualizador3_d_a0658ae716081cfef64a1ad1baca50a06}{visualizador3D}} ()
+\item 
+bool \doxymbox{\hyperlink{classvisualizador3_d_a6cb370a7ac37603755f92be510d35c0e}{On\+User\+Create}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the main components of the program. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classvisualizador3_d_ab43101f5705a126ded94e48cec07af84}{On\+User\+Update}} (float f\+Elapsed\+Time) override
+\begin{DoxyCompactList}\small\item\em Main engine loop, called once per frame. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_ab59a0c6b40edd08f1e4fa769b5c6a99a}{draw\+Crt}} ()
+\begin{DoxyCompactList}\small\item\em Applies a CRT filter based on the precalculated LUT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_afe9d685732305246c3fcb361ae3c4bc6}{Pixel\+Game\+Engine}} ()
+\item 
+virtual \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a423d90134c297f7b9f1834a136071b19}{\texorpdfstring{$\sim$}{\string~}\+Pixel\+Game\+Engine}} ()
+\item 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aaa42fbb44097cc9a8fb1820de1182ac3}{Construct}} (int32\+\_\+t screen\+\_\+w, int32\+\_\+t screen\+\_\+h, int32\+\_\+t pixel\+\_\+w, int32\+\_\+t pixel\+\_\+h, bool full\+\_\+screen=false, bool vsync=false, bool cohesion=false, bool realwindow=false)
+\item 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a8e8848aa1c743a1ec2cdaa14c87e5cde}{Start}} ()
+\item 
+virtual bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad4fbf979865fb1f08250ea379f2de669}{On\+User\+Destroy}} ()
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7007f889edd7731b0c60cc61c60cdf8b}{On\+Text\+Entry\+Complete}} (const std::\+string \&s\+Text)
+\item 
+virtual bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a3fd277780c977b84f0695a13e825340e}{On\+Console\+Command}} (const std::\+string \&s\+Command)
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a92192402b5d499ab8b230dfb9393f3b7}{Is\+Focused}} () const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_h_w_button}{HWButton}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a27cb4cb68d5e1ca7df8014d66221269e}{Get\+Key}} (\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{Key}} k) const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_h_w_button}{HWButton}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_abdf9f5d70c9e24ab9358a8dd07474105}{Get\+Mouse}} (uint32\+\_\+t b) const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a2ec1d2a1f3777338fb4388c620344a34}{Get\+MouseX}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a8dde80c07547240f5e72b4f2fcd89668}{Get\+MouseY}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a9640286e4a7cd03c6f545b1df7373269}{Get\+Mouse\+Wheel}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a833d48cf4fa3a8f437abd5ed7653cc32}{Get\+Window\+Mouse}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a8730f3281b17428235ace7036ae030ac}{Get\+Mouse\+Pos}} () const
+\item 
+const std::\+map$<$ size\+\_\+t, \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} $>$ \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab2a3b140077d7139c218b2cdddb59358}{Get\+Key\+Map}} () const
+\item 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a73616c00067ed53111177436d5f1d101}{Set\+Window\+Size}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Size)
+\item 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa1d6891e068563cbba45eee8f18e84af}{Show\+Window\+Frame}} (const bool b\+Show\+Frame)
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa3b458d05eab503d9918cfd2d383a45c}{Screen\+Width}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_abbbee4578ffa6b844c04c1af363052af}{Screen\+Height}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a45d918f65f5fee13e654878d8271326b}{Get\+Draw\+Target\+Width}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a4ee3dbff01900d71e62bfe499b1c83c3}{Get\+Draw\+Target\+Height}} () const
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a50d4a776f146662b586a51a1a887584c}{Get\+Draw\+Target}} () const
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_abd403468f57f7665d56e202da8de8e76}{Set\+Screen\+Size}} (int w, int h)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a70b6a145d7ab0c8857000a72ce4d4a70}{Set\+Draw\+Target}} (\doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}target)
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a89d27938d71d49b42a20307444147697}{Get\+FPS}} () const
+\item 
+float \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af881473291c52d849dbef155e359b27c}{Get\+Elapsed\+Time}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a09ce081826dc9dc4103e8998de0697f7}{Get\+Window\+Size}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad075c095de9d96be89a436fed7264dcd}{Get\+Window\+Pos}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af491deb40a70a3b1ea89778ef35cfe92}{Get\+Pixel\+Size}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a92436f307c7ca4cc62af7ef7b81ad584}{Get\+Screen\+Pixel\+Size}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5b508f9b68f865fe0d7c724080c870e1}{Get\+Screen\+Size}} () const
+\item 
+const std::\+vector$<$ std::\+string $>$ \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a935ad7f5a6b1bf8abc1f3ec64af9d629}{Get\+Dropped\+Files}} () const
+\item 
+const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a2f74b36be949f846366e5d5459a7f590}{Get\+Dropped\+Files\+Point}} () const
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad0b749a788ee69c72e28c57c837c8b32}{Set\+Draw\+Target}} (uint8\+\_\+t layer, bool b\+Dirty=true)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a1e3453e2a118596fa04a961f66c6fd46}{Enable\+Layer}} (uint8\+\_\+t layer, bool b)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0e1ddc993ef65dfe00f2bbcf59e535ad}{Set\+Layer\+Offset}} (uint8\+\_\+t layer, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&offset)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a9fed21eddcebeb743472d8b9eb1e3ece}{Set\+Layer\+Offset}} (uint8\+\_\+t layer, float x, float y)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af8fbe005b4069ed1de8e0347b72ebc30}{Set\+Layer\+Scale}} (uint8\+\_\+t layer, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a409825b0147e25c0d4c05fb0aa1f6273}{Set\+Layer\+Scale}} (uint8\+\_\+t layer, float x, float y)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7d7c04245161782d5f5c48d3d62ff7a7}{Set\+Layer\+Tint}} (uint8\+\_\+t layer, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a40a88ddb3800e59121f05b06fd64dbfd}{Set\+Layer\+Custom\+Render\+Function}} (uint8\+\_\+t layer, std::\+function$<$ void()$>$ f)
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_layer_desc}{Layer\+Desc}} $>$ \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a25b1d7ca807d0881684483f87071dcd3}{Get\+Layers}} ()
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae15ffa0503e2893aad7001aa2f5769b7}{Create\+Layer}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae4a3d1aaa40761986389966ab927ef32}{Set\+Pixel\+Mode}} (\doxymbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel::\+\+Mode}} m)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel_ae9012164940526ddb09b217dbbddfd65}{Pixel::\+\+Mode}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad4f95a449dc09a2650ec771e6fa83049}{Get\+Pixel\+Mode}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a9aa31ae4e1735efa72f3ea17fb51b2ef}{Set\+Pixel\+Mode}} (std::\+function$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}}(const int x, const int y, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&p\+Source, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&p\+Dest)$>$ pixel\+Mode)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab0726b7758bc1bf7f7de30369076b8e7}{Set\+Pixel\+Blend}} (float f\+Blend)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_adccd902fc78297ae494145510e681441}{adv\+\_\+\+Manual\+Render\+Enable}} (const bool b\+Enable)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_afb932329f0434d1243b206776b80329e}{adv\+\_\+\+Hardware\+Clip}} (const bool b\+Scale, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&view\+Pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&view\+Size, const bool b\+Clear=false)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab877e172f6ae1141f6ac9a955fad51ed}{adv\+\_\+\+Flush\+Layer}} (const size\+\_\+t n\+Layer\+ID)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad8e3bbc3f450c04a3305f48e37fdf27a}{adv\+\_\+\+Flush\+Layer\+Decals}} (const size\+\_\+t n\+Layer\+ID)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a398b01a3bd87cc25db0e2886373214cc}{adv\+\_\+\+Flush\+Layer\+GPUTasks}} (const size\+\_\+t n\+Layer\+ID)
+\item 
+virtual bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a95ab046b4b0843565bddd0e009a25569}{Draw}} (int32\+\_\+t x, int32\+\_\+t y, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad7bd70d2c3d0bc5bbb0991fa4695a4e9}{Draw}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a131877968123c843374f079814503d22}{Draw\+Line}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t pattern=0x\+FFFFFFFF)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ac24457d32db7d8acf0661c6de57be7a8}{Draw\+Line}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos1, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos2, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t pattern=0x\+FFFFFFFF)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a2ce3e34fd633acdc22b8dc2c8d25f86c}{Draw\+Circle}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t radius, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint8\+\_\+t mask=0x\+FF)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0016377c9188719462724f523b3a6334}{Draw\+Circle}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, int32\+\_\+t radius, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint8\+\_\+t mask=0x\+FF)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a483f56606fbbf3ab4850554491a853bd}{Fill\+Circle}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t radius, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a169b1c8ca3116ac2338785b8ffe87954}{Fill\+Circle}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, int32\+\_\+t radius, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a220f523e520e317f5656c4d3df777163}{Draw\+Rect}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t w, int32\+\_\+t h, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ac8536bf173a396cf78f952ab66fe6156}{Draw\+Rect}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&size, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a6b5e218bb4360f27a470f9e821721331}{Fill\+Rect}} (int32\+\_\+t x, int32\+\_\+t y, int32\+\_\+t w, int32\+\_\+t h, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae225f7027e20fe0f45a8190a992981cc}{Fill\+Rect}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&size, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a2bddba9e808a8702f6af354007302c16}{Draw\+Triangle}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, int32\+\_\+t x3, int32\+\_\+t y3, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aafe21db2127f56670b5f5f089adced71}{Draw\+Triangle}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos1, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos2, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos3, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ad31abffe6c4d0b864b8f7762c33b7a7d}{Fill\+Triangle}} (int32\+\_\+t x1, int32\+\_\+t y1, int32\+\_\+t x2, int32\+\_\+t y2, int32\+\_\+t x3, int32\+\_\+t y3, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a091224d5937210726d25c8cdeb4a951e}{Fill\+Triangle}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos1, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos2, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos3, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae0475a34186c613dd7a411d6df491a15}{Fill\+Textured\+Triangle}} (std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ v\+Points, std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ v\+Tex, std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ v\+Colour, \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}spr\+Tex)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae5419fc06fac6428fb232af34fd4690f}{Fill\+Textured\+Polygon}} (const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&v\+Points, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&v\+Tex, const std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \&v\+Colour, \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}spr\+Tex, \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}{olc::\+\+Decal\+Structure}} structure=\doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629a298cb25408234de02baf2085803a464a}{olc::\+\+Decal\+Structure::\+\+LIST}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5bae460b03f2837e39fdee3a0bbb6f99}{Draw\+Sprite}} (int32\+\_\+t x, int32\+\_\+t y, \doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc::\+\+Sprite::\+\+NONE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_adcf00714f6f13ed5ad256e2102084177}{Draw\+Sprite}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc::\+\+Sprite::\+\+NONE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab777dd885946b2dba5e8bef894c6868c}{Draw\+Partial\+Sprite}} (int32\+\_\+t x, int32\+\_\+t y, \doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, int32\+\_\+t ox, int32\+\_\+t oy, int32\+\_\+t w, int32\+\_\+t h, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc::\+\+Sprite::\+\+NONE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aecfcfec384cf4eb56ab89f92df4ff288}{Draw\+Partial\+Sprite}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&sourcepos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&size, uint32\+\_\+t scale=1, uint8\+\_\+t flip=\doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{olc::\+\+Sprite::\+\+NONE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ac29d79dedde0b2187f9f9ccbbc33fd0b}{Draw\+String}} (int32\+\_\+t x, int32\+\_\+t y, const std::\+string \&s\+Text, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t scale=1)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae099b13b38e5b02ffd31ad34a703cee5}{Draw\+String}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, const std::\+string \&s\+Text, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t scale=1)
+\item 
+\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa70121ffb85733f8ea2e7e5d0b4b311b}{Get\+Text\+Size}} (const std::\+string \&s)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a1ddca999be34411764bb12d2a15cc021}{Draw\+String\+Prop}} (int32\+\_\+t x, int32\+\_\+t y, const std::\+string \&s\+Text, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t scale=1)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a161ef8177257c371741d12cbc4818cf6}{Draw\+String\+Prop}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, const std::\+string \&s\+Text, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, uint32\+\_\+t scale=1)
+\item 
+\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab282eddb9b8fe14d01311c8613f79e84}{Get\+Text\+Size\+Prop}} (const std::\+string \&s)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a27ee96acff2c74d47f0cb78493aac756}{Set\+Decal\+Mode}} (const \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc::\+\+Decal\+Mode}} \&mode)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0a25a229a318027e13c6d890c1808ba5}{Set\+Decal\+Structure}} (const \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}{olc::\+\+Decal\+Structure}} \&structure)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5b676590555cab61db67804417c6f25f}{Draw\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a8bae37cf84b215e9e0416f058241aeba}{Draw\+Partial\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a1b757070353b8f9238c229e42d33bbb5}{Draw\+Partial\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&size, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a26d7073d87bb19f15d5ade6bb58e8e2d}{Draw\+Explicit\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \texorpdfstring{$\ast$}{*}pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \texorpdfstring{$\ast$}{*}uv, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \texorpdfstring{$\ast$}{*}col, uint32\+\_\+t elements=4)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a65098b403a403c45041599893429b550}{Draw\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}}(\&pos)\+[4]\+, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae6cc4bd274522bf9ac36054eda6c95ac}{Draw\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \texorpdfstring{$\ast$}{*}pos, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5174456bbdaace7cde233889f7ad6d72}{Draw\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+array$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}}, 4 $>$ \&pos, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a78be0709345710435fdaef7bc14f5fb3}{Draw\+Partial\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}}(\&pos)\+[4]\+, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5993da382c8e661655386a41ae874270}{Draw\+Partial\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \texorpdfstring{$\ast$}{*}pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aaccd68c61d88b13ffe1e93493f2a5b35}{Draw\+Partial\+Warped\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+array$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}}, 4 $>$ \&pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab9af9b6726271e83dd7e4b24583b4236}{Draw\+Rotated\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const float f\+Angle, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&center=\{ 0.\+0f, 0.\+0f \}, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aad3107bbad34e5792a9a35629e1fdbd0}{Draw\+Partial\+Rotated\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const float f\+Angle, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&center, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&source\+\_\+size, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \&tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a689d1828a93292702070b97fb14f5644}{Draw\+String\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const std::\+string \&s\+Text, const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7392273f15fc09b3659b112564aa0dfa}{Draw\+String\+Prop\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const std::\+string \&s\+Text, const \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a47eeee32575794d89b28a7d8dcec7b99}{Draw\+Rect\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a02a26bca44e04f075f517bdae6ac0e9d}{Fill\+Rect\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a11d9ed8762b81e0bd6bbe4349255b1e8}{Gradient\+Fill\+Rect\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col\+TL, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col\+BL, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col\+BR, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col\+TR)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a03ccf72a62d4b08f8434ffe17be04e75}{Fill\+Triangle\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p0, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p1, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p2, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a950c98f68205ff9beacbf8dc3cb5a1b4}{Gradient\+Triangle\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p0, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p1, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&p2, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} c0, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} c1, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} c2)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a40a7754338ea7b388ffa2383958d1f0b}{Draw\+Polygon\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&pos, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&uv, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a705c9ed823edc58daa6a3787b50def2c}{Draw\+Polygon\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&pos, const std::\+vector$<$ float $>$ \&depth, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&uv, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0c4a5d35b7b63db0eb2fa5efd264430d}{Draw\+Polygon\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&pos, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&uv, const std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \&tint)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ac7a7017f6a075981d8c602252f72fde3}{Draw\+Polygon\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&pos, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&uv, const std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \&colours, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a190f1fa97a0daa04b168e1f0b2bcca76}{Draw\+Polygon\+Decal}} (\doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&pos, const std::\+vector$<$ float $>$ \&depth, const std::\+vector$<$ \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} $>$ \&uv, const std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \&colours, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa0711a4a1abfd5fb5fbb48dc7159e693}{Draw\+Line\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos1, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos2, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa5e1d886af2aba2958b996f265070810}{Draw\+Rotated\+String\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const std::\+string \&s\+Text, const float f\+Angle, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&center=\{ 0.\+0f, 0.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aff4127335d2bd14dd787edfac8399afc}{Draw\+Rotated\+String\+Prop\+Decal}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&pos, const std::\+string \&s\+Text, const float f\+Angle, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&center=\{ 0.\+0f, 0.\+0f \}, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale=\{ 1.\+0f, 1.\+0f \})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aeb70b40809815fab4e1017e25c7ab161}{Clear}} (\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aed9a3f6bd349e091728a329ee42932bf}{Clear\+Buffer}} (\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p, bool b\+Depth=true)
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_addf1db797f818a54af079f3f047b61f2}{Get\+Font\+Sprite}} ()
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a119def2ae0781c7d7bf6dc7bee91313e}{Clip\+Line\+To\+Screen}} (\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&in\+\_\+p1, \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&in\+\_\+p2)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_abb2086e3b2613a5e852d20e6a1b0fbdf}{Enable\+Pixel\+Transfer}} (const bool b\+Enable=true)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a86b36dabde4721cf6a471f4f3ed6b4e4}{Console\+Show}} (const \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} \&key\+Exit, bool b\+Suspend\+Time=true)
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a9e431a295a2961314034db3e15702f0c}{Is\+Console\+Showing}} () const
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_afd7141921ad2cd3e1477010b26fa65f4}{Console\+Clear}} ()
+\item 
+std::\+stringstream \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a6004372d25169e8f06b8662acc78fa12}{Console\+Out}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae4e2a1b5f77eedb0a5d2b5eeacb55891}{Console\+Capture\+Std\+Out}} (const bool b\+Capture)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5729af7e0b11a6462ef7ac979bef045d}{Text\+Entry\+Enable}} (const bool b\+Enable, const std::\+string \&s\+Text="{}"{})
+\item 
+std::\+string \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab814fb2f8318560fddef7b363893313c}{Text\+Entry\+Get\+String}} () const
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a3717721db438a342ed1fd167296b592a}{Text\+Entry\+Get\+Cursor}} () const
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_abb38476afd90a6eaeda683215a8b8ff6}{Is\+Text\+Entry\+Enabled}} () const
+\item 
+const std::\+vector$<$ int32\+\_\+t $>$ \& \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aea991e2db0434e79b41ca70b5a9c77bc}{Get\+Key\+Press\+Cache}} () const
+\item 
+\doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a8b2238dea6025933664c2df8f024030b}{Convert\+Keycode}} (const int keycode) const
+\item 
+const std::\+string \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a5809040c0c4f1bbf51b154c1af1a1a8b}{Get\+Key\+Symbol}} (const \doxymbox{\hyperlink{namespaceolc_aef0c85793fee2bd3f6f96b86b8baa9b2}{olc::\+\+Key}} pgekey, const bool mod\+Shift=false, const bool mod\+Ctrl=false, const bool mod\+Alt=false) const
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a865ac41bf51c2a616f3ebd658556601f}{HW3\+D\+\_\+\+Projection}} (const std::\+array$<$ float, 16 $>$ \&m)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab41406c6c312e4a6e39f3e9ee9ebecb8}{HW3\+D\+\_\+\+Enable\+Depth\+Test}} (const bool b\+Enable\+Depth)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0350479e4041ebc7943b08c26637c36a}{HW3\+D\+\_\+\+Set\+Cull\+Mode}} (const \doxymbox{\hyperlink{namespaceolc_a94aa91027b17cdb9f9d304eec39e3189}{olc::\+\+Cull\+Mode}} mode)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a1467a37e33da935835ed4a468d08c247}{HW3\+D\+\_\+\+Draw\+Object}} (const std::\+array$<$ float, 16 $>$ \&mat\+Model\+View, \doxymbox{\hyperlink{classolc_1_1_decal}{olc::\+\+Decal}} \texorpdfstring{$\ast$}{*}decal, const \doxymbox{\hyperlink{namespaceolc_a1fd77f40337bdc24a20bee32c3dd4629}{olc::\+\+Decal\+Structure}} layout, const std::\+vector$<$ std::\+array$<$ float, 4 $>$ $>$ \&pos, const std::\+vector$<$ std::\+array$<$ float, 2 $>$ $>$ \&uv, const std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \&col, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af3352874c9b8f4125ec26cc5bd1809b0}{HW3\+D\+\_\+\+Draw\+Line}} (const std::\+array$<$ float, 16 $>$ \&mat\+Model\+View, const std::\+array$<$ float, 4 $>$ \&pos1, const std::\+array$<$ float, 4 $>$ \&pos2, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ae603dfff49cd2feec6137ae9f3ecf39e}{HW3\+D\+\_\+\+Draw\+Line\+Box}} (const std::\+array$<$ float, 16 $>$ \&mat\+Model\+View, const std::\+array$<$ float, 4 $>$ \&pos, const std::\+array$<$ float, 4 $>$ \&size, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} col=\doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}})
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a6e10d8fae75e26dea03b0b447667a308}{olc\+\_\+\+Update\+Mouse}} (int32\+\_\+t x, int32\+\_\+t y)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa33ea5e40d4577e3c44fcf4a26cecadd}{olc\+\_\+\+Update\+Mouse\+Wheel}} (int32\+\_\+t delta)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af9ef2246d4c27c653313e54d8b92dd12}{olc\+\_\+\+Update\+Window\+Pos}} (int32\+\_\+t x, int32\+\_\+t y)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a4f0dae00f21f8d71d4544d50593234c3}{olc\+\_\+\+Update\+Window\+Size}} (int32\+\_\+t x, int32\+\_\+t y)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af1cd38cf0df2e7c3ab53bee66ec63771}{olc\+\_\+\+Update\+Viewport}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a117eedbe1e9366fe2bf402334beb9692}{olc\+\_\+\+Construct\+Font\+Sheet}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a0018131435f88bb5de406fd11ee54058}{olc\+\_\+\+Core\+Update}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_aa19aafa028a7e2eaaf7b2235a9bd2256}{olc\+\_\+\+Prepare\+Engine}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a59645c08376a7d4e58673919f3bd0dfb}{olc\+\_\+\+Update\+Mouse\+State}} (int32\+\_\+t button, bool state)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a68b5beaa53f22c93a131edbd6e7f6808}{olc\+\_\+\+Update\+Key\+State}} (int32\+\_\+t keycode, bool state)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_ab3150ba487188e64940c294998fa38d3}{olc\+\_\+\+Update\+Mouse\+Focus}} (bool state)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7343712504f23f86c8490646ffc50e7f}{olc\+\_\+\+Update\+Key\+Focus}} (bool state)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a2da1f2ebbc1a5fbdbf52890e6ac707b1}{olc\+\_\+\+Terminate}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a20acccec46c6a566a1c016f1bd2e3fe4}{olc\+\_\+\+Drop\+Files}} (int32\+\_\+t x, int32\+\_\+t y, const std::\+vector$<$ std::\+string $>$ \&v\+Files)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a417b6cd564ccad1d878ae51cfdd3be8e}{olc\+\_\+\+Reanimate}} ()
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7b0f41bc4b4258a5c4fa1742b41d15e3}{olc\+\_\+\+Is\+Running}} ()
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a7afa0b57c65bd5d9a54c602afd4fe756}{olc\+\_\+\+Configure\+System}} ()
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a49a2ead57239e1595cc555effd3e3a2b}{pgex\+\_\+\+Register}} (\doxymbox{\hyperlink{classolc_1_1_p_g_e_x}{olc::\+\+PGEX}} \texorpdfstring{$\ast$}{*}pgex)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_ae196d1f70032c6e2f11f213612aeebee}{has\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Synchronizes the user\textquotesingle{}s text input with the mathematical tensor. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_a8eb72347d301fc68ece2e532b61245ee}{Draw\+Stress\+Vector}} (const Eigen::\+\+Matrix4f \&mp, const Eigen::\+\+Vector3f \&start\+Pos, const Eigen::\+\+Vector3f \&force\+Vec, \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} color, const std::\+string \&label="{}"{})
+\begin{DoxyCompactList}\small\item\em Draws a 3D stress vector projected on the screen. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_a6912573d6725120ef679568eebdf4605}{handle\+Input}} (float f\+Elapsed\+Time)
+\begin{DoxyCompactList}\small\item\em Processes keyboard inputs to interact with the application. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_a5be676771a5b814a4aa7aca6016e4a2d}{update\+Logic}} (float f\+Elapsed\+Time)
+\begin{DoxyCompactList}\small\item\em Applies mathematical transformations to the vertices of the 3D model. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_a0d31faeda899096beda3b62b613ed015}{render\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Builds and draws all graphical elements on the secondary buffer (canva\+Sprite). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classvisualizador3_d_a0fe2bab030680e9362790e758d1bdee9}{Draw\+Mohr\+Diagram}} (int originX, int originY, int width, int height)
+\begin{DoxyCompactList}\small\item\em Draws the 2D parametric representation of Mohr\textquotesingle{}s Circle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::\+vector$<$ std::\+vector$<$ std::\+string $>$ $>$ \doxymbox{\hyperlink{classvisualizador3_d_a7bf9aebf47780336ad789f8d4c8489e3}{sigmaS}}
+\begin{DoxyCompactList}\small\item\em Text representation of the stress matrix for the interface. \end{DoxyCompactList}\item 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} $>$ \doxymbox{\hyperlink{classvisualizador3_d_ae1ec107ea2a261569afa1c3e4ce3b409}{canva\+Sprite}}
+\begin{DoxyCompactList}\small\item\em Intermediate canvas to render the scene before software post-\/processing. \end{DoxyCompactList}\item 
+std::\+vector$<$ \doxymbox{\hyperlink{structcrt_map}{crt\+Map}} $>$ \doxymbox{\hyperlink{classvisualizador3_d_a254f9180815ed869b4f1e3fd55b6255c}{crt\+Lut}}
+\begin{DoxyCompactList}\small\item\em Look-\/\+Up Table (LUT) for CRT lens distortion mapping. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_a8d5289ec64d50c3dbbf1d5739ceafaf1}{screen\+Height}}
+\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_a4656174e7c979b3108eed7616c2e42d4}{screen\+Width}}
+\begin{DoxyCompactList}\small\item\em Full screen dimensions. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_a5636d5a039a07ac4f6a0caee0b31c70d}{hscreen\+Height}}
+\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_afc3e0308002e36e2003c955ad3e7a850}{hscreen\+Width}}
+\begin{DoxyCompactList}\small\item\em Half of the screen dimensions (center). \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_a99a698094c9c93111228b00fa75072ab}{sy\+Pos}}
+\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_aa1db7adec4e2a7646a899a7d2f9886c1}{sx\+Pos}}
+\begin{DoxyCompactList}\small\item\em Base position (offset) for 3D projection on screen. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classvisualizador3_d_ab716ff355f945a723969897b2cbf6b97}{inscreen\+Width2}}
+\item 
+float \doxymbox{\hyperlink{classvisualizador3_d_af286a48ee637654f2b9bed1699f05427}{inscreen\+Height2}}
+\begin{DoxyCompactList}\small\item\em Precalculated multipliers for coordinate normalization. \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classvisualizador3_d_a8a644ea3480f621e2f19ec8256b8bbf5}{k}} = 0.\+15f
+\begin{DoxyCompactList}\small\item\em Barrel distortion coefficient for the CRT effect. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{structcube}{cube}} \doxymbox{\hyperlink{classvisualizador3_d_a91b3dfd3c906e117829d05d3164e8cde}{differential\+Cube}}
+\begin{DoxyCompactList}\small\item\em Geometric structure of the cubic differential element. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classpipe_line}{pipe\+Line}} \doxymbox{\hyperlink{classvisualizador3_d_aad30cbe461f985bad1671a8946023a8d}{rendpipe\+Line}}
+\begin{DoxyCompactList}\small\item\em Camera system and matrix transformation (MVP). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{structtensor}{tensor}} \doxymbox{\hyperlink{classvisualizador3_d_a3c254a28b932044fe93b0c3db15c851f}{tensor\+State}}
+\begin{DoxyCompactList}\small\item\em Mathematical engine that stores the tensor and solves the principal stresses. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_a7ab12ddf6735adc97ec2e719156324d2}{cell\+SelX}} = 0
+\begin{DoxyCompactList}\small\item\em X index of the currently selected stress matrix cell. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classvisualizador3_d_af27a2bd55167a9447ff5bcf9a36fcaa7}{cell\+SelY}} = 0
+\begin{DoxyCompactList}\small\item\em Y index of the currently selected stress matrix cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}}}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a02d0f9c50770aa38aea1448f62d3604f}{s\+App\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interactive application for the visualization of Mohr\textquotesingle{}s Circle and the 3D stress state. 
+
+Extends {\ttfamily \doxylink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}} to render a graphical interface that includes:
+\begin{DoxyItemize}
+\item A matrix editor for the Cauchy Stress Tensor.
+\item A 3D representation of the differential element subjected to stresses.
+\item A 2D diagram of Mohr\textquotesingle{}s Circle.
+\item A retro CRT post-\/processing effect (barrel distortion). 
+\end{DoxyItemize}
+
+\label{classvisualizador3_d_doc-constructors}
+\Hypertarget{classvisualizador3_d_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classvisualizador3_d_a0658ae716081cfef64a1ad1baca50a06}\index{visualizador3D@{visualizador3D}!visualizador3D@{visualizador3D}}
+\index{visualizador3D@{visualizador3D}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{visualizador3D()}{visualizador3D()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a0658ae716081cfef64a1ad1baca50a06} 
+visualizador3\+D::\+visualizador3D (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{classvisualizador3_d_doc-func-members}
+\Hypertarget{classvisualizador3_d_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classvisualizador3_d_ab59a0c6b40edd08f1e4fa769b5c6a99a}\index{visualizador3D@{visualizador3D}!drawCrt@{drawCrt}}
+\index{drawCrt@{drawCrt}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{drawCrt()}{drawCrt()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_ab59a0c6b40edd08f1e4fa769b5c6a99a} 
+void visualizador3\+D::\+draw\+Crt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Applies a CRT filter based on the precalculated LUT. 
+
+Extracts the rendered pixels in {\ttfamily \doxylink{classvisualizador3_d_ae1ec107ea2a261569afa1c3e4ce3b409}{canva\+Sprite}}, calculates grayscale luminance with a retro terminal green tint, and applies spatial mapping (Brown-\/\+Conrady distortion). \Hypertarget{classvisualizador3_d_a0fe2bab030680e9362790e758d1bdee9}\index{visualizador3D@{visualizador3D}!DrawMohrDiagram@{DrawMohrDiagram}}
+\index{DrawMohrDiagram@{DrawMohrDiagram}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{DrawMohrDiagram()}{DrawMohrDiagram()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a0fe2bab030680e9362790e758d1bdee9} 
+void visualizador3\+D::\+\+Draw\+Mohr\+Diagram (\begin{DoxyParamCaption}\item[{int}]{originX}{, }\item[{int}]{originY}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Draws the 2D parametric representation of Mohr\textquotesingle{}s Circle. 
+
+Represents the principal stresses (\$\textbackslash{}sigma\+\_\+1, \textbackslash{}sigma\+\_\+2, \textbackslash{}sigma\+\_\+3\$), calculates maximum shears and prints the Von Mises criterion based on: \$\$ \textbackslash{}sigma\+\_\+v = \textbackslash{}sqrt\{\textbackslash{}frac\{(\textbackslash{}sigma\+\_\+1 -\/ \textbackslash{}sigma\+\_\+2)\texorpdfstring{$^\wedge$}{\string^}2 + (\textbackslash{}sigma\+\_\+2 -\/ \textbackslash{}sigma\+\_\+3)\texorpdfstring{$^\wedge$}{\string^}2 + (\textbackslash{}sigma\+\_\+3 -\/ \textbackslash{}sigma\+\_\+1)\texorpdfstring{$^\wedge$}{\string^}2\}\{2\}\} \$\$
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em originX} & Origin position on screen (X). \\
+\hline
+\doxymbox{\texttt{in}}  & {\em originY} & Origin position on screen (Y). \\
+\hline
+\doxymbox{\texttt{in}}  & {\em width} & Width of the assigned area. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em height} & Height of the assigned area. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classvisualizador3_d_a8eb72347d301fc68ece2e532b61245ee}\index{visualizador3D@{visualizador3D}!DrawStressVector@{DrawStressVector}}
+\index{DrawStressVector@{DrawStressVector}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{DrawStressVector()}{DrawStressVector()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a8eb72347d301fc68ece2e532b61245ee} 
+void visualizador3\+D::\+\+Draw\+Stress\+Vector (\begin{DoxyParamCaption}\item[{const Eigen::\+\+Matrix4f \&}]{mp}{, }\item[{const Eigen::\+\+Vector3f \&}]{start\+Pos}{, }\item[{const Eigen::\+\+Vector3f \&}]{force\+Vec}{, }\item[{\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}}}]{color}{, }\item[{const std::\+string \&}]{label}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Draws a 3D stress vector projected on the screen. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em mp} & Transformation matrix. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em start\+Pos} & 3D start coordinate of the vector (center of the face). \\
+\hline
+\doxymbox{\texttt{in}}  & {\em force\+Vec} & Force/\+stress vector to represent. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em color} & Base color of the vector. \\
+\hline
+\doxymbox{\texttt{in}}  & {\em label} & Optional text label to identify the vector (e.\+g., "{}\+G11"{}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classvisualizador3_d_a6912573d6725120ef679568eebdf4605}\index{visualizador3D@{visualizador3D}!handleInput@{handleInput}}
+\index{handleInput@{handleInput}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{handleInput()}{handleInput()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a6912573d6725120ef679568eebdf4605} 
+void visualizador3\+D::\+handle\+Input (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Processes keyboard inputs to interact with the application. 
+
+Supports matrix navigation (Arrows), number input, negatives and decimals, manual cube rotation (Q, W, E, A, S, D) and alignment with principal axes (R).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em f\+Elapsed\+Time} & Time elapsed since the last frame (Delta Time). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classvisualizador3_d_ae196d1f70032c6e2f11f213612aeebee}\index{visualizador3D@{visualizador3D}!hasChange@{hasChange}}
+\index{hasChange@{hasChange}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{hasChange()}{hasChange()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_ae196d1f70032c6e2f11f213612aeebee} 
+void visualizador3\+D::\+has\+Change (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Synchronizes the user\textquotesingle{}s text input with the mathematical tensor. 
+
+Converts the modified text of the cell to float, forces tensor symmetry (\$\textbackslash{}sigma\_\{ij\} = \textbackslash{}sigma\_\{ji\}\$) and recalculates the eigenvalues and eigenvectors. Solves the stress tensor. \Hypertarget{classvisualizador3_d_a6cb370a7ac37603755f92be510d35c0e}\index{visualizador3D@{visualizador3D}!OnUserCreate@{OnUserCreate}}
+\index{OnUserCreate@{OnUserCreate}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{OnUserCreate()}{OnUserCreate()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a6cb370a7ac37603755f92be510d35c0e} 
+bool visualizador3\+D::\+\+On\+User\+Create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initializes the main components of the program. 
+
+Defines the initial tensor, initializes the visual matrix, configures the 3D pipeline (camera) and precalculates the look-\/up table (LUT) to optimize the CRT filter.
+
+\begin{DoxyReturn}{Returns}
+boolean indicating the success of the creation. 
+\end{DoxyReturn}
+
+
+Reimplemented from \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_a6a33b6ff7cd23dfd05b34416865fb5c3}{olc::\+\+Pixel\+Game\+Engine}}.
+
+\Hypertarget{classvisualizador3_d_ab43101f5705a126ded94e48cec07af84}\index{visualizador3D@{visualizador3D}!OnUserUpdate@{OnUserUpdate}}
+\index{OnUserUpdate@{OnUserUpdate}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{OnUserUpdate()}{OnUserUpdate()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_ab43101f5705a126ded94e48cec07af84} 
+bool visualizador3\+D::\+\+On\+User\+Update (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Main engine loop, called once per frame. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em f\+Elapsed\+Time} & Time elapsed since the last frame (Delta Time). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true. 
+\end{DoxyReturn}
+
+
+Reimplemented from \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine_af9379a3db341b0acb410ea543e30fdd1}{olc::\+\+Pixel\+Game\+Engine}}.
+
+\Hypertarget{classvisualizador3_d_a0d31faeda899096beda3b62b613ed015}\index{visualizador3D@{visualizador3D}!renderScene@{renderScene}}
+\index{renderScene@{renderScene}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{renderScene()}{renderScene()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a0d31faeda899096beda3b62b613ed015} 
+void visualizador3\+D::\+render\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Builds and draws all graphical elements on the secondary buffer (canva\+Sprite). 
+
+\Hypertarget{classvisualizador3_d_a5be676771a5b814a4aa7aca6016e4a2d}\index{visualizador3D@{visualizador3D}!updateLogic@{updateLogic}}
+\index{updateLogic@{updateLogic}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{updateLogic()}{updateLogic()}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a5be676771a5b814a4aa7aca6016e4a2d} 
+void visualizador3\+D::\+update\+Logic (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Applies mathematical transformations to the vertices of the 3D model. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in}}  & {\em f\+Elapsed\+Time} & Time elapsed since the last frame (Delta Time). \\
+\hline
+\end{DoxyParams}
+
+
+\label{classvisualizador3_d_doc-variable-members}
+\Hypertarget{classvisualizador3_d_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classvisualizador3_d_ae1ec107ea2a261569afa1c3e4ce3b409}\index{visualizador3D@{visualizador3D}!canvaSprite@{canvaSprite}}
+\index{canvaSprite@{canvaSprite}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{canvaSprite}{canvaSprite}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_ae1ec107ea2a261569afa1c3e4ce3b409} 
+std::\+unique\+\_\+ptr$<$\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}}$>$ visualizador3\+D::\+canva\+Sprite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Intermediate canvas to render the scene before software post-\/processing. 
+
+\Hypertarget{classvisualizador3_d_a7ab12ddf6735adc97ec2e719156324d2}\index{visualizador3D@{visualizador3D}!cellSelX@{cellSelX}}
+\index{cellSelX@{cellSelX}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{cellSelX}{cellSelX}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a7ab12ddf6735adc97ec2e719156324d2} 
+int visualizador3\+D::\+cell\+SelX = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+X index of the currently selected stress matrix cell. 
+
+\Hypertarget{classvisualizador3_d_af27a2bd55167a9447ff5bcf9a36fcaa7}\index{visualizador3D@{visualizador3D}!cellSelY@{cellSelY}}
+\index{cellSelY@{cellSelY}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{cellSelY}{cellSelY}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_af27a2bd55167a9447ff5bcf9a36fcaa7} 
+int visualizador3\+D::\+cell\+SelY = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Y index of the currently selected stress matrix cell. 
+
+\Hypertarget{classvisualizador3_d_a254f9180815ed869b4f1e3fd55b6255c}\index{visualizador3D@{visualizador3D}!crtLut@{crtLut}}
+\index{crtLut@{crtLut}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{crtLut}{crtLut}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a254f9180815ed869b4f1e3fd55b6255c} 
+std::\+vector$<$\doxymbox{\hyperlink{structcrt_map}{crt\+Map}}$>$ visualizador3\+D::\+crt\+Lut\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Look-\/\+Up Table (LUT) for CRT lens distortion mapping. 
+
+\Hypertarget{classvisualizador3_d_a91b3dfd3c906e117829d05d3164e8cde}\index{visualizador3D@{visualizador3D}!differentialCube@{differentialCube}}
+\index{differentialCube@{differentialCube}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{differentialCube}{differentialCube}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a91b3dfd3c906e117829d05d3164e8cde} 
+\doxymbox{\hyperlink{structcube}{cube}} visualizador3\+D::\+differential\+Cube\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Geometric structure of the cubic differential element. 
+
+\Hypertarget{classvisualizador3_d_a5636d5a039a07ac4f6a0caee0b31c70d}\index{visualizador3D@{visualizador3D}!hscreenHeight@{hscreenHeight}}
+\index{hscreenHeight@{hscreenHeight}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{hscreenHeight}{hscreenHeight}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a5636d5a039a07ac4f6a0caee0b31c70d} 
+int visualizador3\+D::\+hscreen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classvisualizador3_d_afc3e0308002e36e2003c955ad3e7a850}\index{visualizador3D@{visualizador3D}!hscreenWidth@{hscreenWidth}}
+\index{hscreenWidth@{hscreenWidth}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{hscreenWidth}{hscreenWidth}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_afc3e0308002e36e2003c955ad3e7a850} 
+int visualizador3\+D::\+hscreen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Half of the screen dimensions (center). 
+
+\Hypertarget{classvisualizador3_d_af286a48ee637654f2b9bed1699f05427}\index{visualizador3D@{visualizador3D}!inscreenHeight2@{inscreenHeight2}}
+\index{inscreenHeight2@{inscreenHeight2}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{inscreenHeight2}{inscreenHeight2}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_af286a48ee637654f2b9bed1699f05427} 
+float visualizador3\+D::\+inscreen\+Height2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Precalculated multipliers for coordinate normalization. 
+
+\Hypertarget{classvisualizador3_d_ab716ff355f945a723969897b2cbf6b97}\index{visualizador3D@{visualizador3D}!inscreenWidth2@{inscreenWidth2}}
+\index{inscreenWidth2@{inscreenWidth2}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{inscreenWidth2}{inscreenWidth2}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_ab716ff355f945a723969897b2cbf6b97} 
+float visualizador3\+D::\+inscreen\+Width2\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classvisualizador3_d_a8a644ea3480f621e2f19ec8256b8bbf5}\index{visualizador3D@{visualizador3D}!k@{k}}
+\index{k@{k}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a8a644ea3480f621e2f19ec8256b8bbf5} 
+float visualizador3\+D::\+k = 0.\+15f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Barrel distortion coefficient for the CRT effect. 
+
+\Hypertarget{classvisualizador3_d_aad30cbe461f985bad1671a8946023a8d}\index{visualizador3D@{visualizador3D}!rendpipeLine@{rendpipeLine}}
+\index{rendpipeLine@{rendpipeLine}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{rendpipeLine}{rendpipeLine}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_aad30cbe461f985bad1671a8946023a8d} 
+\doxymbox{\hyperlink{classpipe_line}{pipe\+Line}} visualizador3\+D::\+rendpipe\+Line\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Camera system and matrix transformation (MVP). 
+
+\Hypertarget{classvisualizador3_d_a8d5289ec64d50c3dbbf1d5739ceafaf1}\index{visualizador3D@{visualizador3D}!screenHeight@{screenHeight}}
+\index{screenHeight@{screenHeight}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{screenHeight}{screenHeight}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a8d5289ec64d50c3dbbf1d5739ceafaf1} 
+int visualizador3\+D::\+screen\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classvisualizador3_d_a4656174e7c979b3108eed7616c2e42d4}\index{visualizador3D@{visualizador3D}!screenWidth@{screenWidth}}
+\index{screenWidth@{screenWidth}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{screenWidth}{screenWidth}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a4656174e7c979b3108eed7616c2e42d4} 
+int visualizador3\+D::\+screen\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Full screen dimensions. 
+
+\Hypertarget{classvisualizador3_d_a7bf9aebf47780336ad789f8d4c8489e3}\index{visualizador3D@{visualizador3D}!sigmaS@{sigmaS}}
+\index{sigmaS@{sigmaS}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{sigmaS}{sigmaS}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a7bf9aebf47780336ad789f8d4c8489e3} 
+std::\+vector$<$std::\+vector$<$std::\+string$>$ $>$ visualizador3\+D::\+sigmaS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text representation of the stress matrix for the interface. 
+
+\Hypertarget{classvisualizador3_d_aa1db7adec4e2a7646a899a7d2f9886c1}\index{visualizador3D@{visualizador3D}!sxPos@{sxPos}}
+\index{sxPos@{sxPos}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{sxPos}{sxPos}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_aa1db7adec4e2a7646a899a7d2f9886c1} 
+int visualizador3\+D::\+sx\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Base position (offset) for 3D projection on screen. 
+
+\Hypertarget{classvisualizador3_d_a99a698094c9c93111228b00fa75072ab}\index{visualizador3D@{visualizador3D}!syPos@{syPos}}
+\index{syPos@{syPos}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{syPos}{syPos}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a99a698094c9c93111228b00fa75072ab} 
+int visualizador3\+D::\+sy\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classvisualizador3_d_a3c254a28b932044fe93b0c3db15c851f}\index{visualizador3D@{visualizador3D}!tensorState@{tensorState}}
+\index{tensorState@{tensorState}!visualizador3D@{visualizador3D}}
+\doxysubsubsection{\texorpdfstring{tensorState}{tensorState}}
+{\footnotesize\ttfamily \label{classvisualizador3_d_a3c254a28b932044fe93b0c3db15c851f} 
+\doxymbox{\hyperlink{structtensor}{tensor}} visualizador3\+D::\+tensor\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mathematical engine that stores the tensor and solves the principal stresses. 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

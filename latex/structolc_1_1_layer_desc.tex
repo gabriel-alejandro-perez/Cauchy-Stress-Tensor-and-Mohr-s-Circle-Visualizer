@@ -1,0 +1,99 @@
+\doxysection{olc::Layer\+Desc Struct Reference}
+\hypertarget{structolc_1_1_layer_desc}{}\label{structolc_1_1_layer_desc}\index{olc::LayerDesc@{olc::LayerDesc}}
+
+
+{\ttfamily \+\#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \doxymbox{\hyperlink{structolc_1_1_layer_desc_a1657be3b96c8fbb85fe113ae695fece9}{v\+Offset}} = \{ 0, 0 \}
+\item 
+\doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \doxymbox{\hyperlink{structolc_1_1_layer_desc_ab9701d17eb84ab32e93211277cacc763}{v\+Scale}} = \{ 1, 1 \}
+\item 
+bool \doxymbox{\hyperlink{structolc_1_1_layer_desc_aeb19896b6a82e301769bfd9d5aa053b6}{b\+Show}} = false
+\item 
+bool \doxymbox{\hyperlink{structolc_1_1_layer_desc_a5239ecc59495acca81a03e8783d9b873}{b\+Update}} = false
+\item 
+\doxymbox{\hyperlink{classolc_1_1_renderable}{olc::\+\+Renderable}} \doxymbox{\hyperlink{structolc_1_1_layer_desc_a5bd23796f0469627107e9d340be57162}{p\+Draw\+Target}}
+\item 
+uint32\+\_\+t \doxymbox{\hyperlink{structolc_1_1_layer_desc_a9433153aabd3d3530043f71a2ad63b1a}{n\+Res\+ID}} = 0
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_decal_instance}{Decal\+Instance}} $>$ \doxymbox{\hyperlink{structolc_1_1_layer_desc_ac6cd952e0ebbd7cde19060b4e3896875}{vec\+Decal\+Instance}}
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_g_p_u_task}{GPUTask}} $>$ \doxymbox{\hyperlink{structolc_1_1_layer_desc_a5237adedfa1f62e7c2defabed6e6271a}{vec\+GPUTasks}}
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} \doxymbox{\hyperlink{structolc_1_1_layer_desc_af6027ed5757afe2c8c0cd50620d7311f}{tint}} = \doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}
+\item 
+std::\+function$<$ void()$>$ \doxymbox{\hyperlink{structolc_1_1_layer_desc_a3ed4e651cce6277ab5b75ab1a9b05765}{func\+Hook}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\label{structolc_1_1_layer_desc_doc-variable-members}
+\Hypertarget{structolc_1_1_layer_desc_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structolc_1_1_layer_desc_aeb19896b6a82e301769bfd9d5aa053b6}\index{olc::LayerDesc@{olc::LayerDesc}!bShow@{bShow}}
+\index{bShow@{bShow}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{bShow}{bShow}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_aeb19896b6a82e301769bfd9d5aa053b6} 
+bool olc::\+\+Layer\+Desc::\+b\+Show = false}
+
+\Hypertarget{structolc_1_1_layer_desc_a5239ecc59495acca81a03e8783d9b873}\index{olc::LayerDesc@{olc::LayerDesc}!bUpdate@{bUpdate}}
+\index{bUpdate@{bUpdate}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{bUpdate}{bUpdate}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a5239ecc59495acca81a03e8783d9b873} 
+bool olc::\+\+Layer\+Desc::\+b\+Update = false}
+
+\Hypertarget{structolc_1_1_layer_desc_a3ed4e651cce6277ab5b75ab1a9b05765}\index{olc::LayerDesc@{olc::LayerDesc}!funcHook@{funcHook}}
+\index{funcHook@{funcHook}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{funcHook}{funcHook}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a3ed4e651cce6277ab5b75ab1a9b05765} 
+std::\+function$<$void()$>$ olc::\+\+Layer\+Desc::\+func\+Hook = nullptr}
+
+\Hypertarget{structolc_1_1_layer_desc_a9433153aabd3d3530043f71a2ad63b1a}\index{olc::LayerDesc@{olc::LayerDesc}!nResID@{nResID}}
+\index{nResID@{nResID}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{nResID}{nResID}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a9433153aabd3d3530043f71a2ad63b1a} 
+uint32\+\_\+t olc::\+\+Layer\+Desc::\+n\+Res\+ID = 0}
+
+\Hypertarget{structolc_1_1_layer_desc_a5bd23796f0469627107e9d340be57162}\index{olc::LayerDesc@{olc::LayerDesc}!pDrawTarget@{pDrawTarget}}
+\index{pDrawTarget@{pDrawTarget}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{pDrawTarget}{pDrawTarget}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a5bd23796f0469627107e9d340be57162} 
+\doxymbox{\hyperlink{classolc_1_1_renderable}{olc::\+\+Renderable}} olc::\+\+Layer\+Desc::\+p\+Draw\+Target}
+
+\Hypertarget{structolc_1_1_layer_desc_af6027ed5757afe2c8c0cd50620d7311f}\index{olc::LayerDesc@{olc::LayerDesc}!tint@{tint}}
+\index{tint@{tint}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{tint}{tint}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_af6027ed5757afe2c8c0cd50620d7311f} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} olc::\+\+Layer\+Desc::\+tint = \doxymbox{\hyperlink{namespaceolc_ae3de4726bf87f2d74693e62d76816db1}{olc::\+\+WHITE}}}
+
+\Hypertarget{structolc_1_1_layer_desc_ac6cd952e0ebbd7cde19060b4e3896875}\index{olc::LayerDesc@{olc::LayerDesc}!vecDecalInstance@{vecDecalInstance}}
+\index{vecDecalInstance@{vecDecalInstance}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{vecDecalInstance}{vecDecalInstance}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_ac6cd952e0ebbd7cde19060b4e3896875} 
+std::\+vector$<$\doxymbox{\hyperlink{structolc_1_1_decal_instance}{Decal\+Instance}}$>$ olc::\+\+Layer\+Desc::\+vec\+Decal\+Instance}
+
+\Hypertarget{structolc_1_1_layer_desc_a5237adedfa1f62e7c2defabed6e6271a}\index{olc::LayerDesc@{olc::LayerDesc}!vecGPUTasks@{vecGPUTasks}}
+\index{vecGPUTasks@{vecGPUTasks}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{vecGPUTasks}{vecGPUTasks}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a5237adedfa1f62e7c2defabed6e6271a} 
+std::\+vector$<$\doxymbox{\hyperlink{structolc_1_1_g_p_u_task}{GPUTask}}$>$ olc::\+\+Layer\+Desc::\+vec\+GPUTasks}
+
+\Hypertarget{structolc_1_1_layer_desc_a1657be3b96c8fbb85fe113ae695fece9}\index{olc::LayerDesc@{olc::LayerDesc}!vOffset@{vOffset}}
+\index{vOffset@{vOffset}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{vOffset}{vOffset}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_a1657be3b96c8fbb85fe113ae695fece9} 
+\doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} olc::\+\+Layer\+Desc::\+v\+Offset = \{ 0, 0 \}}
+
+\Hypertarget{structolc_1_1_layer_desc_ab9701d17eb84ab32e93211277cacc763}\index{olc::LayerDesc@{olc::LayerDesc}!vScale@{vScale}}
+\index{vScale@{vScale}!olc::LayerDesc@{olc::LayerDesc}}
+\doxysubsubsection{\texorpdfstring{vScale}{vScale}}
+{\footnotesize\ttfamily \label{structolc_1_1_layer_desc_ab9701d17eb84ab32e93211277cacc763} 
+\doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} olc::\+\+Layer\+Desc::\+v\+Scale = \{ 1, 1 \}}
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

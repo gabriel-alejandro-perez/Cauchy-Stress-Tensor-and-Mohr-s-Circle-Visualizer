@@ -1,0 +1,305 @@
+\doxysection{olc::Sprite Class Reference}
+\hypertarget{classolc_1_1_sprite}{}\label{classolc_1_1_sprite}\index{olc::Sprite@{olc::Sprite}}
+
+
+{\ttfamily \+\#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{Mode}} \{ \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}{NORMAL}}
+, \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa3185e8dea4ea5a89d7ea66716c67a175}{PERIODIC}}
+, \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa8cd87f1092fd21a8f531b805e55f7619}{CLAMP}}
+ \}
+\item 
+enum \doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24}{Flip}} \{ \doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}{NONE}} = 0
+, \doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a2ff5b18e468156f629a10c5b515d78cd}{HORIZ}} = 1
+, \doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a7d2b99d18b574e41332e569d141914c5}{VERT}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_aaf231565550d294ef20bf31364562ec3}{Sprite}} ()
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_ad8ce71f2399a2721aff9234390a18b8e}{Sprite}} (const std::\+string \&s\+Image\+File, \doxymbox{\hyperlink{classolc_1_1_resource_pack}{olc::\+\+Resource\+Pack}} \texorpdfstring{$\ast$}{*}pack=nullptr)
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_a3e452a040fc2680228b1e6a7b6b9890e}{Sprite}} (int32\+\_\+t w, int32\+\_\+t h)
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_a5b0190890ed98560125b2ae4db9a7d9f}{Sprite}} (const \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \&)=delete
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_a594abc52842c29e4a5417adf57fb877e}{\texorpdfstring{$\sim$}{\string~}\+Sprite}} ()
+\item 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_sprite_adc277c0342733a4aa8dcdc9152326fec}{Load\+From\+File}} (const std::\+string \&s\+Image\+File, \doxymbox{\hyperlink{classolc_1_1_resource_pack}{olc::\+\+Resource\+Pack}} \texorpdfstring{$\ast$}{*}pack=nullptr)
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_sprite_a78f4fcf41780cfc547f21e5a0dea03a2}{Set\+Sample\+Mode}} (\doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{olc::\+\+Sprite::\+\+Mode}} mode=\doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}{olc::\+\+Sprite::\+\+Mode::\+\+NORMAL}})
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_a7e1f8169c9822f1ed94f0212d3f8d6f6}{Get\+Pixel}} (int32\+\_\+t x, int32\+\_\+t y) const
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_sprite_a294389e93a95c8307f1260d7cacaf9ba}{Set\+Pixel}} (int32\+\_\+t x, int32\+\_\+t y, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_a1a05e4ffd8d8b24b99ab511279b342cf}{Get\+Pixel}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&a) const
+\item 
+bool \doxymbox{\hyperlink{classolc_1_1_sprite_ae7b8af09a29793ab16b7b813c8b0d26d}{Set\+Pixel}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&a, \doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} p)
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_a902192f81ab42420921992a7288aab48}{Sample}} (float x, float y) const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_ab2306d08104a78a112c9fedcc82e2d26}{Sample}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&uv) const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_a5e28024237453fb56c32f37d6996443d}{Sample\+BL}} (float u, float v) const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \doxymbox{\hyperlink{classolc_1_1_sprite_a02502dff1dd0966e3b1b1bb1e23c3fe4}{Sample\+BL}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&uv) const
+\item 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_sprite_a738086f5b093e65ff7dcf41a055326c8}{Get\+Data}} ()
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_sprite_a4e67f902ce6cfae6920bfe1d8af766b5}{Duplicate}} ()
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_sprite_a2abe18f8fe5ed1642d4e69103cbd3f08}{Duplicate}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&v\+Size)
+\item 
+\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \doxymbox{\hyperlink{classolc_1_1_sprite_ac991fd59880fe03adf03ef95fcd365c3}{Size}} () const
+\item 
+void \doxymbox{\hyperlink{classolc_1_1_sprite_a590964ff91000e52f226b8a9fd384a22}{Set\+Size}} (int32\+\_\+t w, int32\+\_\+t h)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_sprite_af055800e63204ae372ca0812e6926230}{width}} = 0
+\item 
+int32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_sprite_ab05010cb1a5ff6c36267d0050d568d96}{height}} = 0
+\item 
+std::\+vector$<$ \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} $>$ \doxymbox{\hyperlink{classolc_1_1_sprite_adb41a2041dfe14de9605dabcd905db60}{p\+Col\+Data}}
+\item 
+\doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{Mode}} \doxymbox{\hyperlink{classolc_1_1_sprite_ab9182b86e829467f454c7ef630ebc9fb}{mode\+Sample}} = \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}{Mode::\+\+NORMAL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classolc_1_1_image_loader}{olc::\+\+Image\+Loader}} $>$ \doxymbox{\hyperlink{classolc_1_1_sprite_a023da26661031ebf7a276cafd9a43902}{loader}}
+\end{DoxyCompactItemize}
+
+
+\label{classolc_1_1_sprite_doc-enum-members}
+\Hypertarget{classolc_1_1_sprite_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24}\index{olc::Sprite@{olc::Sprite}!Flip@{Flip}}
+\index{Flip@{Flip}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Flip}{Flip}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24} 
+enum \doxymbox{\hyperlink{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24}{olc::\+\+Sprite::\+\+Flip}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!NONE@{NONE}}
+}\Hypertarget{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c}\label{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a6ad338b4e63faacfbed68b020c3a0c0c} 
+NONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HORIZ@{HORIZ}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!HORIZ@{HORIZ}}
+}\Hypertarget{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a2ff5b18e468156f629a10c5b515d78cd}\label{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a2ff5b18e468156f629a10c5b515d78cd} 
+HORIZ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERT@{VERT}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!VERT@{VERT}}
+}\Hypertarget{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a7d2b99d18b574e41332e569d141914c5}\label{classolc_1_1_sprite_ad0d1976d2060997f5cd99eb284a5dc24a7d2b99d18b574e41332e569d141914c5} 
+VERT&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}\index{olc::Sprite@{olc::Sprite}!Mode@{Mode}}
+\index{Mode@{Mode}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf} 
+enum \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{olc::\+\+Sprite::\+\+Mode}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL@{NORMAL}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!NORMAL@{NORMAL}}
+}\Hypertarget{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}\label{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1} 
+NORMAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PERIODIC@{PERIODIC}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!PERIODIC@{PERIODIC}}
+}\Hypertarget{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa3185e8dea4ea5a89d7ea66716c67a175}\label{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa3185e8dea4ea5a89d7ea66716c67a175} 
+PERIODIC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLAMP@{CLAMP}!olc::Sprite@{olc::Sprite}}
+\index{olc::Sprite@{olc::Sprite}!CLAMP@{CLAMP}}
+}\Hypertarget{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa8cd87f1092fd21a8f531b805e55f7619}\label{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa8cd87f1092fd21a8f531b805e55f7619} 
+CLAMP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{classolc_1_1_sprite_doc-constructors}
+\Hypertarget{classolc_1_1_sprite_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classolc_1_1_sprite_aaf231565550d294ef20bf31364562ec3}\index{olc::Sprite@{olc::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_aaf231565550d294ef20bf31364562ec3} 
+olc::\+\+Sprite::\+\+Sprite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_ad8ce71f2399a2721aff9234390a18b8e}\index{olc::Sprite@{olc::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ad8ce71f2399a2721aff9234390a18b8e} 
+olc::\+\+Sprite::\+\+Sprite (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+Image\+File}{, }\item[{\doxymbox{\hyperlink{classolc_1_1_resource_pack}{olc::\+\+Resource\+Pack}} \texorpdfstring{$\ast$}{*}}]{pack}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a3e452a040fc2680228b1e6a7b6b9890e}\index{olc::Sprite@{olc::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a3e452a040fc2680228b1e6a7b6b9890e} 
+olc::\+\+Sprite::\+\+Sprite (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{w}{, }\item[{int32\+\_\+t}]{h}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a5b0190890ed98560125b2ae4db9a7d9f}\index{olc::Sprite@{olc::Sprite}!Sprite@{Sprite}}
+\index{Sprite@{Sprite}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sprite()}{Sprite()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a5b0190890ed98560125b2ae4db9a7d9f} 
+olc::\+\+Sprite::\+\+Sprite (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{classolc_1_1_sprite_a594abc52842c29e4a5417adf57fb877e}\index{olc::Sprite@{olc::Sprite}!````~Sprite@{\texorpdfstring{$\sim$}{\string~}Sprite}}
+\index{````~Sprite@{\texorpdfstring{$\sim$}{\string~}Sprite}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sprite()}{\string~Sprite()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a594abc52842c29e4a5417adf57fb877e} 
+olc::\+\+Sprite::\+\texorpdfstring{$\sim$}{\string~}\+Sprite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{classolc_1_1_sprite_doc-func-members}
+\Hypertarget{classolc_1_1_sprite_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classolc_1_1_sprite_a4e67f902ce6cfae6920bfe1d8af766b5}\index{olc::Sprite@{olc::Sprite}!Duplicate@{Duplicate}}
+\index{Duplicate@{Duplicate}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Duplicate()}{Duplicate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a4e67f902ce6cfae6920bfe1d8af766b5} 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} olc::\+\+Sprite::\+\+Duplicate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a2abe18f8fe5ed1642d4e69103cbd3f08}\index{olc::Sprite@{olc::Sprite}!Duplicate@{Duplicate}}
+\index{Duplicate@{Duplicate}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Duplicate()}{Duplicate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a2abe18f8fe5ed1642d4e69103cbd3f08} 
+\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*} olc::\+\+Sprite::\+\+Duplicate (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Pos}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{v\+Size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a738086f5b093e65ff7dcf41a055326c8}\index{olc::Sprite@{olc::Sprite}!GetData@{GetData}}
+\index{GetData@{GetData}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a738086f5b093e65ff7dcf41a055326c8} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} \texorpdfstring{$\ast$}{*} olc::\+\+Sprite::\+\+Get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a1a05e4ffd8d8b24b99ab511279b342cf}\index{olc::Sprite@{olc::Sprite}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a1a05e4ffd8d8b24b99ab511279b342cf} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Get\+Pixel (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{a}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_a7e1f8169c9822f1ed94f0212d3f8d6f6}\index{olc::Sprite@{olc::Sprite}!GetPixel@{GetPixel}}
+\index{GetPixel@{GetPixel}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{GetPixel()}{GetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a7e1f8169c9822f1ed94f0212d3f8d6f6} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Get\+Pixel (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x}{, }\item[{int32\+\_\+t}]{y}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_adc277c0342733a4aa8dcdc9152326fec}\index{olc::Sprite@{olc::Sprite}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_adc277c0342733a4aa8dcdc9152326fec} 
+\doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Sprite::\+\+Load\+From\+File (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{s\+Image\+File}{, }\item[{\doxymbox{\hyperlink{classolc_1_1_resource_pack}{olc::\+\+Resource\+Pack}} \texorpdfstring{$\ast$}{*}}]{pack}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_ab2306d08104a78a112c9fedcc82e2d26}\index{olc::Sprite@{olc::Sprite}!Sample@{Sample}}
+\index{Sample@{Sample}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sample()}{Sample()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ab2306d08104a78a112c9fedcc82e2d26} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Sample (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&}]{uv}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_a902192f81ab42420921992a7288aab48}\index{olc::Sprite@{olc::Sprite}!Sample@{Sample}}
+\index{Sample@{Sample}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Sample()}{Sample()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a902192f81ab42420921992a7288aab48} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Sample (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_a02502dff1dd0966e3b1b1bb1e23c3fe4}\index{olc::Sprite@{olc::Sprite}!SampleBL@{SampleBL}}
+\index{SampleBL@{SampleBL}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SampleBL()}{SampleBL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a02502dff1dd0966e3b1b1bb1e23c3fe4} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Sample\+BL (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&}]{uv}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_a5e28024237453fb56c32f37d6996443d}\index{olc::Sprite@{olc::Sprite}!SampleBL@{SampleBL}}
+\index{SampleBL@{SampleBL}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SampleBL()}{SampleBL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a5e28024237453fb56c32f37d6996443d} 
+\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}} olc::\+\+Sprite::\+\+Sample\+BL (\begin{DoxyParamCaption}\item[{float}]{u}{, }\item[{float}]{v}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classolc_1_1_sprite_ae7b8af09a29793ab16b7b813c8b0d26d}\index{olc::Sprite@{olc::Sprite}!SetPixel@{SetPixel}}
+\index{SetPixel@{SetPixel}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SetPixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ae7b8af09a29793ab16b7b813c8b0d26d} 
+bool olc::\+\+Sprite::\+\+Set\+Pixel (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{a}{, }\item[{\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a294389e93a95c8307f1260d7cacaf9ba}\index{olc::Sprite@{olc::Sprite}!SetPixel@{SetPixel}}
+\index{SetPixel@{SetPixel}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SetPixel()}{SetPixel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a294389e93a95c8307f1260d7cacaf9ba} 
+bool olc::\+\+Sprite::\+\+Set\+Pixel (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{x}{, }\item[{int32\+\_\+t}]{y}{, }\item[{\doxymbox{\hyperlink{structolc_1_1_pixel}{Pixel}}}]{p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a78f4fcf41780cfc547f21e5a0dea03a2}\index{olc::Sprite@{olc::Sprite}!SetSampleMode@{SetSampleMode}}
+\index{SetSampleMode@{SetSampleMode}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SetSampleMode()}{SetSampleMode()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a78f4fcf41780cfc547f21e5a0dea03a2} 
+void olc::\+\+Sprite::\+\+Set\+Sample\+Mode (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{olc::\+\+Sprite::\+\+Mode}}}]{mode}{ = {\ttfamily \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}{olc::\+\+Sprite::\+\+Mode::\+\+NORMAL}}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_a590964ff91000e52f226b8a9fd384a22}\index{olc::Sprite@{olc::Sprite}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a590964ff91000e52f226b8a9fd384a22} 
+void olc::\+\+Sprite::\+\+Set\+Size (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{w}{, }\item[{int32\+\_\+t}]{h}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classolc_1_1_sprite_ac991fd59880fe03adf03ef95fcd365c3}\index{olc::Sprite@{olc::Sprite}!Size@{Size}}
+\index{Size@{Size}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ac991fd59880fe03adf03ef95fcd365c3} 
+\doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} olc::\+\+Sprite::\+\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\label{classolc_1_1_sprite_doc-variable-members}
+\Hypertarget{classolc_1_1_sprite_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classolc_1_1_sprite_ab05010cb1a5ff6c36267d0050d568d96}\index{olc::Sprite@{olc::Sprite}!height@{height}}
+\index{height@{height}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ab05010cb1a5ff6c36267d0050d568d96} 
+int32\+\_\+t olc::\+\+Sprite::\+height = 0}
+
+\Hypertarget{classolc_1_1_sprite_a023da26661031ebf7a276cafd9a43902}\index{olc::Sprite@{olc::Sprite}!loader@{loader}}
+\index{loader@{loader}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_a023da26661031ebf7a276cafd9a43902} 
+std::\+unique\+\_\+ptr$<$\doxymbox{\hyperlink{classolc_1_1_image_loader}{olc::\+\+Image\+Loader}}$>$ olc::\+\+Sprite::\+loader\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classolc_1_1_sprite_ab9182b86e829467f454c7ef630ebc9fb}\index{olc::Sprite@{olc::Sprite}!modeSample@{modeSample}}
+\index{modeSample@{modeSample}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{modeSample}{modeSample}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_ab9182b86e829467f454c7ef630ebc9fb} 
+\doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cf}{Mode}} olc::\+\+Sprite::\+mode\+Sample = \doxymbox{\hyperlink{classolc_1_1_sprite_a78b7f14903f9f0bb536b66c37f3139cfa1128b229a2ab5d7b344aeefd329252a1}{Mode::\+\+NORMAL}}}
+
+\Hypertarget{classolc_1_1_sprite_adb41a2041dfe14de9605dabcd905db60}\index{olc::Sprite@{olc::Sprite}!pColData@{pColData}}
+\index{pColData@{pColData}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{pColData}{pColData}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_adb41a2041dfe14de9605dabcd905db60} 
+std::\+vector$<$\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}}$>$ olc::\+\+Sprite::\+p\+Col\+Data}
+
+\Hypertarget{classolc_1_1_sprite_af055800e63204ae372ca0812e6926230}\index{olc::Sprite@{olc::Sprite}!width@{width}}
+\index{width@{width}!olc::Sprite@{olc::Sprite}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classolc_1_1_sprite_af055800e63204ae372ca0812e6926230} 
+int32\+\_\+t olc::\+\+Sprite::\+width = 0}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

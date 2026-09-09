@@ -1,0 +1,184 @@
+\doxysection{olc::Renderer Class Reference}
+\hypertarget{classolc_1_1_renderer}{}\label{classolc_1_1_renderer}\index{olc::Renderer@{olc::Renderer}}
+
+
+{\ttfamily \+\#include $<$olc\+Pixel\+Game\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{classolc_1_1_renderer_a877048a1bcf3decfe544804f0e4e1ad9}{\texorpdfstring{$\sim$}{\string~}\+Renderer}} ()=default
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a7d97cab172e59d23a2587f636c9b12b7}{Prepare\+Device}} ()=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_renderer_a28c87db87f8fd9b0f356db5d01499992}{Create\+Device}} (std::\+vector$<$ void \texorpdfstring{$\ast$}{*} $>$ params, bool b\+Full\+Screen, bool b\+VSYNC)=0
+\item 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} \doxymbox{\hyperlink{classolc_1_1_renderer_a3a59a195cc380f89e5f9cc98b6fda2c7}{Destroy\+Device}} ()=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a660f3ca709b2a2fcec1d1cba1a4cfd18}{Display\+Frame}} ()=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a04c56d76c76ab50f5f06b9b537e9d98d}{Prepare\+Drawing}} ()=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_aebfc5a561c54b88f16a0b3d855eedaa1}{Set\+Decal\+Mode}} (const \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc::\+\+Decal\+Mode}} \&mode)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a3eccca504615e72d1f40acd03ffce89f}{Draw\+Layer\+Quad}} (const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&offset, const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&scale, const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} tint)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_ac567df937350bffb2eae3e647ccc10d5}{Draw\+Decal}} (const \doxymbox{\hyperlink{structolc_1_1_decal_instance}{olc::\+\+Decal\+Instance}} \&decal)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a57f2dbb9b97dc694dc22e164812ba37f}{Do\+GPUTask}} (const \doxymbox{\hyperlink{structolc_1_1_g_p_u_task}{olc::\+\+GPUTask}} \&task)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a8b3d2a84750d8671621b43d2e958c29b}{Set3\+DProjection}} (const std::\+array$<$ float, 16 $>$ \&mat)=0
+\item 
+virtual uint32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_renderer_aeac898aaf282d09a9cd848303de57bea}{Create\+Texture}} (const uint32\+\_\+t width, const uint32\+\_\+t height, const bool filtered=false, const bool clamp=true)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a1512e2939b94f6fdb58bbf152ac0e4e5}{Update\+Texture}} (uint32\+\_\+t id, \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}spr)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_aa0e93a7d9ff6f25e9b154b2c8c86d44d}{Read\+Texture}} (uint32\+\_\+t id, \doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}spr)=0
+\item 
+virtual uint32\+\_\+t \doxymbox{\hyperlink{classolc_1_1_renderer_aec8e86eb7a104fb0bc8f9fe51318f1a0}{Delete\+Texture}} (const uint32\+\_\+t id)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a0a87094df3c911860a0eec9a8bb3b060}{Apply\+Texture}} (uint32\+\_\+t id)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_abc873336dd8f9079dc26f92ce0f95748}{Update\+Viewport}} (const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&pos, const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&size)=0
+\item 
+virtual void \doxymbox{\hyperlink{classolc_1_1_renderer_a921406bc341efd881ca510c64cebdc26}{Clear\+Buffer}} (\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}} p, bool b\+Depth)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classolc_1_1_renderer_a89f800c14ab1b070408c17e2589e02a1}{ptr\+PGE}}
+\end{DoxyCompactItemize}
+
+
+\label{classolc_1_1_renderer_doc-constructors}
+\Hypertarget{classolc_1_1_renderer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classolc_1_1_renderer_a877048a1bcf3decfe544804f0e4e1ad9}\index{olc::Renderer@{olc::Renderer}!````~Renderer@{\texorpdfstring{$\sim$}{\string~}Renderer}}
+\index{````~Renderer@{\texorpdfstring{$\sim$}{\string~}Renderer}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Renderer()}{\string~Renderer()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a877048a1bcf3decfe544804f0e4e1ad9} 
+virtual olc::\+\+Renderer::\+\texorpdfstring{$\sim$}{\string~}\+Renderer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\label{classolc_1_1_renderer_doc-func-members}
+\Hypertarget{classolc_1_1_renderer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classolc_1_1_renderer_a0a87094df3c911860a0eec9a8bb3b060}\index{olc::Renderer@{olc::Renderer}!ApplyTexture@{ApplyTexture}}
+\index{ApplyTexture@{ApplyTexture}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{ApplyTexture()}{ApplyTexture()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a0a87094df3c911860a0eec9a8bb3b060} 
+virtual void olc::\+\+Renderer::\+\+Apply\+Texture (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a921406bc341efd881ca510c64cebdc26}\index{olc::Renderer@{olc::Renderer}!ClearBuffer@{ClearBuffer}}
+\index{ClearBuffer@{ClearBuffer}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{ClearBuffer()}{ClearBuffer()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a921406bc341efd881ca510c64cebdc26} 
+virtual void olc::\+\+Renderer::\+\+Clear\+Buffer (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}}}]{p}{, }\item[{bool}]{b\+Depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a28c87db87f8fd9b0f356db5d01499992}\index{olc::Renderer@{olc::Renderer}!CreateDevice@{CreateDevice}}
+\index{CreateDevice@{CreateDevice}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{CreateDevice()}{CreateDevice()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a28c87db87f8fd9b0f356db5d01499992} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Renderer::\+\+Create\+Device (\begin{DoxyParamCaption}\item[{std::\+vector$<$ void \texorpdfstring{$\ast$}{*} $>$}]{params}{, }\item[{bool}]{b\+Full\+Screen}{, }\item[{bool}]{b\+VSYNC}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_aeac898aaf282d09a9cd848303de57bea}\index{olc::Renderer@{olc::Renderer}!CreateTexture@{CreateTexture}}
+\index{CreateTexture@{CreateTexture}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{CreateTexture()}{CreateTexture()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_aeac898aaf282d09a9cd848303de57bea} 
+virtual uint32\+\_\+t olc::\+\+Renderer::\+\+Create\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{width}{, }\item[{const uint32\+\_\+t}]{height}{, }\item[{const bool}]{filtered}{ = {\ttfamily false}, }\item[{const bool}]{clamp}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_aec8e86eb7a104fb0bc8f9fe51318f1a0}\index{olc::Renderer@{olc::Renderer}!DeleteTexture@{DeleteTexture}}
+\index{DeleteTexture@{DeleteTexture}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DeleteTexture()}{DeleteTexture()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_aec8e86eb7a104fb0bc8f9fe51318f1a0} 
+virtual uint32\+\_\+t olc::\+\+Renderer::\+\+Delete\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a3a59a195cc380f89e5f9cc98b6fda2c7}\index{olc::Renderer@{olc::Renderer}!DestroyDevice@{DestroyDevice}}
+\index{DestroyDevice@{DestroyDevice}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DestroyDevice()}{DestroyDevice()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a3a59a195cc380f89e5f9cc98b6fda2c7} 
+virtual \doxymbox{\hyperlink{namespaceolc_a3d40e9b1c005602550230690b55ae87b}{olc::\+rcode}} olc::\+\+Renderer::\+\+Destroy\+Device (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a660f3ca709b2a2fcec1d1cba1a4cfd18}\index{olc::Renderer@{olc::Renderer}!DisplayFrame@{DisplayFrame}}
+\index{DisplayFrame@{DisplayFrame}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DisplayFrame()}{DisplayFrame()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a660f3ca709b2a2fcec1d1cba1a4cfd18} 
+virtual void olc::\+\+Renderer::\+\+Display\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a57f2dbb9b97dc694dc22e164812ba37f}\index{olc::Renderer@{olc::Renderer}!DoGPUTask@{DoGPUTask}}
+\index{DoGPUTask@{DoGPUTask}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DoGPUTask()}{DoGPUTask()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a57f2dbb9b97dc694dc22e164812ba37f} 
+virtual void olc::\+\+Renderer::\+\+Do\+GPUTask (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1_g_p_u_task}{olc::\+\+GPUTask}} \&}]{task}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_ac567df937350bffb2eae3e647ccc10d5}\index{olc::Renderer@{olc::Renderer}!DrawDecal@{DrawDecal}}
+\index{DrawDecal@{DrawDecal}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DrawDecal()}{DrawDecal()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_ac567df937350bffb2eae3e647ccc10d5} 
+virtual void olc::\+\+Renderer::\+\+Draw\+Decal (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{structolc_1_1_decal_instance}{olc::\+\+Decal\+Instance}} \&}]{decal}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a3eccca504615e72d1f40acd03ffce89f}\index{olc::Renderer@{olc::Renderer}!DrawLayerQuad@{DrawLayerQuad}}
+\index{DrawLayerQuad@{DrawLayerQuad}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{DrawLayerQuad()}{DrawLayerQuad()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a3eccca504615e72d1f40acd03ffce89f} 
+virtual void olc::\+\+Renderer::\+\+Draw\+Layer\+Quad (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&}]{offset}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a108d16539e72d6c6cc8ccefb14c4b742}{olc::\+vf2d}} \&}]{scale}{, }\item[{const \doxymbox{\hyperlink{structolc_1_1_pixel}{olc::\+\+Pixel}}}]{tint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a7d97cab172e59d23a2587f636c9b12b7}\index{olc::Renderer@{olc::Renderer}!PrepareDevice@{PrepareDevice}}
+\index{PrepareDevice@{PrepareDevice}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{PrepareDevice()}{PrepareDevice()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a7d97cab172e59d23a2587f636c9b12b7} 
+virtual void olc::\+\+Renderer::\+\+Prepare\+Device (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a04c56d76c76ab50f5f06b9b537e9d98d}\index{olc::Renderer@{olc::Renderer}!PrepareDrawing@{PrepareDrawing}}
+\index{PrepareDrawing@{PrepareDrawing}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{PrepareDrawing()}{PrepareDrawing()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a04c56d76c76ab50f5f06b9b537e9d98d} 
+virtual void olc::\+\+Renderer::\+\+Prepare\+Drawing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_aa0e93a7d9ff6f25e9b154b2c8c86d44d}\index{olc::Renderer@{olc::Renderer}!ReadTexture@{ReadTexture}}
+\index{ReadTexture@{ReadTexture}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{ReadTexture()}{ReadTexture()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_aa0e93a7d9ff6f25e9b154b2c8c86d44d} 
+virtual void olc::\+\+Renderer::\+\+Read\+Texture (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id}{, }\item[{\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}}]{spr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a8b3d2a84750d8671621b43d2e958c29b}\index{olc::Renderer@{olc::Renderer}!Set3DProjection@{Set3DProjection}}
+\index{Set3DProjection@{Set3DProjection}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{Set3DProjection()}{Set3DProjection()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a8b3d2a84750d8671621b43d2e958c29b} 
+virtual void olc::\+\+Renderer::\+\+Set3\+DProjection (\begin{DoxyParamCaption}\item[{const std::\+array$<$ float, 16 $>$ \&}]{mat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_aebfc5a561c54b88f16a0b3d855eedaa1}\index{olc::Renderer@{olc::Renderer}!SetDecalMode@{SetDecalMode}}
+\index{SetDecalMode@{SetDecalMode}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{SetDecalMode()}{SetDecalMode()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_aebfc5a561c54b88f16a0b3d855eedaa1} 
+virtual void olc::\+\+Renderer::\+\+Set\+Decal\+Mode (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_aeda642f63378f868193c28e8613138ca}{olc::\+\+Decal\+Mode}} \&}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_a1512e2939b94f6fdb58bbf152ac0e4e5}\index{olc::Renderer@{olc::Renderer}!UpdateTexture@{UpdateTexture}}
+\index{UpdateTexture@{UpdateTexture}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{UpdateTexture()}{UpdateTexture()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a1512e2939b94f6fdb58bbf152ac0e4e5} 
+virtual void olc::\+\+Renderer::\+\+Update\+Texture (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id}{, }\item[{\doxymbox{\hyperlink{classolc_1_1_sprite}{olc::\+\+Sprite}} \texorpdfstring{$\ast$}{*}}]{spr}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\Hypertarget{classolc_1_1_renderer_abc873336dd8f9079dc26f92ce0f95748}\index{olc::Renderer@{olc::Renderer}!UpdateViewport@{UpdateViewport}}
+\index{UpdateViewport@{UpdateViewport}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{UpdateViewport()}{UpdateViewport()}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_abc873336dd8f9079dc26f92ce0f95748} 
+virtual void olc::\+\+Renderer::\+\+Update\+Viewport (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{pos}{, }\item[{const \doxymbox{\hyperlink{namespaceolc_a7733a4d8cda07ed249fefc00b290b38b}{olc::\+vi2d}} \&}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\label{classolc_1_1_renderer_doc-variable-members}
+\Hypertarget{classolc_1_1_renderer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classolc_1_1_renderer_a89f800c14ab1b070408c17e2589e02a1}\index{olc::Renderer@{olc::Renderer}!ptrPGE@{ptrPGE}}
+\index{ptrPGE@{ptrPGE}!olc::Renderer@{olc::Renderer}}
+\doxysubsubsection{\texorpdfstring{ptrPGE}{ptrPGE}}
+{\footnotesize\ttfamily \label{classolc_1_1_renderer_a89f800c14ab1b070408c17e2589e02a1} 
+\doxymbox{\hyperlink{classolc_1_1_pixel_game_engine}{olc::\+\+Pixel\+Game\+Engine}}\texorpdfstring{$\ast$}{*} olc::\+\+Renderer::\+ptr\+PGE\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{olc_pixel_game_engine_8h}{olc\+Pixel\+Game\+Engine.\+h}}\end{DoxyCompactItemize}

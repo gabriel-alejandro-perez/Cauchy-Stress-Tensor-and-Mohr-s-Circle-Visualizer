@@ -1,0 +1,3 @@
+C:/Users/Haisen/Desktop/Stress/Build/CMakeFiles/mohr.dir
+C:/Users/Haisen/Desktop/Stress/Build/CMakeFiles/edit_cache.dir
+C:/Users/Haisen/Desktop/Stress/Build/CMakeFiles/rebuild_cache.dir

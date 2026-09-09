@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['n_0',['n',['../unionolc_1_1_pixel_1_1_0funion_0e_8____unnamed0____.html#a7c78d98c3f358a917355e988de403e55',1,'olc::Pixel::[union].__unnamed0__']]],
+  ['ndecalmode_1',['nDecalMode',['../classolc_1_1_pixel_game_engine.html#a78ee4966dfd29362dc9447da8585cde9',1,'olc::PixelGameEngine']]],
+  ['ndecalstructure_2',['nDecalStructure',['../classolc_1_1_pixel_game_engine.html#aafc267ad7d79fb780a071d63d70ba15f',1,'olc::PixelGameEngine']]],
+  ['ndefaultalpha_3',['nDefaultAlpha',['../namespaceolc.html#adede7d1156ab9d8ffdc3e9048f0f364b',1,'olc']]],
+  ['ndefaultpixel_4',['nDefaultPixel',['../namespaceolc.html#a10bbdc57cc3fecc7b80ba428eb7494d0',1,'olc']]],
+  ['nframecount_5',['nFrameCount',['../classolc_1_1_pixel_game_engine.html#a301315084f606ce384ff3038dfd01539',1,'olc::PixelGameEngine']]],
+  ['nhw3dcullmode_6',['nHW3DCullMode',['../classolc_1_1_pixel_game_engine.html#a5c62b70d8bbfeb598d21bb8543c15411',1,'olc::PixelGameEngine']]],
+  ['nkeypresscachetarget_7',['nKeyPressCacheTarget',['../classolc_1_1_pixel_game_engine.html#a3452ef7c719e13ecd2473b1baf6cdefa',1,'olc::PixelGameEngine']]],
+  ['nlastfps_8',['nLastFPS',['../classolc_1_1_pixel_game_engine.html#aa20201e99913d4d9f55b323b1b567d21',1,'olc::PixelGameEngine']]],
+  ['nmousebuttons_9',['nMouseButtons',['../namespaceolc.html#abf7dfc35dd1d895f33d3635831953e38',1,'olc']]],
+  ['nmousewheeldelta_10',['nMouseWheelDelta',['../classolc_1_1_pixel_game_engine.html#ae0fd4fe68c628abbb0988cb9e6cd4507',1,'olc::PixelGameEngine']]],
+  ['nmousewheeldeltacache_11',['nMouseWheelDeltaCache',['../classolc_1_1_pixel_game_engine.html#a96a82f683f60d16eda69c95bc05e369a',1,'olc::PixelGameEngine']]],
+  ['noffset_12',['nOffset',['../structolc_1_1_resource_pack_1_1s_resource_file.html#a5a13c09e27a9b7e72f6c4e2aa92ec41b',1,'olc::ResourcePack::sResourceFile']]],
+  ['npixelmode_13',['nPixelMode',['../classolc_1_1_pixel_game_engine.html#ab1029ccc094a1c81163d589498c4b015',1,'olc::PixelGameEngine']]],
+  ['nresid_14',['nResID',['../structolc_1_1_layer_desc.html#a9433153aabd3d3530043f71a2ad63b1a',1,'olc::LayerDesc']]],
+  ['nsize_15',['nSize',['../structolc_1_1_resource_pack_1_1s_resource_file.html#a1eb86c4fa7a7c44d070d0fafe8febd7f',1,'olc::ResourcePack::sResourceFile']]],
+  ['ntabsizeinspaces_16',['nTabSizeInSpaces',['../namespaceolc.html#a63e04c5d0f196f674d1bb3b1a6cd97f0',1,'olc']]],
+  ['ntargetlayer_17',['nTargetLayer',['../classolc_1_1_pixel_game_engine.html#a64bc595b53908581dfabaa8cc0789cb7',1,'olc::PixelGameEngine']]],
+  ['ntextentrycursor_18',['nTextEntryCursor',['../classolc_1_1_pixel_game_engine.html#a918809e11525cdd0aa31426b4f650f3f',1,'olc::PixelGameEngine']]]
+];
